@@ -1,0 +1,517 @@
+<!doctype html><html lang=ar dir=rtl><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>الملخص – مبادئ إدارة الأعمال</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI','Dubai','Noto Sans Arabic','Noto Naskh Arabic',system-ui,Arial,sans-serif;margin:0;background:#f4f6f8;color:#1e293b;line-height:1.9;font-size:17px;-webkit-font-smoothing:antialiased}b,strong{font-weight:700}
+a{color:#1d4ed8}
+.top{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;font-weight:bold;background:#ffffff30;padding:6px 14px;border-radius:20px;font-size:16px}
+.top h1{margin:0;font-size:22px;flex:1}
+.tabs{position:sticky;top:0;z-index:10;background:#fff;display:flex;gap:6px;padding:8px;overflow-x:auto;box-shadow:0 2px 6px #0002}
+.tabs a{white-space:nowrap;padding:10px 16px;border-radius:12px;background:#e2e8f0;color:#0f172a;text-decoration:none;font-size:17px;font-weight:bold}
+.tabs a.on{background:var(--c);color:#fff}
+main{max-width:860px;margin:auto;padding:14px}
+.card{background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0;box-shadow:0 1px 4px #0002}
+.card h2{margin:0 0 8px;font-size:22px}
+.big{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;padding:18px;margin:12px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 5px #0003;border-right:8px solid var(--c)}
+.big .ic{font-size:36px}.big b{font-size:21px;display:block}.big small{color:#475569;font-size:15px;line-height:1.5;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.grid figure{margin:0;font-size:13px;line-height:1.4;color:#334155}
+.grid img{width:100%;border-radius:10px;cursor:zoom-in;border:1px solid #cbd5e1;background:#fff}
+.pages img{width:100%;border-radius:10px;border:1px solid #cbd5e1;margin:4px 0;cursor:zoom-in}
+.pn{background:var(--c);color:#fff;display:inline-block;border-radius:20px;padding:0 14px;font-size:15px;margin-top:10px}
+.todo label{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:#f8fafc;margin:8px 0;cursor:pointer;border:2px solid #e2e8f0}
+.todo input{width:26px;height:26px;margin-top:5px;flex:none;accent-color:var(--c)}
+.todo input:checked+span{opacity:.5;text-decoration:line-through}
+.chip{display:inline-block;background:#e2e8f0;border-radius:16px;padding:2px 12px;margin:3px 3px 0 0;font-size:15px;text-decoration:none;color:#0f172a;font-weight:bold}.chips{display:block;margin-top:4px;font-size:15px}
+.ch{background:#fff;border-radius:14px;padding:12px 16px;margin:12px 0;border-right:8px solid;box-shadow:0 1px 4px #0002}.ch p{margin:6px 0}.badge{color:#fff;border-radius:12px;padding:1px 10px;font-size:14px;margin-right:6px}
+.pt{background:#fff;border-radius:16px;margin:18px 0;box-shadow:0 1px 4px #0002;overflow:hidden}
+.pth{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px}.pth label{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:18px;line-height:1.6;flex:1}.tt{flex:1}
+.pth input{width:26px;height:26px;flex:none;accent-color:#fff;margin-right:auto}
+.pth label:has(input:checked) .tt{opacity:.6;text-decoration:line-through}
+.ptd{padding:10px 16px 14px}
+.num{background:#fff;color:var(--c);border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:none}
+.pth .badge{background:#ffffff40;margin:0}
+.seg{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;border-bottom:2px solid #e2e8f0;margin-bottom:10px}.seg button{font:inherit;font-size:16px;font-weight:700;border:0;background:#e2e8f0;color:#0f172a;border-radius:20px;padding:7px 14px;cursor:pointer;white-space:nowrap}.seg button.on{background:var(--c);color:#fff}
+.pane[hidden]{display:none}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}.strip figure{margin:0;flex:none;width:150px;scroll-snap-align:start;text-align:center}.strip img{width:150px;height:200px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #cbd5e1;cursor:zoom-in;background:#fff}.strip figcaption{font-size:12px;color:#64748b}
+.hint{font-size:14px;color:#64748b;margin:0 0 4px}.cht{margin:0 0 2px;font-size:16px}
+.admbox{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;padding:8px 14px 6px;margin:14px 0}.admh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;color:#9a3412;margin-bottom:6px}.dl{background:#ea580c;color:#fff;text-decoration:none;border-radius:20px;padding:5px 14px;font-size:15px;white-space:nowrap}.fn{font-size:13px;color:#64748b;margin:0}
+#lbc{position:fixed;top:14px;left:50%;transform:translateX(-50%);color:#fff;font-size:17px;z-index:100;background:#0008;padding:2px 14px;border-radius:12px}
+.sec{border-top:1px dashed #cbd5e1;padding-top:6px;margin-top:10px}
+.sech{font-weight:700;color:var(--c);font-size:18px;margin:8px 0}
+.sec h3{font-size:18px;margin:14px 0 4px}.sec p{margin:6px 0}.sec ul,.sec ol{padding-right:24px;margin:6px 0}
+.sec table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px;margin:8px 0}.sec td,.sec th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sec th{background:#f1f5f9}
+.sec blockquote{background:#fef9c3;margin:8px 0;padding:4px 14px;border-radius:8px;border-right:4px solid #eab308}
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px}.idx a{display:flex;gap:8px;align-items:center;padding:6px 10px;background:#f1f5f9;border-radius:10px;text-decoration:none;color:#1e293b;font-size:15px;line-height:1.5}.idx .num{background:var(--c);color:#fff;width:26px;height:26px;font-size:14px}
+.warn{background:#fef9c3;border-right:5px solid #eab308;padding:10px 14px;border-radius:10px;font-size:16px}
+.btn{display:block;background:var(--c);color:#fff;text-align:center;padding:14px;border-radius:14px;text-decoration:none;font-weight:bold;font-size:19px;margin:10px 0}
+.btn.alt{background:#fff;color:var(--c);border:2px solid var(--c)}
+.nextbar{display:flex;gap:10px;margin:22px 0}.nextbar a{flex:1}
+details{background:#f8fafc;border-radius:12px;padding:8px 14px;margin:10px 0;border:1px solid #e2e8f0}summary{cursor:pointer;font-weight:bold;font-size:18px}
+.sum h2{border-right:6px solid var(--c);padding-right:10px;margin-top:34px;font-size:23px;background:#f8fafc;border-radius:8px}
+.sum h3{color:var(--c);font-size:20px}
+.sum table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px}
+.sum td,.sum th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sum th{background:#f1f5f9}
+.sum blockquote{background:#fef9c3;margin:10px 0;padding:6px 14px;border-radius:8px;border-right:4px solid #eab308}
+.mx{display:inline-grid;direction:ltr;gap:0 16px;padding:2px 12px;border-left:3px solid #0f172a;border-right:3px solid #0f172a;border-radius:8px;vertical-align:middle;text-align:center;margin:2px 6px;line-height:1.6}.mx.det{border-radius:0;border-width:2px}.mx i{font-style:normal}
+.allim{margin-top:14px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px;padding:8px 12px}.allim summary{cursor:pointer;font-weight:700;color:#334155}
+.blk{border-top:3px dashed #cbd5e1;padding-top:10px;margin-top:14px}.blk:first-child{border-top:0;margin-top:0}.blkh{font-weight:800;font-size:19px;color:#0f172a;display:flex;gap:8px;align-items:center;margin-bottom:6px}.bn{background:var(--c,#2563eb);color:#fff;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+.eq{direction:ltr;text-align:center;font-size:21px;background:#f1f5f9;border-radius:12px;padding:10px 12px;margin:10px 0;font-family:'Cambria Math',Cambria,serif}
+.sum code{background:#f1f5f9;padding:0 4px;border-radius:4px}
+.toc{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 16px;font-size:17px}.toc ul{padding-right:20px;margin:4px 0}
+.dayh{margin:26px 0 8px;font-size:19px;background:#fff;padding:6px 14px;border-radius:10px;border-right:6px solid var(--c)}
+.f{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:14px;margin:10px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 4px #0002;border-right:6px solid var(--c)}.f .ic{font-size:30px}
+table.sch{border-collapse:collapse;width:100%}table.sch td,table.sch th{border:1px solid #cbd5e1;padding:8px;text-align:center}table.sch th{background:#f1f5f9}
+.sjs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.sj{background:var(--c);color:#fff;border-radius:18px;padding:16px 18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;box-shadow:0 3px 8px #0003;min-height:120px}.sj b{font-size:22px;line-height:1.4}.sje{font-size:34px}.sjd{background:#ffffff33;border-radius:12px;padding:2px 12px;align-self:flex-start;font-size:15px;margin-top:auto}
+.tools{margin:26px 0 8px;padding:12px 14px;border:2px dashed #94a3b8;border-radius:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.toolh{width:100%;font-size:15px;color:#64748b;font-weight:700}.tools a{background:#e2e8f0;color:#0f172a;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:16px;font-weight:700}
+.ex{background:#ecfdf5;border:2px solid #34d399;border-radius:14px;padding:6px 16px 10px;margin:12px 0}.exh{font-weight:700;color:#047857;font-size:19px;margin:6px 0}.ex p{margin:6px 0}.ex ul,.ex ol{padding-right:24px;margin:6px 0}
+.ims{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 12px;margin:10px 0}.ims summary{font-size:18px}.imh{font-weight:700;color:var(--c);margin:12px 0 6px}
+.grid figcaption{text-align:center;font-size:12px;color:#64748b}
+.adm{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;margin:14px 0}.adm summary{font-size:19px;color:#9a3412}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:8px 0}
+.vc{display:block;background:#fff;border:1px solid #cbd5e1;border-radius:12px;overflow:hidden;text-decoration:none;color:#0f172a;font-size:15px;line-height:1.5}.vc img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#e2e8f0}.vc span{display:block;padding:8px 10px}
+.chap{background:#fff;border-radius:16px;border-right:8px solid;padding:6px 18px 14px;margin:18px 0;box-shadow:0 1px 4px #0002;scroll-margin-top:70px}.chap h2{font-size:22px;margin:10px 0}.pgs{font-size:14px;color:#64748b;margin:2px 0 8px}
+.expl{background:#f8fafc;border-radius:12px;padding:6px 12px;margin:10px 0;border:1px solid #e2e8f0}.pt{scroll-margin-top:70px}
+#lb{display:none;position:fixed;inset:0;background:#000e;z-index:99;overflow:auto;text-align:center}#lb img{max-width:100%;margin:50px auto 0;display:block}
+#lb button{position:fixed;top:8px;background:#fff;border:0;border-radius:20px;padding:8px 18px;font-size:18px;cursor:pointer;font-weight:bold;z-index:100}
+
+html.dk{filter:invert(1) hue-rotate(180deg);background:#fff}html.dk img,html.dk .vc img{filter:invert(1) hue-rotate(180deg)}html.dk #lb{filter:none}
+html.sp body{background:#f1e7d0}html.sp .card,html.sp .pt,html.sp .sec{background:#faf3e0}
+#mode{position:fixed;left:10px;bottom:12px;z-index:50;background:#1e293b;color:#fff;border:0;border-radius:24px;padding:10px 14px;font-size:16px;box-shadow:0 2px 8px #0005;font-family:inherit}
+html.dk #mode{filter:invert(1) hue-rotate(180deg)}
+@media(max-width:700px){body{font-size:18px;line-height:2}main{padding:8px!important}.card{padding:12px!important;border-radius:14px}.strip figure{width:42vw}.strip img{width:42vw;height:56vw}.seg button{padding:10px 12px;font-size:16px}.tabs a,.tabs button{font-size:15px;padding:10px 12px}.eq{font-size:18px;overflow-x:auto}.ex{padding:4px 12px 8px}.blkh{font-size:18px}.vgrid{grid-template-columns:1fr}}
+@media print{.pane[hidden]{display:block!important}.seg,.strip{display:none!important}.top,.tabs,.nextbar,.noprint{display:none!important}body{background:#fff;font-size:15px}.card{box-shadow:none;padding:0}}
+</style><body style="--c:#9333ea"><div class=top><a href=index.html>🏠 الرئيسية</a><h1 dir=auto>🏢 مبادئ إدارة الأعمال</h1></div><div class=tabs><a class="" href=mgmt-todo.html>🎯 المطلوب</a><a class="" href=mgmt-cur.html>📚 المنهج</a><a class="on" href=mgmt-sum.html>📝 الملخص الكامل</a><a class="" href=mgmt-files.html>📄 ملفات الأدمن</a><a class="" href=mgmt-ext.html>🎥 شروحات</a></div><main><div class="card sum"><a class="btn noprint" href="files/ملخص_مبادئ_إدارة_الأعمال.pdf">⬇ تحميل الملخص <bdi dir=ltr>PDF</bdi></a><details open><summary>فهرس الملخص (اضغط على أي عنوان تروحله)</summary><div class=idx><a href="#اللي-الأدمن-قال-عليه-مهم-جد-ا-متحدد-بالأخضر"><span class=num><bdi dir=ltr>1</bdi></span>⭐ اللي الأدمن قال عليه مهم جدًا</a><a href="#1-تعريف-الإدارة-ووظائفها"><span class=num><bdi dir=ltr>2</bdi></span>تعريف الإدارة ووظائفها</a><a href="#2-الإدارة-علم-وفن-وممارسة-قد-م-الأخضر-ده-في-الامتحان"><span class=num><bdi dir=ltr>3</bdi></span>الإدارة علم وفن وممارسة</a><a href="#3-مهارات-المدير"><span class=num><bdi dir=ltr>4</bdi></span>مهارات المدير</a><a href="#4-أهمية-الإدارة"><span class=num><bdi dir=ltr>5</bdi></span>أهمية الإدارة</a><a href="#5-مظاهر-سوء-الإدارة-اكتب-10-منها"><span class=num><bdi dir=ltr>6</bdi></span>مظاهر سوء الإدارة</a><a href="#6-الكفاءة-والفاعلية-سؤال-مقالي-متوقع-جد-ا"><span class=num><bdi dir=ltr>7</bdi></span>الكفاءة والفاعلية</a><a href="#7-مستويات-الإدارة-الهرم"><span class=num><bdi dir=ltr>8</bdi></span>مستويات الإدارة</a><a href="#8-تطور-الفكر-الإداري-الفصل-الأول-ص9-52"><span class=num><bdi dir=ltr>9</bdi></span>تطور الفكر الإداري</a><a href="#9-هرم-ماسلو-من-الأعلى-للأسفل-في-الصورة"><span class=num><bdi dir=ltr>10</bdi></span>هرم ماسلو</a><a href="#10-التخطيط-الفصل-الثالث-ص79-104"><span class=num><bdi dir=ltr>11</bdi></span>التخطيط</a><a href="#أسئلة-الشيت-الخمسة-هتتسلم-السبت-إجابات-من-الملخص"><span class=num><bdi dir=ltr>12</bdi></span>أسئلة الشيت الخمسة</a><a href="#كويز-الجروب-إجابات-الأدمن-صح-خطأ"><span class=num><bdi dir=ltr>13</bdi></span>كويز الجروب</a><a href="#شيت-الأدمن-إجابات-منشورة-صح-خطأ-والاختيار"><span class=num><bdi dir=ltr>14</bdi></span>شيت الأدمن: صح/خطأ والاختيار</a><a href="#ملحق-حسب-رسالة-الأدمن-5-11-خريطة-ذهنية-لكل-مدرسة-التخطيط"><span class=num><bdi dir=ltr>15</bdi></span>➕ ملحق</a><a href="#ملاحظات-أمانة"><span class=num><bdi dir=ltr>16</bdi></span>ملاحظات أمانة</a><a href="#ملخص-الأدمن-الجديد-الشامل-في-مبادئ-الإدارة-21-صفحة-اتبعت-4-11"><span class=num><bdi dir=ltr>17</bdi></span>➕ ملخص الأدمن الجديد</a></div></details>
+<h1 dir=auto id="مراجعة-مبادئ-إدارة-الأعمال-ميدترم-السبت-7-11">مراجعة مبادئ إدارة الأعمال – ميدترم السبت <bdi dir=ltr>7/11</bdi></h1>
+<blockquote dir=auto>
+<p dir=auto>المصادر: كتاب المحاضرات والسكاشن (تصميم منار محمد – <bdi dir=ltr>17</bdi> صفحة بخط اليد)، صور الأدمن اللي حدد فيها المهم بالأخضر <bdi dir=ltr>(28/10)</bdi>، شيت الأسئلة الخمسة، وكويز الجروب يوم <bdi dir=ltr>24/10</bdi>.<br />
+<strong>شكل الامتحان (من صورة الأدمن بتاريخ <bdi dir=ltr>28/10)</bdi>:</strong> عبارات صح/خطأ + <bdi dir=ltr>10</bdi> اختيار من متعدد + <bdi dir=ltr>4</bdi> أسئلة مقالي. عدد عبارات الصح/خطأ مش واضح في الخط (يمكن <bdi dir=ltr>⑳</bdi>.<br />
+<strong>المحاضر:</strong> د/هاني فتحي. <strong>كتاب الجامعة:</strong> فهرسه في صورة <bdi dir=ltr>WA0098</bdi>: الفصل <bdi dir=ltr>1</bdi> تطور الفكر الإداري ص<bdi dir=ltr>9</bdi>–<bdi dir=ltr>52</bdi>، الفصل <bdi dir=ltr>2</bdi> أهمية الإدارة وعناصرها ص<bdi dir=ltr>53</bdi>–<bdi dir=ltr>78</bdi>، الفصل <bdi dir=ltr>3</bdi> التخطيط ص<bdi dir=ltr>79</bdi>–<bdi dir=ltr>104</bdi> (الأدمن علّم على الفصول <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> بالأزرق، يعني المطلوب في الميدترم).</p>
+</blockquote>
+<hr />
+<h2 dir=auto id="اللي-الأدمن-قال-عليه-مهم-جد-ا-متحدد-بالأخضر">⭐ اللي الأدمن قال عليه مهم جدًا (متحدد بالأخضر)</h2>
+<ol>
+<li dir=auto><strong>المدرسة الكلاسيكية + مبادئها</strong></li>
+<li dir=auto><strong>الفرق بين نظرية <bdi dir=ltr>X</bdi> و نظرية <bdi dir=ltr>Y</bdi></strong> (دوجلاس ماكجروجر)</li>
+<li dir=auto><strong>إبراهام ماسلو</strong> وهرم الحاجات</li>
+<li dir=auto><strong>مظاهر سوء الإدارة</strong> – "يكفي منها <bdi dir=ltr>10</bdi> بس" (للمقالي)</li>
+<li dir=auto><strong>الفرق بين وظائف الإدارة ووظائف المنظمة</strong> (مكتوبة "مهم")</li>
+<li dir=auto><strong>مفهوم التخطيط</strong> + <strong>مستويات الإدارة</strong></li>
+</ol>
+<hr />
+<h2 dir=auto id="1-تعريف-الإدارة-ووظائفها"><bdi dir=ltr>①</bdi> تعريف الإدارة ووظائفها</h2>
+<ul>
+<li dir=auto><strong>الإدارة:</strong> الاستغلال الأمثل للموارد المتاحة من خلال <strong>التخطيط والتنظيم والتوجيه والرقابة</strong> لتحقيق الأهداف بكفاءة وفعالية.</li>
+<li dir=auto>هي <strong>نشاط إنساني</strong> (مش اقتصادي بس) ووسيلة لتحقيق الهدف، <strong>عامة</strong> (موجودة في الشركات والمستشفيات والمدارس والجامعات والبيت). <strong>أي منظمة تحتاج إدارة.</strong></li>
+<li dir=auto><strong>وظائف الإدارة <bdi dir=ltr>(4)</bdi>:</strong> تخطيط – تنظيم – توجيه – رقابة.</li>
+<li dir=auto><strong>وظائف المنظمة:</strong> الإنتاج، التسويق، المبيعات، المشتريات، المحاسبة/المخازن، العلاقات العامة، التمويل، الموارد البشرية، نظم المعلومات <bdi dir=ltr>(IT)</bdi>.<ul>
+<li dir=auto><strong>الفرق:</strong> وظائف الإدارة تمارسها الإدارة <strong>داخل كل</strong> وظيفة من وظائف المنظمة. وظائف المنظمة هي <strong>أنشطة التشغيل</strong> نفسها.</li>
+</ul>
+</li>
+<li dir=auto><strong>الموارد <bdi dir=ltr>(3)</bdi>:</strong> مادية (آلات، أجهزة) – بشرية – معلوماتية (خبرة/معلومات).</li>
+<li dir=auto>المنظمات: شركات، مصانع، مستشفيات، بنوك، مدارس، جامعات.</li>
+</ul>
+<h2 dir=auto id="2-الإدارة-علم-وفن-وممارسة-قد-م-الأخضر-ده-في-الامتحان"><bdi dir=ltr>②</bdi> الإدارة علم وفن وممارسة (قدّم الأخضر ده في الامتحان)</h2>
+<table>
+<thead>
+<tr>
+<th dir=auto>الوصف</th>
+<th dir=auto>السبب</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><strong>علم</strong></td>
+<td dir=auto>لأنها تعتمد على مدارس ونظريات علمية (الكلاسيكية والإنسانية والسلوكية ومدخل النظم)</td>
+</tr>
+<tr>
+<td dir=auto><strong>فن</strong></td>
+<td dir=auto>لأنها تعتمد على مهارات إنسانية وفنية وفكرية</td>
+</tr>
+<tr>
+<td dir=auto><strong>ممارسة</strong></td>
+<td dir=auto>لأنها خبرة وتعلّم مستمر</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto>الإجابة الصحيحة للسؤال "الإدارة من حيث طبيعتها": <strong>علم وفن وممارسة</strong> (مش علم بس).</li>
+<li dir=auto><strong>الإدارة فن</strong> مرتبط بالمهارة. <strong>الإدارة ممارسة</strong> تعتمد على التعلم المستمر.</li>
+</ul>
+<h2 dir=auto id="3-مهارات-المدير"><bdi dir=ltr>③</bdi> مهارات المدير</h2>
+<ul>
+<li dir=auto><strong>فنية <bdi dir=ltr>(Technical)</bdi>:</strong> القدرة في مجال التخصص (مثل مهندس المصنع/من يقوم بتنظيم البرامج). مهمة للإدارة <strong>الدنيا</strong>.</li>
+<li dir=auto><strong>إنسانية:</strong> التعامل مع الآخرين والتحفيز وبناء الثقة. = <strong>الاقناع والحوار والتواصل الإداري</strong>.</li>
+<li dir=auto><strong>فكرية (ذهنية):</strong> التفكير الاستراتيجي وتحليل المشكلات واتخاذ القرارات. مهمة للإدارة <strong>العليا</strong>.</li>
+<li dir=auto><strong>تذكّر:</strong> المهارة الفنية = مجال التخصص | الإنسانية = التعامل والإقناع والحوار | الفكرية = اتخاذ القرار الصحيح.</li>
+<li dir=auto><strong>التفكير</strong> يؤدي لاتخاذ القرارات الصحيحة: ابتكاري – نقدي – إبداعي – استراتيجي.</li>
+<li dir=auto><strong>الاحتراق الذاتي</strong> = إطالة التفكير بدون الوصول لاتخاذ قرارات سليمة.</li>
+<li dir=auto>أسئلة الشيت: المهارة <strong>الفنية</strong> مش هي التعامل مع الآخرين <bdi dir=ltr>(×)</bdi>. مهارات الاتصال من <strong>الإنسانية</strong> (✓). الإدارة <strong>غير ملموسة</strong> (×تظهر كملموسة زي الآلات).</li>
+</ul>
+<h2 dir=auto id="4-أهمية-الإدارة"><bdi dir=ltr>④</bdi> أهمية الإدارة</h2>
+<ul>
+<li dir=auto>الاستغلال <strong>الأمثل</strong> للموارد المتاحة للمنظمة. تحقيق الأهداف المرجوة بكفاءة وفاعلية.</li>
+<li dir=auto>الإدارة هي <strong>العنصر الخامس</strong> من عناصر الإنتاج (<strong>غير ملموس</strong>).</li>
+<li dir=auto>تحديد الأهداف بناءً عليها يتخذ القرار.</li>
+<li dir=auto>الإدارة عنصر <strong>مادي؟ لا – غير ملموس</strong>: عناصر الإنتاج <strong><bdi dir=ltr>4</bdi></strong>: موارد بشرية (عاملين وموظفين) – آلات – مواد خام – مبانٍ/منشآت. والإدارة هي اللي <strong>تدير</strong> كل ده (ظهورها يؤدي لنجاح المنظمات، حل مشكلة البطالة، تقليل الهدر).</li>
+<li dir=auto><strong>الأسباب والدواعي الحديثة للاهتمام بالإدارة:</strong> تزايد الإحساس بأهمية دورها – التقدم التكنولوجي – التطور العلمي – حدة المنافسة – زيادة حجم المعاملات – تشابك العلاقة بين المنظمة وغيرها – كثرة التوجيهات الحديثة للإدارة.</li>
+</ul>
+<h2 dir=auto id="5-مظاهر-سوء-الإدارة-اكتب-10-منها"><bdi dir=ltr>⑤</bdi> مظاهر سوء الإدارة (اكتب <bdi dir=ltr>10</bdi> منها)</h2>
+<ol>
+<li dir=auto>الاختلالات الإدارية والمالية</li>
+<li dir=auto>انخفاض المبيعات والحصة السوقية (إدارة فاشلة)</li>
+<li dir=auto>ارتفاع معدل دوران العمل / كثرة التأخيرات والشكاوى</li>
+<li dir=auto>التأخر في سداد الالتزامات</li>
+<li dir=auto>ارتفاع نسبة الديون المعدومة</li>
+<li dir=auto>زيادة غرامات التأخير</li>
+<li dir=auto>ارتفاع المخزون الراكد</li>
+<li dir=auto>ارتفاع معدل الشكاوى والحوادث</li>
+<li dir=auto>زيادة البطالة المقنعة</li>
+<li dir=auto>أخطاء/اضطراب في عملية الإنتاج</li>
+<li dir=auto>نقص الإنتاج وزيادة العيوب</li>
+<li dir=auto>عدم انتظام السجلات</li>
+<li dir=auto>شكاوى العملاء</li>
+<li dir=auto>نقص البيانات المطلوبة</li>
+</ol>
+<h2 dir=auto id="6-الكفاءة-والفاعلية-سؤال-مقالي-متوقع-جد-ا"><bdi dir=ltr>⑥</bdi> الكفاءة والفاعلية (سؤال مقالي متوقع جدًا)</h2>
+<table>
+<thead>
+<tr>
+<th dir=auto></th>
+<th dir=auto>الكفاءة <bdi dir=ltr>(Efficiency)</bdi></th>
+<th dir=auto>الفاعلية <bdi dir=ltr>(Effectiveness)</bdi></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>المعنى</td>
+<td dir=auto><strong>فعل الأشياء بالطريقة الصحيحة</strong></td>
+<td dir=auto><strong>فعل الأشياء الصحيحة</strong></td>
+</tr>
+<tr>
+<td dir=auto>التركيز</td>
+<td dir=auto>تقليل التكلفة والهدر، استخدام الموارد بأفضل صورة</td>
+<td dir=auto>تحقيق الأهداف المطلوبة</td>
+</tr>
+<tr>
+<td dir=auto>تتعلق بـ</td>
+<td dir=auto>المدخلات (الموارد)</td>
+<td dir=auto>المخرجات (النتائج)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto>كويز الجروب: "الفاعلية = فعل الأشياء الصحيحة وتحقيق الأهداف المحددة" (الإجابة ج). "الإدارة علم وليست فنًا" = <strong>غلط</strong>. "الإدارة العليا تهتم بالتخطيط التشغيلي اليومي" = <strong>غلط</strong> (ده دور الدنيا).</li>
+</ul>
+<h2 dir=auto id="7-مستويات-الإدارة-الهرم"><bdi dir=ltr>⑦</bdi> مستويات الإدارة (الهرم)</h2>
+<table>
+<thead>
+<tr>
+<th dir=auto>المستوى</th>
+<th dir=auto>النوع</th>
+<th dir=auto>المدى الزمني</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><strong>العليا</strong></td>
+<td dir=auto>استراتيجية</td>
+<td dir=auto><strong>طويل</strong> الأجل</td>
+</tr>
+<tr>
+<td dir=auto><strong>الوسطى</strong></td>
+<td dir=auto>تكتيكية</td>
+<td dir=auto><strong>متوسط</strong> الأجل</td>
+</tr>
+<tr>
+<td dir=auto><strong>الدنيا (الإشراف)</strong></td>
+<td dir=auto>تنفيذية/تشغيلية</td>
+<td dir=auto><strong>قصير</strong> الأجل</td>
+</tr>
+</tbody>
+</table>
+<h2 dir=auto id="8-تطور-الفكر-الإداري-الفصل-الأول-ص9-52"><bdi dir=ltr>⑧</bdi> تطور الفكر الإداري (الفصل الأول – ص<bdi dir=ltr>9</bdi>–<bdi dir=ltr>52.</bdi></h2>
+<p dir=auto>المدارس بالترتيب:</p>
+<ol>
+<li dir=auto><strong>المدرسة الكلاسيكية</strong> (مهم جدًا):<ul>
+<li dir=auto>الإدارة العلمية – <strong>فريدريك تايلور</strong> (دراسة الوقت والحركة لزيادة كفاءة العامل).</li>
+<li dir=auto>مدرسة <strong>الإدارة العامة / المبادئ الإدارية</strong> – <strong>هنري فايول</strong> (الأعمال الإدارية، مبادئ الإدارة).</li>
+<li dir=auto><strong>النموذج البيروقراطي</strong> – <strong>ماكس فيبر</strong>.</li>
+</ul>
+</li>
+<li dir=auto><strong>مدرسة العلاقات الإنسانية</strong> (الفكر الإنساني):<ul>
+<li dir=auto><strong>ألتون مايو</strong> – تجارب <strong>هاوثورن</strong> (مصنع هاوثورن، أمريكا): الاهتمام بالظروف المادية للعامل وعلاقتها بالإنتاجية (مثال: التهوية وساعات العمل). النتيجة: <strong>العامل إنسان وليس آلة</strong> (البعد النفسي والاجتماعي مؤثر على الإنتاج).</li>
+<li dir=auto><strong>ماري باركر فوليت:</strong> الاعتراف بأهمية العوامل المحفزة للفرد، <strong>اعتماد السلطة على الجماعة والمسؤولية</strong>.</li>
+</ul>
+</li>
+<li dir=auto><strong>المدرسة السلوكية:</strong><ul>
+<li dir=auto><strong>نظرية <bdi dir=ltr>X</bdi> و <bdi dir=ltr>Y</bdi></strong> – دوجلاس ماكجروجر</li>
+<li dir=auto><strong>هرم ماسلو</strong> (الحاجات).</li>
+</ul>
+</li>
+<li dir=auto><strong>مدخل النظم</strong> (المدرسة الحديثة): المنظمة نظام مفتوح (مدخلات – عمليات – مخرجات).</li>
+</ol>
+<ul>
+<li dir=auto><strong>مدرسة الإدارة العلمية = تايلور</strong> ✓، <strong>مدرسة الإدارة العامة/المبادئ = فايول</strong> ✓، <strong>هاوثورن + العلاقات الإنسانية = مايو</strong> ✓.</li>
+<li dir=auto>المدرسة الكمية: الرياضيات والإحصاء (إضافة).</li>
+</ul>
+<h3 dir=auto id="نظرية-X-و-Y-الأخضر-مهم">نظرية <bdi dir=ltr>X</bdi> و <bdi dir=ltr>Y</bdi> (الأخضر – مهم)</h3>
+<table>
+<thead>
+<tr>
+<th dir=auto>نظرية <bdi dir=ltr>X</bdi> (نظرة سلبية للإنسان)</th>
+<th dir=auto>نظرية <bdi dir=ltr>Y</bdi> (نظرة إيجابية)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الإنسان بطبيعته <strong>كسول</strong></td>
+<td dir=auto>الإنسان بطبيعته <strong>نشيط</strong></td>
+</tr>
+<tr>
+<td dir=auto>يتجنب تحمل المسؤولية</td>
+<td dir=auto><strong>يتحمل المسؤولية</strong></td>
+</tr>
+<tr>
+<td dir=auto>يحتاج إلى <strong>قيادة</strong> (توجيه)</td>
+<td dir=auto>قد يكون <strong>قائدًا</strong> فهو حسّاس ومكتسب للتعلم (يتعلم)</td>
+</tr>
+<tr>
+<td dir=auto>تهديد/عقاب للحفاظ على وسيلة العمل</td>
+<td dir=auto>يتحمل ويحب العمل بطبيعته</td>
+</tr>
+<tr>
+<td dir=auto>الرقابة وسيلة للدفع إلى العمل</td>
+<td dir=auto>–</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto>القراءة هنا من خط اليد وبعض الكلمات مقطوعة من الصورة، فراجع الصفحة <bdi dir=ltr>8</bdi> من الكتاب.</li>
+</ul>
+<h3 dir=auto id="مبادئ-فايول-من-شيت-الأسئلة">مبادئ فايول (من شيت الأسئلة)</h3>
+<p dir=auto>مبدأ <strong>اللامركزية</strong>، <strong>تكافؤ السلطة والمسؤولية</strong> (السلطة = حق اتخاذ القرار، المسؤولية = الالتزام). (باقي المبادئ زي وحدة الأمر مش مكتوبة في ملاحظاتك – راجعها في الكتاب ص<bdi dir=ltr>9</bdi>–<bdi dir=ltr>52.)</bdi></p>
+<h2 dir=auto id="9-هرم-ماسلو-من-الأعلى-للأسفل-في-الصورة"><bdi dir=ltr>⑨</bdi> هرم ماسلو (من الأعلى للأسفل في الصورة)</h2>
+<p dir=auto><bdi dir=ltr>5</bdi> مستويات: <strong>الفسيولوجية (أساسي) ← الأمان ← الاجتماعية/الانتماء ← التقدير ← تحقيق/تأكيد الذات (القمة)</strong>.</p>
+<ul>
+<li dir=auto>في شيت الأسئلة: "الحاجات الفسيولوجية" و"تأكيد الذات" من الإجابات.</li>
+</ul>
+<h2 dir=auto id="10-التخطيط-الفصل-الثالث-ص79-104"><bdi dir=ltr>⑩</bdi> التخطيط (الفصل الثالث – ص<bdi dir=ltr>79</bdi>–<bdi dir=ltr>104.</bdi></h2>
+<ul>
+<li dir=auto><strong>مفهوم التخطيط (لازم الاثنين):</strong><ol>
+<li dir=auto>دراسة للماضي وتحليل الحاضر وتنبؤ بالمستقبل.</li>
+<li dir=auto>عمل ذهني قائم على التفكير يسبق عملية اتخاذ القرار والتنفيذ.</li>
+</ol>
+</li>
+<li dir=auto><strong>التوجيه:</strong> يهتم بقيادة العاملين وتوجيههم.</li>
+</ul>
+<hr />
+<h2 dir=auto id="أسئلة-الشيت-الخمسة-هتتسلم-السبت-إجابات-من-الملخص">أسئلة الشيت الخمسة (هتتسلم السبت) – إجابات من الملخص</h2>
+<ol>
+<li dir=auto><strong>المهارات الأساسية للمدير:</strong> فنية – إنسانية – فكرية (+ الإقناع والحوار).</li>
+<li dir=auto><strong>أهمية الإدارة للمنظمة:</strong> الاستغلال الأمثل للموارد المتاحة، تحقيق الأهداف بكفاءة وفاعلية، نجاح المنظمات، حل مشكلة البطالة وتقليل الهدر.</li>
+<li dir=auto><strong>عناصر الإنتاج:</strong> موارد بشرية (عاملين وموظفين) – آلات – مواد خام – مبانٍ/منشآت (والإدارة العنصر الخامس غير الملموس).</li>
+<li dir=auto><strong>الفرق بين الكفاءة والفاعلية:</strong> جدول القسم <bdi dir=ltr>6</bdi>.</li>
+<li dir=auto><strong>تعريف الإدارة ووظائفها:</strong> القسم <bdi dir=ltr>1</bdi>.</li>
+</ol>
+<h2 dir=auto id="كويز-الجروب-إجابات-الأدمن-صح-خطأ">كويز الجروب (إجابات الأدمن – صح/خطأ)</h2>
+<table>
+<thead>
+<tr>
+<th dir=auto>العبارة</th>
+<th dir=auto>الإجابة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الإدارة عملية تحقيق الأهداف التنظيمية بكفاءة وفاعلية باستثمار الموارد</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>الكفاءة = الطريقة الصحيحة، الفاعلية = الأعمال الصحيحة</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>الإدارة العليا تهتم بالتخطيط التشغيلي اليومي</td>
+<td dir=auto>✗</td>
+</tr>
+<tr>
+<td dir=auto>الإدارة علم وليست فنًا ولا تحتاج مهارات إبداعية</td>
+<td dir=auto>✗</td>
+</tr>
+<tr>
+<td dir=auto>الإدارة العلمية لتايلور ركزت على الوقت والحركة</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>تجارب هاوثورن أثبتت أثر الجوانب النفسية والاجتماعية</td>
+<td dir=auto>✓</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto>اختيار من متعدد: الفاعلية = <strong>ج</strong> (فعل الأشياء الصحيحة)، رائد الإدارة العلمية = <strong>ب</strong> تايلور.</li>
+</ul>
+<h2 dir=auto id="شيت-الأدمن-إجابات-منشورة-صح-خطأ-والاختيار">شيت الأدمن (إجابات منشورة): صح/خطأ والاختيار</h2>
+<p dir=auto>صح وخطأ <bdi dir=ltr>1</bdi>–<bdi dir=ltr>14</bdi> كما في الصورة: <bdi dir=ltr>1× 2</bdi>✓ <bdi dir=ltr>3</bdi>✓ <bdi dir=ltr>4</bdi>✓ <bdi dir=ltr>5</bdi>✓ <bdi dir=ltr>6× 7</bdi>✓ <bdi dir=ltr>8× 9</bdi>✓ <bdi dir=ltr>10× 11</bdi>✓ <bdi dir=ltr>12</bdi>✓ <bdi dir=ltr>13</bdi>✓ <bdi dir=ltr>14</bdi>×. (الأسئلة نفسها مش في الصورة، فالقائمة بس للمراجعة لو لقيت نص الأسئلة.) اختيار: <bdi dir=ltr>1</bdi> ب تايلور – <bdi dir=ltr>2</bdi> أ هنري فايول – <bdi dir=ltr>3</bdi> ج اللامركزية – <bdi dir=ltr>4</bdi> د تكافؤ السلطة والمسؤولية – <bdi dir=ltr>5</bdi> د نظام المعلومات اللامركزي – <bdi dir=ltr>6</bdi> د استخدام الأسلوب العلمي للتسيير – <bdi dir=ltr>7</bdi> د النظم الهرمي – <bdi dir=ltr>8</bdi> أ التون مايو – <bdi dir=ltr>12</bdi> أ الحاجات الفسيولوجية – <bdi dir=ltr>11</bdi> ب تأكيد الذات.</p>
+<hr />
+<h2 dir=auto id="ملحق-حسب-رسالة-الأدمن-5-11-خريطة-ذهنية-لكل-مدرسة-التخطيط">➕ ملحق (حسب رسالة الأدمن <bdi dir=ltr>5/11)</bdi>: خريطة ذهنية لكل مدرسة + التخطيط</h2>
+<blockquote dir=auto>
+<p dir=auto>✅ <strong>القسم ده مش بالكامل من ملاحظاتك</strong>: تعريف التخطيط من صورة الأدمن، والمدارس ورواد كل مدرسة (تايلور، فايول، فيبر، مايو، ماكجروجر، ماسلو) وفكرتها متطابقة مع شروحات المدرسة الكلاسيكية والسلوكية المنشورة، أما تفاصيل خطوات التخطيط وأنواعه فهي من الصياغة القياسية. كتاب د/هاني ممكن يرتبها أو يسميها بشكل مختلف، فاحفظ صياغة الكتاب لو اختلفت.</p>
+</blockquote>
+<h3 dir=auto id="الإدارة-علم-اجتماعي-وفن-وممارسة">الإدارة علم اجتماعي وفن وممارسة</h3>
+<ul>
+<li dir=auto><strong>علم من العلوم الاجتماعية:</strong> لأنها تدرس <strong>سلوك الإنسان داخل المنظمة</strong> (وليست علمًا طبيعيًا دقيقًا)، ولها مدارس ونظريات.</li>
+<li dir=auto><strong>فن:</strong> مهارة المدير في تطبيق المعرفة. <strong>ممارسة:</strong> خبرة وتعلّم مستمر.</li>
+</ul>
+<h3 dir=auto id="خريطة-ذهنية-للمدارس-احفظ-المدرسة-رائدها-فكرتها">خريطة ذهنية للمدارس (احفظ: المدرسة ← رائدها ← فكرتها)</h3>
+<table>
+<thead>
+<tr>
+<th dir=auto>المدرسة</th>
+<th dir=auto>رائدها</th>
+<th dir=auto>الفكرة الأساسية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><strong>الإدارة العلمية</strong> (كلاسيكية)</td>
+<td dir=auto><strong>فريدريك تايلور</strong></td>
+<td dir=auto>دراسة <strong>الوقت والحركة</strong> لرفع كفاءة العامل، الأسلوب العلمي بدل التقدير الشخصي، اختيار وتدريب العامل، <strong>الحافز المادي</strong></td>
+</tr>
+<tr>
+<td dir=auto><strong>الإدارة العامة / المبادئ</strong> (كلاسيكية)</td>
+<td dir=auto><strong>هنري فايول</strong></td>
+<td dir=auto><strong>وظائف الإدارة</strong> (تخطيط – تنظيم – أمر/توجيه – تنسيق – رقابة) و<strong>مبادئ</strong> منها تقسيم العمل، <strong>تكافؤ السلطة والمسؤولية</strong>، وحدة الأمر، <strong>اللامركزية</strong>، التسلسل الهرمي</td>
+</tr>
+<tr>
+<td dir=auto><strong>البيروقراطية</strong> (كلاسيكية)</td>
+<td dir=auto><strong>ماكس فيبر</strong></td>
+<td dir=auto>تنظيم هرمي، قواعد مكتوبة، تقسيم العمل، التعيين بالكفاءة، علاقات غير شخصية</td>
+</tr>
+<tr>
+<td dir=auto><strong>العلاقات الإنسانية</strong></td>
+<td dir=auto><strong>ألتون مايو</strong> (تجارب <strong>هاوثورن</strong>) + <strong>ماري باركر فوليت</strong></td>
+<td dir=auto>الجانب <strong>النفسي والاجتماعي</strong> للعامل يؤثر على الإنتاجية؛ العامل إنسان وليس آلة</td>
+</tr>
+<tr>
+<td dir=auto><strong>السلوكية</strong></td>
+<td dir=auto><strong>ماسلو</strong> (هرم الحاجات) و<strong>ماكجروجر</strong> <bdi dir=ltr>(X</bdi> و <bdi dir=ltr>Y)</bdi></td>
+<td dir=auto>دوافع الإنسان وسلوكه</td>
+</tr>
+<tr>
+<td dir=auto><strong>مدخل النظم</strong></td>
+<td dir=auto>–</td>
+<td dir=auto>المنظمة <strong>نظام مفتوح</strong>: مدخلات ← عمليات ← مخرجات ← تغذية عكسية</td>
+</tr>
+<tr>
+<td dir=auto><strong>الكمية</strong></td>
+<td dir=auto>–</td>
+<td dir=auto>استخدام الرياضيات والإحصاء في اتخاذ القرار</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto><strong>المدرسة الكلاسيكية مبادئها (للمقالي):</strong> التخصص وتقسيم العمل – الهرمية – وحدة الأمر – التدرج في السلطة – الأسلوب العلمي في العمل – التركيز على الكفاءة والحافز المادي.</li>
+</ul>
+<h3 dir=auto id="الفصل-الثالث-التخطيط">الفصل الثالث: التخطيط</h3>
+<ul>
+<li dir=auto><strong>التعريف (الاثنين لازم):</strong> دراسة للماضي وتحليل الحاضر وتنبؤ بالمستقبل، وهو عمل ذهني قائم على التفكير يسبق اتخاذ القرار والتنفيذ (من صورة الأدمن). أو: تحديد الأهداف ووسائل تحقيقها مقدمًا.</li>
+<li dir=auto><strong>أهميته:</strong> يقلل عدم التأكد والعشوائية – يوجه الجهود نحو الأهداف – يوفر الموارد ويقلل الهدر – أساس الوظائف الأخرى (التنظيم والتوجيه والرقابة) – يساعد على مواجهة التغيرات – يسهل التنسيق.</li>
+<li dir=auto><strong>خصائصه:</strong> عملية <strong>مستمرة</strong> – <strong>ذهنية</strong> (تفكير) – <strong>شاملة</strong> – <strong>تتجه للمستقبل</strong> – <strong>مرنة</strong> – <strong>واقعية</strong> وقابلة للتنفيذ – تتضمن <strong>بدائل</strong> – ذات <strong>هدف</strong> محدد.</li>
+<li dir=auto><strong>أنواعه حسب المستوى:</strong> <strong>استراتيجي</strong> (إدارة عليا – طويل الأجل) | <strong>تكتيكي</strong> (وسطى – متوسط) | <strong>تشغيلي</strong> (دنيا – قصير).</li>
+<li dir=auto><strong>خطوات التخطيط:</strong> تحديد الهدف ← جمع المعلومات وتحليلها ← وضع البدائل ← تقييم البدائل واختيار الأفضل ← التنفيذ ← المتابعة والتقويم.</li>
+<li dir=auto><strong>التخطيط الاستراتيجي:</strong> تحديد <strong>رسالة</strong> المنظمة و<strong>رؤيتها</strong> و<strong>أهدافها طويلة الأجل</strong>، وتحليل البيئة الداخلية والخارجية (<strong><bdi dir=ltr>SWOT</bdi></strong>: نقاط القوة، الضعف، الفرص، التهديدات)، واختيار الاستراتيجية.</li>
+</ul>
+<hr />
+<h2 dir=auto id="ملاحظات-أمانة">ملاحظات أمانة</h2>
+<ul>
+<li dir=auto>الكتاب كله ملاحظات <strong>بخط اليد</strong> وبعضها مقطوع أو بزاوية؛ اللي مكتوب هنا مبني على اللي قدرت أقرأه بوضوح. صفحة <bdi dir=ltr>5</bdi> (خريطة تطور الفكر) وصفحة <bdi dir=ltr>8</bdi> (الهرم) مقلوبة وصعبة، وصفحة <bdi dir=ltr>14</bdi> مقلوبة أصلاً.</li>
+<li dir=auto><strong>مش لاقي</strong> في الجروب: ملف <bdi dir=ltr>principles</bdi>_<bdi dir=ltr>of</bdi>_<bdi dir=ltr>management</bdi>_<bdi dir=ltr>summary (21</bdi> صفحة) اللي اتبعت بعد التصدير، ولا نص أسئلة صح/خطأ <bdi dir=ltr>1</bdi>–<bdi dir=ltr>14</bdi>.</li>
+<li dir=auto>الفصول <bdi dir=ltr>4</bdi>–<bdi dir=ltr>7</bdi> (تنظيم/توجيه/رقابة/نظم معلومات) خارج الميدترم حسب علامات الأدمن على الفهرس <bdi dir=ltr>(1</bdi>–<bdi dir=ltr>3</bdi> بس).</li>
+<li dir=auto>لو في تعارض بين اللي هنا وكتاب الجامعة، <strong>الكتاب هو الأصل</strong>.</li>
+</ul>
+<hr />
+<h2 dir=auto id="ملخص-الأدمن-الجديد-الشامل-في-مبادئ-الإدارة-21-صفحة-اتبعت-4-11">➕ ملخص الأدمن الجديد: "الشامل في مبادئ الإدارة" <bdi dir=ltr>(21</bdi> صفحة، اتبعت <bdi dir=ltr>4/11)</bdi></h2>
+<p dir=auto>الملف عبارة عن <strong><bdi dir=ltr>4</bdi> دروس</strong>، وبعد كل درس <strong>بنك <bdi dir=ltr>50</bdi> سؤال</strong> <bdi dir=ltr>(20</bdi> صح وغلط + <bdi dir=ltr>20</bdi> اختيار + <bdi dir=ltr>10</bdi> مقالي) والإجابات مكتوبة بالأخضر. قريت أول <bdi dir=ltr>3</bdi> دروس وأسئلتهم؛ <strong>الدرس <bdi dir=ltr>4</bdi> (التخطيط والوظائف الإدارية) شفت عنوانه وأوله بس.</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>الدرس</th>
+<th dir=auto>الموضوع</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi></td>
+<td dir=auto>مفهوم الإدارة، الكفاءة والفعالية، علم أم فن</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi></td>
+<td dir=auto>التطور التاريخي للفكر الإداري</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi></td>
+<td dir=auto>بيئة الإدارة</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi></td>
+<td dir=auto>التخطيط والوظائف الإدارية</td>
+</tr>
+</tbody>
+</table>
+<h3 dir=auto id="الدرس-1-من-الملف-إجابات-الأسئلة">الدرس <bdi dir=ltr>1</bdi> (من الملف + إجابات الأسئلة)</h3>
+<ul>
+<li dir=auto><strong>الإدارة</strong> = عملية التخطيط والتنظيم والتوجيه والرقابة على الموارد البشرية والمالية والمادية والمعلوماتية للمنظمة بهدف تحقيق أهدافها <strong>بكفاءة وفعالية</strong>.</li>
+<li dir=auto><strong>الكفاءة</strong> <bdi dir=ltr>(Efficiency)</bdi> = أداء العمل <strong>بطريقة صحيحة</strong> <bdi dir=ltr>(Doing things right)</bdi>: أقصى استفادة بأقل ضياع، مخرجات مقابل مدخلات.</li>
+<li dir=auto><strong>الفعالية</strong> <bdi dir=ltr>(Effectiveness)</bdi> = <strong>تحقيق الأهداف</strong> المحددة <bdi dir=ltr>(Doing the right things)</bdi>.</li>
+<li dir=auto>الإدارة <strong>علم وفن</strong>: علم لأنها بتعتمد على نظريات ومبادئ، وفن لأن النجاح بيعتمد على مهارة المدير وخبرته.</li>
+<li dir=auto>أسئلة صح/غلط ظهرت وإجاباتها:<ul>
+<li dir=auto>"الفعالية تعني أداء الأشياء بطريقة صحيحة والكفاءة تعني أداء الأشياء الصحيحة" ⟵ <strong>خطأ</strong> (العكس هو الصحيح).</li>
+<li dir=auto>"الإدارة تقتصر على المنظمات الهادفة للربح" ⟵ <strong>خطأ</strong>.</li>
+<li dir=auto>"المدير في الإدارة العليا يحتاج مهارات فنية أكتر من مهارات فكرية" ⟵ <strong>خطأ</strong> (يحتاج مهارات فكرية أكتر).</li>
+<li dir=auto>"الرقابة أولى الوظائف الإدارية" ⟵ <strong>خطأ</strong> (التخطيط هو الأول).</li>
+<li dir=auto>"الموارد البشرية أهم الموارد التي تديرها العملية الإدارية" ⟵ <strong>صح</strong>.</li>
+<li dir=auto>"الهدف النهائي للإدارة تحقيق الأهداف بغض النظر عن التكلفة" ⟵ <strong>خطأ</strong>.</li>
+<li dir=auto>"الوظائف الإدارية متكاملة" ⟵ <strong>صح</strong>. "المهارات الإنسانية مطلوبة بالتساوي تقريباً في كل المستويات" ⟵ <strong>صح</strong>.</li>
+<li dir=auto>"الإدارة نشاط فردي" ⟵ <strong>خطأ</strong>. "مفهوم الإدارة جامد لا يتأثر بالتغيرات" ⟵ <strong>خطأ</strong>.</li>
+</ul>
+</li>
+<li dir=auto>اختيار من متعدد (الإجابة بالأخضر في الملف): الاستخدام الأمثل للموارد بأقل تكلفة = <strong>الكفاءة</strong>. تحفيز وقيادة الموظفين = <strong>التوجيه</strong>. الإدارة مزيج بين <strong>العلم والفن</strong>. القدرة على التعامل مع الأفراد وفهم سلوكهم = <strong>المهارات الإنسانية</strong>. المسؤول عن وضع الاستراتيجيات والخطط طويلة الأجل = <strong>الإدارة العليا</strong>. الإدارة الوسطى تنسق بين الإدارة العليا والدنيا. الوظائف الإدارية الأساسية الشائعة اليوم <strong><bdi dir=ltr>4</bdi> وظائف</strong> (تخطيط، تنظيم، توجيه، رقابة) حسب الملف.</li>
+<li dir=auto><strong>أسئلة المقال المتوقعة:</strong> عرّف الإدارة واذكر وظائفها الأربع، قارن بين الكفاءة والفعالية بمثال، المهارات الثلاث حسب "روبرت كاتز" وكيف تختلف باختلاف المستوى، أهمية الإدارة في ظل ندرة الموارد، أهمية الموارد المعلوماتية.</li>
+</ul>
+<h3 dir=auto id="الدرس-2-مدارس-الفكر-الإداري">الدرس <bdi dir=ltr>2</bdi>: مدارس الفكر الإداري</h3>
+<ul>
+<li dir=auto><strong>المدرسة الكلاسيكية (التقليدية):</strong> ركزت على زيادة الإنتاجية بطرق علمية صارمة. <strong>فريدريك تايلور</strong> (أبو الإدارة العلمية: دراسة الوقت والحركة، أفضل طريقة للأداء)، <strong>هنري فايول</strong> <bdi dir=ltr>(14</bdi> مبدأ للإدارة: وحدة الأمر، تدرج السلطة...)، <strong>ماكس فيبر</strong> (النموذج البيروقراطي: قواعد صارمة، تقسيم واضح للعمل، موضوعية).</li>
+<li dir=auto><strong>مدرسة العلاقات الإنسانية:</strong> <strong>التون مايو</strong> وتجارب <strong>هاوثورن</strong>: العوامل الاجتماعية والنفسية تأثيرها كبير على إنتاجية العاملين. اهتمت بالرضا والعلاقات داخل العمل مش بس الأجر.</li>
+<li dir=auto><strong>المدارس الحديثة:</strong> مدرسة <strong>النظم</strong> (المنظمة نظام متكامل: مدخلات، عمليات، مخرجات، تغذية عكسية، وبتتفاعل مع البيئة) والمدرسة <strong>الموقفية</strong> (مفيش "طريقة واحدة مثلى"، الأسلوب المناسب حسب الموقف). ونظرية <bdi dir=ltr>(X)</bdi> و<bdi dir=ltr>(Y)</bdi> لـ<strong>دوجلاس مكجريجور</strong>، والمدرسة الكمية (النماذج الرياضية في اتخاذ القرارات).</li>
+<li dir=auto>أسئلة صح/غلط وإجاباتها: "تايلور أبو المدرسة البيروقراطية" ⟵ <strong>خطأ</strong> (تايلور = الإدارة العلمية، فيبر = البيروقراطية). "مدرسة العلاقات الإنسانية ركزت على الجوانب النفسية والاجتماعية" ⟵ <strong>صح</strong>. "مبدأ وحدة الأمر عند فايول: الموظف يتلقى الأوامر من رئيس واحد" ⟵ <strong>صح</strong>. "المدرسة الموقفية: طريقة واحدة تصلح للجميع" ⟵ <strong>خطأ</strong>. "نظرية <bdi dir=ltr>X</bdi>: الإنسان بطبيعته لا يحب العمل" ⟵ <strong>صح</strong>. "المدرسة الكمية تعتمد على النماذج الرياضية" ⟵ <strong>صح</strong>. "من عيوب البيروقراطية أنها قد تؤدي إلى الجمود" ⟵ <strong>صح</strong>. "تجارب هاوثورن أثبتت إن العوامل الاجتماعية والنفسية لها أثر على الإنتاجية" ⟵ <strong>صح</strong>. "المنظمة نظام مغلق لا يتأثر بالبيئة" ⟵ <strong>خطأ</strong> (نظام مفتوح).</li>
+<li dir=auto>اختيار: رائد الإدارة العلمية = تايلور. نظرية "هاوثورن" = <strong>التون مايو</strong>. "تدرج السلطة" = <strong>السلطة من الأعلى للأسفل في خط مستقيم</strong>. "وحدة الاتجاه" = <strong>مجموعة من الأنشطة لها نفس الهدف يقودها مدير واحد وخطة واحدة</strong>. "لا يوجد أسلوب واحد أمثل" = <strong>الموقفية</strong>. مدرسة النظم: عناصرها <strong>مدخلات، عمليات، مخرجات، تغذية عكسية</strong>. أبرز عيوب المدرسة الكلاسيكية: <strong>إغفال الجانب الإنساني والاجتماعي للعامل</strong>.</li>
+<li dir=auto>أسئلة مقال: مبادئ تايلور وفايول، تجارب هاوثورن، فرق المنظمة المغلقة والمفتوحة، أهمية المدرسة الموقفية، مبادئ فايول الـ<bdi dir=ltr>14</bdi> (اختر <bdi dir=ltr>④</bdi>.</li>
+</ul>
+<h3 dir=auto id="الدرس-3-بيئة-الإدارة">الدرس <bdi dir=ltr>3</bdi>: بيئة الإدارة</h3>
+<ul>
+<li dir=auto><strong>بيئة المنظمة</strong> = مجموعة القوى والظروف والمتغيرات الداخلية والخارجية اللي بتؤثر في أداء المنظمة.</li>
+<li dir=auto><strong>البيئة الداخلية</strong> (تحت سيطرة الإدارة): الهيكل التنظيمي، <strong>الثقافة التنظيمية</strong> (القيم والاعتقادات والمعايير المشتركة)، الموارد المتاحة (مالية، بشرية، مادية، تقنية). تحليلها بيكشف <strong>نقاط القوة <bdi dir=ltr>(Strengths)</bdi> والضعف <bdi dir=ltr>(Weaknesses)</bdi></strong>.</li>
+<li dir=auto><strong>البيئة الخارجية</strong> (خارج سيطرة المنظمة): تحليلها بيكشف <strong>الفرص <bdi dir=ltr>(Opportunities)</bdi> والتهديدات <bdi dir=ltr>(Threats)</bdi></strong>. وبتنقسم لـ:<ul>
+<li dir=auto><strong>بيئة المهمة (الخاصة):</strong> المنافسين، العملاء، الموردين، الأجهزة الرقابية الحكومية. بتأثر على منظمة معينة بشكل مباشر.</li>
+<li dir=auto><strong>البيئة العامة (الكلية):</strong> بتأثر على كل المنظمات: <strong><bdi dir=ltr>PESTLE</bdi></strong> = سياسية، اقتصادية، اجتماعية، تكنولوجية، قانونية، بيئية (طبيعية).</li>
+</ul>
+</li>
+<li dir=auto><strong>تحليل <bdi dir=ltr>SWOT</bdi></strong> = الدمج بين البيئة الداخلية والخارجية: <bdi dir=ltr>S</bdi> نقاط قوة + <bdi dir=ltr>W</bdi> نقاط ضعف (داخلية)، <bdi dir=ltr>O</bdi> فرص + <bdi dir=ltr>T</bdi> تهديدات (خارجية).</li>
+<li dir=auto>أسئلة صح/غلط وإجاباتها: "المنظمة تستطيع التحكم الكامل في متغيرات البيئة الخارجية" ⟵ <strong>خطأ</strong>. "ثقافة المنظمة وقيم الموظفين جزء من البيئة الداخلية" ⟵ <strong>صح</strong>. "الموردون والمنافسون من البيئة العامة" ⟵ <strong>خطأ</strong> (بيئة المهمة الخاصة). "تحليل البيئة الخارجية يكتشف نقاط القوة والضعف" ⟵ <strong>خطأ</strong> (الفرص والتهديدات). "ارتفاع التضخم وفوائد البنوك من المتغيرات الاقتصادية العامة" ⟵ <strong>صح</strong>. "التشريعات الضريبية الجديدة تندرج تحت البيئة السياسية والقانونية" ⟵ <strong>صح</strong>. "تغير العادات والتقاليد = البعد التكنولوجي" ⟵ <strong>خطأ</strong> (البعد الاجتماعي والثقافي). "نقص السيولة المالية = تهديد خارجي" ⟵ <strong>خطأ</strong> (نقطة ضعف داخلية). "دخول منافس قوي تكنولوجياً = فرصة" ⟵ <strong>خطأ</strong> (تهديد). "الموارد البشرية المؤهلة نقطة قوة" ⟵ <strong>صح</strong>. "بيئة المهمة = البيئة الخارجية العامة" ⟵ <strong>خطأ</strong> (هي البيئة الخاصة).</li>
+<li dir=auto>اختيار: القوى داخل حدود المنظمة = <strong>البيئة الداخلية</strong>. تحليل البيئة الداخلية يهدف لتحديد <strong>نقاط القوة والضعف</strong>. المنافسون الحاليون = <strong>بيئة المهمة</strong>. السؤال "ارتفاع ضرائب جمركية على المواد الخام المستوردة" = <strong>تهديد</strong> (بيئة سياسية/قانونية). مجموعة القيم والتقاليد المشتركة = <strong>الثقافة التنظيمية</strong>. التحليل الذي يجمع الداخلية والخارجية = <strong><bdi dir=ltr>SWOT</bdi></strong>. عدم وضوح المسؤوليات داخل الشركة = <strong>نقطة ضعف داخلية</strong>.</li>
+<li dir=auto>أسئلة مقال: ما هي الثقافة التنظيمية وتأثيرها، أبعاد تحليل <bdi dir=ltr>SWOT</bdi>، الفرق بين العميل والمنافس، تأثير العولمة والإنترنت على البيئة.</li>
+</ul>
+<h3 dir=auto id="نصيحة">نصيحة</h3>
+<p dir=auto>قايمة الأدمن بتاعت الإدارة (الفصل <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> + التخطيط الاستراتيجي) بتطابق الدروس <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> و<bdi dir=ltr>4</bdi> في الملف ده. اشتغل على الملف ده كبنك أسئلة تدريب: غطي إجابات الأخضر وجرب نفسك.</p></div><div class=nextbar><a class=btn href=mgmt-files.html>التالي: 📄 ملفات الأدمن ◀</a></div></main><button id=mode type=button onclick="md()">🌙 ريّح عينك</button><script>(function(){var m=localStorage.getItem("mode")||"";if(m)document.documentElement.className=m;window.md=function(){var c=document.documentElement.className,n=c==""?"sp":c=="sp"?"dk":"";document.documentElement.className=n;localStorage.setItem("mode",n);document.getElementById("mode").textContent=n=="sp"?"📖 ورقي":n=="dk"?"☀ عادي":"🌙 ريّح عينك"};var b=document.getElementById("mode");if(b)b.textContent=m=="sp"?"📖 ورقي":m=="dk"?"☀ عادي":"🌙 ريّح عينك"})()</script><div id=lb><button style="right:8px" onclick="lbx()">✕ إغلاق</button><button style="left:8px" onclick="lbn(1)">التالية ▶</button><button style="left:120px" onclick="lbn(-1)">◀ السابقة</button><span id=lbc></span><img id=lbi></div>
+<script>
+var L=[],I=0;
+function lbx(){lb.style.display='none'}
+function lbs(){lbi.src=L[I];lbc.textContent=(I+1)+' / '+L.length;lb.style.display='block'}
+function lbn(d){I=(I+d+L.length)%L.length;lbs()}
+function sw(b){var p=b.closest('.pt');p.querySelectorAll('.seg button').forEach(function(x){x.classList.toggle('on',x===b)});p.querySelectorAll('.pane').forEach(function(x){x.hidden=x.dataset.p!=b.dataset.p})}
+document.addEventListener('click',function(e){var t=e.target;if(t.tagName=='IMG'&&t.dataset.z){var g=t.closest('.strip,.pages')||document;L=[].slice.call(g.querySelectorAll('img[data-z]')).map(function(x){return x.dataset.z});I=L.indexOf(t.dataset.z);lbs()}});
+document.addEventListener('keydown',function(e){if(lb.style.display=='block'){if(e.key=='Escape')lbx();if(e.key=='ArrowLeft')lbn(1);if(e.key=='ArrowRight')lbn(-1)}});
+document.querySelectorAll('.pth input').forEach(function(c){var k='ck:'+location.pathname+c.dataset.i;c.checked=localStorage[k]=='1';c.onchange=function(){localStorage[k]=c.checked?'1':'0'}});
+</script>

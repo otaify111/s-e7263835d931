@@ -1,0 +1,265 @@
+<!doctype html><html lang=ar dir=rtl><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>الملخص – اللغة الأجنبية (1)</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI','Dubai','Noto Sans Arabic','Noto Naskh Arabic',system-ui,Arial,sans-serif;margin:0;background:#f4f6f8;color:#1e293b;line-height:1.9;font-size:17px;-webkit-font-smoothing:antialiased}b,strong{font-weight:700}
+a{color:#1d4ed8}
+.top{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;font-weight:bold;background:#ffffff30;padding:6px 14px;border-radius:20px;font-size:16px}
+.top h1{margin:0;font-size:22px;flex:1}
+.tabs{position:sticky;top:0;z-index:10;background:#fff;display:flex;gap:6px;padding:8px;overflow-x:auto;box-shadow:0 2px 6px #0002}
+.tabs a{white-space:nowrap;padding:10px 16px;border-radius:12px;background:#e2e8f0;color:#0f172a;text-decoration:none;font-size:17px;font-weight:bold}
+.tabs a.on{background:var(--c);color:#fff}
+main{max-width:860px;margin:auto;padding:14px}
+.card{background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0;box-shadow:0 1px 4px #0002}
+.card h2{margin:0 0 8px;font-size:22px}
+.big{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;padding:18px;margin:12px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 5px #0003;border-right:8px solid var(--c)}
+.big .ic{font-size:36px}.big b{font-size:21px;display:block}.big small{color:#475569;font-size:15px;line-height:1.5;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.grid figure{margin:0;font-size:13px;line-height:1.4;color:#334155}
+.grid img{width:100%;border-radius:10px;cursor:zoom-in;border:1px solid #cbd5e1;background:#fff}
+.pages img{width:100%;border-radius:10px;border:1px solid #cbd5e1;margin:4px 0;cursor:zoom-in}
+.pn{background:var(--c);color:#fff;display:inline-block;border-radius:20px;padding:0 14px;font-size:15px;margin-top:10px}
+.todo label{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:#f8fafc;margin:8px 0;cursor:pointer;border:2px solid #e2e8f0}
+.todo input{width:26px;height:26px;margin-top:5px;flex:none;accent-color:var(--c)}
+.todo input:checked+span{opacity:.5;text-decoration:line-through}
+.chip{display:inline-block;background:#e2e8f0;border-radius:16px;padding:2px 12px;margin:3px 3px 0 0;font-size:15px;text-decoration:none;color:#0f172a;font-weight:bold}.chips{display:block;margin-top:4px;font-size:15px}
+.ch{background:#fff;border-radius:14px;padding:12px 16px;margin:12px 0;border-right:8px solid;box-shadow:0 1px 4px #0002}.ch p{margin:6px 0}.badge{color:#fff;border-radius:12px;padding:1px 10px;font-size:14px;margin-right:6px}
+.pt{background:#fff;border-radius:16px;margin:18px 0;box-shadow:0 1px 4px #0002;overflow:hidden}
+.pth{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px}.pth label{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:18px;line-height:1.6;flex:1}.tt{flex:1}
+.pth input{width:26px;height:26px;flex:none;accent-color:#fff;margin-right:auto}
+.pth label:has(input:checked) .tt{opacity:.6;text-decoration:line-through}
+.ptd{padding:10px 16px 14px}
+.num{background:#fff;color:var(--c);border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:none}
+.pth .badge{background:#ffffff40;margin:0}
+.seg{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;border-bottom:2px solid #e2e8f0;margin-bottom:10px}.seg button{font:inherit;font-size:16px;font-weight:700;border:0;background:#e2e8f0;color:#0f172a;border-radius:20px;padding:7px 14px;cursor:pointer;white-space:nowrap}.seg button.on{background:var(--c);color:#fff}
+.pane[hidden]{display:none}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}.strip figure{margin:0;flex:none;width:150px;scroll-snap-align:start;text-align:center}.strip img{width:150px;height:200px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #cbd5e1;cursor:zoom-in;background:#fff}.strip figcaption{font-size:12px;color:#64748b}
+.hint{font-size:14px;color:#64748b;margin:0 0 4px}.cht{margin:0 0 2px;font-size:16px}
+.admbox{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;padding:8px 14px 6px;margin:14px 0}.admh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;color:#9a3412;margin-bottom:6px}.dl{background:#ea580c;color:#fff;text-decoration:none;border-radius:20px;padding:5px 14px;font-size:15px;white-space:nowrap}.fn{font-size:13px;color:#64748b;margin:0}
+#lbc{position:fixed;top:14px;left:50%;transform:translateX(-50%);color:#fff;font-size:17px;z-index:100;background:#0008;padding:2px 14px;border-radius:12px}
+.sec{border-top:1px dashed #cbd5e1;padding-top:6px;margin-top:10px}
+.sech{font-weight:700;color:var(--c);font-size:18px;margin:8px 0}
+.sec h3{font-size:18px;margin:14px 0 4px}.sec p{margin:6px 0}.sec ul,.sec ol{padding-right:24px;margin:6px 0}
+.sec table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px;margin:8px 0}.sec td,.sec th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sec th{background:#f1f5f9}
+.sec blockquote{background:#fef9c3;margin:8px 0;padding:4px 14px;border-radius:8px;border-right:4px solid #eab308}
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px}.idx a{display:flex;gap:8px;align-items:center;padding:6px 10px;background:#f1f5f9;border-radius:10px;text-decoration:none;color:#1e293b;font-size:15px;line-height:1.5}.idx .num{background:var(--c);color:#fff;width:26px;height:26px;font-size:14px}
+.warn{background:#fef9c3;border-right:5px solid #eab308;padding:10px 14px;border-radius:10px;font-size:16px}
+.btn{display:block;background:var(--c);color:#fff;text-align:center;padding:14px;border-radius:14px;text-decoration:none;font-weight:bold;font-size:19px;margin:10px 0}
+.btn.alt{background:#fff;color:var(--c);border:2px solid var(--c)}
+.nextbar{display:flex;gap:10px;margin:22px 0}.nextbar a{flex:1}
+details{background:#f8fafc;border-radius:12px;padding:8px 14px;margin:10px 0;border:1px solid #e2e8f0}summary{cursor:pointer;font-weight:bold;font-size:18px}
+.sum h2{border-right:6px solid var(--c);padding-right:10px;margin-top:34px;font-size:23px;background:#f8fafc;border-radius:8px}
+.sum h3{color:var(--c);font-size:20px}
+.sum table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px}
+.sum td,.sum th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sum th{background:#f1f5f9}
+.sum blockquote{background:#fef9c3;margin:10px 0;padding:6px 14px;border-radius:8px;border-right:4px solid #eab308}
+.mx{display:inline-grid;direction:ltr;gap:0 16px;padding:2px 12px;border-left:3px solid #0f172a;border-right:3px solid #0f172a;border-radius:8px;vertical-align:middle;text-align:center;margin:2px 6px;line-height:1.6}.mx.det{border-radius:0;border-width:2px}.mx i{font-style:normal}
+.allim{margin-top:14px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px;padding:8px 12px}.allim summary{cursor:pointer;font-weight:700;color:#334155}
+.blk{border-top:3px dashed #cbd5e1;padding-top:10px;margin-top:14px}.blk:first-child{border-top:0;margin-top:0}.blkh{font-weight:800;font-size:19px;color:#0f172a;display:flex;gap:8px;align-items:center;margin-bottom:6px}.bn{background:var(--c,#2563eb);color:#fff;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+.eq{direction:ltr;text-align:center;font-size:21px;background:#f1f5f9;border-radius:12px;padding:10px 12px;margin:10px 0;font-family:'Cambria Math',Cambria,serif}
+.sum code{background:#f1f5f9;padding:0 4px;border-radius:4px}
+.toc{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 16px;font-size:17px}.toc ul{padding-right:20px;margin:4px 0}
+.dayh{margin:26px 0 8px;font-size:19px;background:#fff;padding:6px 14px;border-radius:10px;border-right:6px solid var(--c)}
+.f{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:14px;margin:10px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 4px #0002;border-right:6px solid var(--c)}.f .ic{font-size:30px}
+table.sch{border-collapse:collapse;width:100%}table.sch td,table.sch th{border:1px solid #cbd5e1;padding:8px;text-align:center}table.sch th{background:#f1f5f9}
+.sjs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.sj{background:var(--c);color:#fff;border-radius:18px;padding:16px 18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;box-shadow:0 3px 8px #0003;min-height:120px}.sj b{font-size:22px;line-height:1.4}.sje{font-size:34px}.sjd{background:#ffffff33;border-radius:12px;padding:2px 12px;align-self:flex-start;font-size:15px;margin-top:auto}
+.tools{margin:26px 0 8px;padding:12px 14px;border:2px dashed #94a3b8;border-radius:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.toolh{width:100%;font-size:15px;color:#64748b;font-weight:700}.tools a{background:#e2e8f0;color:#0f172a;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:16px;font-weight:700}
+.ex{background:#ecfdf5;border:2px solid #34d399;border-radius:14px;padding:6px 16px 10px;margin:12px 0}.exh{font-weight:700;color:#047857;font-size:19px;margin:6px 0}.ex p{margin:6px 0}.ex ul,.ex ol{padding-right:24px;margin:6px 0}
+.ims{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 12px;margin:10px 0}.ims summary{font-size:18px}.imh{font-weight:700;color:var(--c);margin:12px 0 6px}
+.grid figcaption{text-align:center;font-size:12px;color:#64748b}
+.adm{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;margin:14px 0}.adm summary{font-size:19px;color:#9a3412}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:8px 0}
+.vc{display:block;background:#fff;border:1px solid #cbd5e1;border-radius:12px;overflow:hidden;text-decoration:none;color:#0f172a;font-size:15px;line-height:1.5}.vc img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#e2e8f0}.vc span{display:block;padding:8px 10px}
+.chap{background:#fff;border-radius:16px;border-right:8px solid;padding:6px 18px 14px;margin:18px 0;box-shadow:0 1px 4px #0002;scroll-margin-top:70px}.chap h2{font-size:22px;margin:10px 0}.pgs{font-size:14px;color:#64748b;margin:2px 0 8px}
+.expl{background:#f8fafc;border-radius:12px;padding:6px 12px;margin:10px 0;border:1px solid #e2e8f0}.pt{scroll-margin-top:70px}
+#lb{display:none;position:fixed;inset:0;background:#000e;z-index:99;overflow:auto;text-align:center}#lb img{max-width:100%;margin:50px auto 0;display:block}
+#lb button{position:fixed;top:8px;background:#fff;border:0;border-radius:20px;padding:8px 18px;font-size:18px;cursor:pointer;font-weight:bold;z-index:100}
+
+html.dk{filter:invert(1) hue-rotate(180deg);background:#fff}html.dk img,html.dk .vc img{filter:invert(1) hue-rotate(180deg)}html.dk #lb{filter:none}
+html.sp body{background:#f1e7d0}html.sp .card,html.sp .pt,html.sp .sec{background:#faf3e0}
+#mode{position:fixed;left:10px;bottom:12px;z-index:50;background:#1e293b;color:#fff;border:0;border-radius:24px;padding:10px 14px;font-size:16px;box-shadow:0 2px 8px #0005;font-family:inherit}
+html.dk #mode{filter:invert(1) hue-rotate(180deg)}
+@media(max-width:700px){body{font-size:18px;line-height:2}main{padding:8px!important}.card{padding:12px!important;border-radius:14px}.strip figure{width:42vw}.strip img{width:42vw;height:56vw}.seg button{padding:10px 12px;font-size:16px}.tabs a,.tabs button{font-size:15px;padding:10px 12px}.eq{font-size:18px;overflow-x:auto}.ex{padding:4px 12px 8px}.blkh{font-size:18px}.vgrid{grid-template-columns:1fr}}
+@media print{.pane[hidden]{display:block!important}.seg,.strip{display:none!important}.top,.tabs,.nextbar,.noprint{display:none!important}body{background:#fff;font-size:15px}.card{box-shadow:none;padding:0}}
+</style><body style="--c:#e11d48"><div class=top><a href=index.html>🏠 الرئيسية</a><h1 dir=auto>🔤 اللغة الأجنبية <bdi dir=ltr>(1)</bdi></h1></div><div class=tabs><a class="" href=lang-todo.html>🎯 المطلوب</a><a class="" href=lang-cur.html>📚 المنهج</a><a class="on" href=lang-sum.html>📝 الملخص الكامل</a><a class="" href=lang-files.html>📄 ملفات الأدمن</a><a class="" href=lang-ext.html>🎥 شروحات</a></div><main><div class="card sum"><a class="btn noprint" href="files/ملخص_اللغة_الأجنبية_(1).pdf">⬇ تحميل الملخص <bdi dir=ltr>PDF</bdi></a><details open><summary>فهرس الملخص (اضغط على أي عنوان تروحله)</summary><div class=idx><a href="#1-مصطلحات-لازم-تحفظها-من-صور-الأدمن-25-10-كلمات-اتأخدت-النهارده-في-السكشن"><span class=num><bdi dir=ltr>1</bdi></span>مصطلحات لازم تحفظها</a><a href="#2-مراحل-المحاسبة-من-صورة-2-10-الكلمات-المهمة"><span class=num><bdi dir=ltr>2</bdi></span>مراحل المحاسبة</a><a href="#3-المعادلة-المحاسبية-المحور-الأساسي"><span class=num><bdi dir=ltr>3</bdi></span>المعادلة المحاسبية</a><a href="#4-سؤال-الكتاب-ص63-64-Questions-أسئلة-تتوقع-بالإنجليزي"><span class=num><bdi dir=ltr>4</bdi></span>سؤال الكتاب ص<bdi dir=ltr>63</bdi>–<bdi dir=ltr>64</bdi></a><a href="#5-أمثلة-محلولة-أثر-العملية-على-المعادلة"><span class=num><bdi dir=ltr>5</bdi></span>أمثلة محلولة: أثر العملية على المعادلة</a><a href="#قواعد-حل-المعادلات"><span class=num><bdi dir=ltr>6</bdi></span>قواعد حل المعادلات</a><a href="#Linear-Equation-الفصل-2-ص215-252"><span class=num><bdi dir=ltr>7</bdi></span><bdi dir=ltr>Linear Equation</bdi></a><a href="#ملحق-حسب-رسالة-الأدمن-5-11-لامتحان-اللغة"><span class=num><bdi dir=ltr>8</bdi></span>➕ ملحق</a><a href="#نصايح-الامتحان"><span class=num><bdi dir=ltr>9</bdi></span>نصايح الامتحان</a><a href="#ملاحظات-أمانة"><span class=num><bdi dir=ltr>10</bdi></span>ملاحظات أمانة</a></div></details>
+<h1 dir=auto id="مراجعة-اللغة-الأجنبية-1-شعبة-نظم-ميدترم-السبت-7-11">مراجعة اللغة الأجنبية <bdi dir=ltr>(1)</bdi> – شعبة نظم – ميدترم السبت <bdi dir=ltr>7/11</bdi></h1>
+<blockquote dir=auto>
+<p dir=auto><strong>اللغة عندكم في نظم = جزءين:</strong> (أ) <bdi dir=ltr>Accounting</bdi> بالإنجليزي (د/محمد سعيد) + (ب) <bdi dir=ltr>Business Mathematics</bdi> بالإنجليزي (د/هيثم). الكتاب واحد، وفهرسه في صورة الأدمن <code>IMG-20261104-WA0097</code>:<br />
+- <bdi dir=ltr>Part One: Accounting</bdi> – <bdi dir=ltr>Chapter 1</bdi> <em><bdi dir=ltr>An Introduction</bdi></em> ص <strong><bdi dir=ltr>7</bdi>–<bdi dir=ltr>66</bdi></strong> (معلَّم) | <bdi dir=ltr>Chapter 2</bdi> <em><bdi dir=ltr>The Accounting System</bdi></em> ص <bdi dir=ltr>67</bdi>–<bdi dir=ltr>172</bdi> (معلَّم على <bdi dir=ltr>Part One</bdi> كله)<br />
+- <bdi dir=ltr>Part Two: Chapter 1</bdi> <em><bdi dir=ltr>Some Preliminaries or Solving Equations</bdi></em> ص <strong><bdi dir=ltr>177</bdi>–<bdi dir=ltr>214</bdi></strong> (معلَّم) | <bdi dir=ltr>Chapter 2</bdi> <em><bdi dir=ltr>Linear Equation</bdi></em> ص <strong><bdi dir=ltr>215</bdi>–<bdi dir=ltr>252</bdi></strong> (معلَّم) | <bdi dir=ltr>Chapter 3 Determinants and Matrices</bdi> ص <bdi dir=ltr>253</bdi>–<bdi dir=ltr>314</bdi> (مش معلَّم)<br />
+الأدمن علَّم بالقلم الأزرق على الأجزاء دي، فهي اللي ركّز عليها. تأكد من د/محمد: هل <bdi dir=ltr>Chapter 2</bdi> محاسبة داخل الميدترم؟ العلامة على "<bdi dir=ltr>Part One</bdi>" كله مش على الفصل التاني لوحده.</p>
+</blockquote>
+<hr />
+<h1 dir=auto id="الجزء-أ-Accounting-بالإنجليزي">الجزء (أ): <bdi dir=ltr>Accounting</bdi> بالإنجليزي</h1>
+<h2 dir=auto id="1-مصطلحات-لازم-تحفظها-من-صور-الأدمن-25-10-كلمات-اتأخدت-النهارده-في-السكشن"><bdi dir=ltr>①</bdi> مصطلحات لازم تحفظها (من صور الأدمن <bdi dir=ltr>25/10</bdi> "كلمات اتأخدت النهارده في السكشن")</h2>
+<p dir=auto><strong>أساسيات:</strong> <bdi dir=ltr>Accounting</bdi> المحاسبة | <bdi dir=ltr>Accountant</bdi> محاسب | <bdi dir=ltr>Accounting Equation</bdi> المعادلة المحاسبية | <bdi dir=ltr>Principles</bdi> المبادئ | <bdi dir=ltr>Concepts</bdi> المفاهيم | <bdi dir=ltr>Standards</bdi> المعايير | <bdi dir=ltr>Accounting Cycle</bdi> الدورة المحاسبية | <bdi dir=ltr>Accounting Period</bdi> الفترة المحاسبية | <bdi dir=ltr>Financial Information</bdi> المعلومات المالية | <bdi dir=ltr>Financial Transactions</bdi> المعاملات المالية | <bdi dir=ltr>Business Entity</bdi> المنشأة | <bdi dir=ltr>Economic Entity</bdi> الوحدة الاقتصادية | <bdi dir=ltr>Going Concern</bdi> الاستمرارية | <bdi dir=ltr>Accrual Basis</bdi> أساس الاستحقاق | <bdi dir=ltr>Cash Basis</bdi> الأساس النقدي | <bdi dir=ltr>Double-Entry System</bdi> نظام القيد المزدوج | <bdi dir=ltr>Single-Entry</bdi> نظام القيد المفرد | <bdi dir=ltr>Bookkeeping</bdi> مسك الدفاتر | <bdi dir=ltr>Source Documents</bdi> المستندات الأصلية | <bdi dir=ltr>Fiscal Year</bdi> السنة المالية | <bdi dir=ltr>Monetary Unit</bdi> وحدة النقد | <bdi dir=ltr>Historical Cost</bdi> التكلفة التاريخية | <bdi dir=ltr>Materiality</bdi> الأهمية النسبية | <bdi dir=ltr>Consistency</bdi> الثبات | <bdi dir=ltr>Prudence</bdi> الحيطة والحذر</p>
+<p dir=auto><strong>الأصول <bdi dir=ltr>Assets</bdi>:</strong> <bdi dir=ltr>Current Assets</bdi> متداولة | <bdi dir=ltr>Non-Current/Fixed</bdi> غير متداولة/ثابتة | <bdi dir=ltr>Tangible</bdi> ملموسة | <bdi dir=ltr>Intangible</bdi> غير ملموسة | <bdi dir=ltr>Cash</bdi> النقدية | <bdi dir=ltr>Petty Cash</bdi> العهدة النقدية | <bdi dir=ltr>Accounts Receivable</bdi> العملاء/المدينون | <bdi dir=ltr>Notes Receivable</bdi> أوراق القبض | <bdi dir=ltr>Inventory</bdi> المخزون | <bdi dir=ltr>Raw Materials</bdi> مواد خام | <bdi dir=ltr>Work in Progress</bdi> إنتاج تحت التشغيل | <bdi dir=ltr>Finished Goods</bdi> إنتاج تام | <bdi dir=ltr>Supplies</bdi> المستلزمات | <bdi dir=ltr>Prepaid Expenses</bdi> مصروفات مقدمة | <bdi dir=ltr>Accrued Revenue</bdi> إيرادات مستحقة | <bdi dir=ltr>Land</bdi> أراضي | <bdi dir=ltr>Buildings</bdi> مباني | <bdi dir=ltr>Machinery</bdi> آلات | <bdi dir=ltr>Equipment</bdi> معدات | <bdi dir=ltr>Furniture</bdi> أثاث | <bdi dir=ltr>Vehicles</bdi> سيارات | <bdi dir=ltr>Goodwill</bdi> الشهرة | <bdi dir=ltr>Patent</bdi> براءة اختراع | <bdi dir=ltr>Copyright</bdi> حقوق نشر | <bdi dir=ltr>Accumulated Depreciation</bdi> مجمع الإهلاك | <bdi dir=ltr>Depreciation</bdi> الإهلاك | <bdi dir=ltr>Book Value</bdi> القيمة الدفترية</p>
+<p dir=auto><strong>الخصوم <bdi dir=ltr>Liabilities</bdi>:</strong> <bdi dir=ltr>Current Liabilities</bdi> متداولة | <bdi dir=ltr>Non-Current</bdi> غير متداولة | <bdi dir=ltr>Accounts Payable</bdi> الموردون/الدائنون | <bdi dir=ltr>Notes Payable</bdi> أوراق الدفع | <bdi dir=ltr>Creditors</bdi> الدائنون | <bdi dir=ltr>Debtors</bdi> المدينون | <bdi dir=ltr>Short-Term/Long-Term Loans</bdi> قروض قصيرة/طويلة | <bdi dir=ltr>Bank Overdraft</bdi> سحب على المكشوف | <bdi dir=ltr>Accrued/Outstanding Expenses</bdi> مصروفات مستحقة/غير مسددة | <bdi dir=ltr>Unearned/Deferred Revenue</bdi> إيرادات غير مكتسبة/مؤجلة | <bdi dir=ltr>Salaries/Wages/Taxes Payable</bdi> رواتب/أجور/ضرائب مستحقة | <bdi dir=ltr>Bonds Payable</bdi> سندات مستحقة الدفع | <bdi dir=ltr>Provision</bdi> مخصص | <bdi dir=ltr>Contingent Liability</bdi> التزام محتمل</p>
+<p dir=auto><strong>القيود والدفاتر:</strong> <bdi dir=ltr>Journal</bdi> دفتر اليومية | <bdi dir=ltr>Journal Entry</bdi> قيد يومية | <bdi dir=ltr>General Ledger</bdi> دفتر الأستاذ العام | <bdi dir=ltr>Ledger</bdi> دفتر الأستاذ | <bdi dir=ltr>Posting</bdi> الترحيل | <bdi dir=ltr>Trial Balance</bdi> ميزان المراجعة | <bdi dir=ltr>Adjusting Entries</bdi> قيود التسوية | <bdi dir=ltr>Closing Entries</bdi> قيود الإقفال | <bdi dir=ltr>Opening Entry</bdi> قيد الافتتاح | <bdi dir=ltr>Compound Entry</bdi> قيد مركب | <bdi dir=ltr>Simple Entry</bdi> قيد بسيط | <bdi dir=ltr>Debit (Dr.)</bdi> مدين | <bdi dir=ltr>Credit (Cr.)</bdi> دائن | <bdi dir=ltr>Debit/Credit Balance</bdi> رصيد مدين/دائن | <bdi dir=ltr>T-Account</bdi> حساب على شكل <bdi dir=ltr>T | Chart of Accounts</bdi> دليل الحسابات | <bdi dir=ltr>Narration</bdi> شرح القيد | <bdi dir=ltr>Balance c/d</bdi> الرصيد المرحل لأسفل | <bdi dir=ltr>Balance b/d</bdi> الرصيد المنقول من أسفل | <bdi dir=ltr>Suspense Account</bdi> حساب معلق | <bdi dir=ltr>Reconciliation</bdi> المطابقة</p>
+<p dir=auto><strong>القوائم المالية:</strong> <bdi dir=ltr>Financial Statements | Statement of Financial Position / Balance Sheet</bdi> قائمة المركز المالي/الميزانية | <bdi dir=ltr>Income Statement</bdi> قائمة الدخل | <bdi dir=ltr>Cash Flow Statement</bdi> قائمة التدفقات النقدية | <bdi dir=ltr>Statement of Changes in Equity</bdi> قائمة التغيرات في حقوق الملكية | <bdi dir=ltr>Total Assets/Liabilities/Equity/Revenue/Expenses</bdi> إجمالي… | <bdi dir=ltr>Current Ratio</bdi> نسبة التداول | <bdi dir=ltr>Working Capital</bdi> رأس المال العامل | <bdi dir=ltr>Liquidity</bdi> السيولة | <bdi dir=ltr>Solvency</bdi> الملاءة | <bdi dir=ltr>Profitability</bdi> الربحية | <bdi dir=ltr>ROA / ROE</bdi> العائد على الأصول/حقوق الملكية | <bdi dir=ltr>EPS</bdi> ربحية السهم<br />
+<em>(مصادرها ملف مصطلحات <bdi dir=ltr>PDF</bdi> مبعوت في الجروب؛ في صفحة المخزون والمشتريات كمان لكن قريت أولها بس.)</em></p>
+<h2 dir=auto id="2-مراحل-المحاسبة-من-صورة-2-10-الكلمات-المهمة"><bdi dir=ltr>②</bdi> مراحل المحاسبة (من صورة <bdi dir=ltr>2/10</bdi> – الكلمات المهمة)</h2>
+<p dir=auto><strong><bdi dir=ltr>The Accounting Process</bdi>:</strong> <bdi dir=ltr>Recording</bdi> التسجيل (إثبات المعاملات في الدفاتر) → <bdi dir=ltr>Classifying</bdi> التصنيف/التبويب (فرز البيانات في حسابات) → <bdi dir=ltr>Reporting</bdi> العرض/إعداد التقارير (قوائم مالية) → <bdi dir=ltr>Interpreting</bdi> التفسير/التحليل.<br />
+<strong>هيئات:</strong> <bdi dir=ltr>FASB = Financial Accounting Standards Board</bdi> (جهة مستقلة تضع المعايير). <bdi dir=ltr>SEC = Securities and Exchange Commission</bdi> (هيئة الأوراق المالية: رقابة وتنفيذ).</p>
+<ul>
+<li dir=auto><bdi dir=ltr>Accounting</bdi> = نظام معلومات يقدم بيانات مالية كمية عن الكيانات الاقتصادية.</li>
+<li dir=auto><strong><bdi dir=ltr>Accounting is a service activity</bdi>:</strong> وظيفتها توفير معلومات مالية لمن يستثمر أو يقرض أو يتعامل تجاريًا مع الشركة.</li>
+<li dir=auto><bdi dir=ltr>Financial accounting</bdi> مبادئها أكثر مرونة وخاضعة للتفسير مقارنة بمجالات متخصصة مثل <bdi dir=ltr>Tax accounting</bdi>.</li>
+</ul>
+<h2 dir=auto id="3-المعادلة-المحاسبية-المحور-الأساسي"><bdi dir=ltr>③</bdi> المعادلة المحاسبية (المحور الأساسي)</h2>
+<p dir=auto><strong><bdi dir=ltr>Assets = Liabilities + Owner's Equity</bdi></strong> (الأصول = الخصوم + حقوق الملكية)</p>
+<ul>
+<li dir=auto>الأصول (ما تملكه المنشأة) | الخصوم (التزامات للغير) | حقوق الملكية (ملك صاحب المشروع = رأس المال + الإيرادات − المصروفات − المسحوبات).</li>
+<li dir=auto>لازم دايمًا متوازنة (المعاملة الواحدة تؤثر على جانبين على الأقل، ومجموع الطرفين يفضل متساوي).</li>
+<li dir=auto><strong><bdi dir=ltr>Owner's equity</bdi> يزيد بـ:</strong> الاستثمار <bdi dir=ltr>(Capital)</bdi> والإيرادات <bdi dir=ltr>Revenue</bdi>. <strong>ينقص بـ:</strong> المصروفات <bdi dir=ltr>Expenses</bdi> والمسحوبات <bdi dir=ltr>Withdrawals/Drawings</bdi>.</li>
+<li dir=auto><strong><bdi dir=ltr>Net income = Revenue − Expenses</bdi></strong> (لو موجب ربح، لو سالب <bdi dir=ltr>Net loss)</bdi>.</li>
+<li dir=auto>قائمة الدخل تاريخها "<strong><bdi dir=ltr>For the year ended</bdi></strong> <bdi dir=ltr>Dec 31</bdi>" (فترة) والميزانية "<strong><bdi dir=ltr>On</bdi></strong> <bdi dir=ltr>Dec 31</bdi>" (لحظة).</li>
+</ul>
+<h2 dir=auto id="4-سؤال-الكتاب-ص63-64-Questions-أسئلة-تتوقع-بالإنجليزي"><bdi dir=ltr>④</bdi> سؤال الكتاب ص<bdi dir=ltr>63</bdi>–<bdi dir=ltr>64 (Questions)</bdi> – أسئلة تتوقع بالإنجليزي</h2>
+<p dir=auto>ملحوظة: ده نص أسئلة الفصل، والمطلوب منك تجاوب <strong>بالإنجليزي</strong>:</p>
+<ol>
+<li dir=auto><bdi dir=ltr>What is the basic accounting equation</bdi>? <bdi dir=ltr>Explain the balance sheet terms</bdi>.</li>
+<li dir=auto><bdi dir=ltr>What does an income statement show</bdi>?</li>
+<li dir=auto><bdi dir=ltr>Can a transaction change a single liability without affecting any other asset, liability or owner's equity</bdi>? <em>(نعم لو التزام اتحول لالتزام تاني.)</em></li>
+<li dir=auto><bdi dir=ltr>What information is in the heading of each of the three financial statements</bdi>? <em>(اسم المنشأة – اسم القائمة – التاريخ/الفترة.)</em></li>
+<li dir=auto><bdi dir=ltr>Why is the income statement dated</bdi> "<bdi dir=ltr>for the year ended</bdi>" <bdi dir=ltr>but the balance sheet</bdi> "<bdi dir=ltr>on</bdi>"?</li>
+<li dir=auto><bdi dir=ltr>Define revenue and expense. 7. Define net income and net loss. 8. Why must the equation always balance</bdi>? <bdi dir=ltr>9. Two groups with claims on assets (creditors</bdi> &amp; <bdi dir=ltr>owners)</bdi> – <bdi dir=ltr>creditors have the primary claim</bdi>.</li>
+<li dir=auto><bdi dir=ltr>Three examples of current assets / current liabilities / plant</bdi> &amp; <bdi dir=ltr>equipment. 12. Prepare a balance sheet. 13. Effects of transactions on the equation. 15</bdi>–<bdi dir=ltr>16. Define assets, liabilities, owners' equity, creditors, net income</bdi>.</li>
+</ol>
+<h2 dir=auto id="5-أمثلة-محلولة-أثر-العملية-على-المعادلة"><bdi dir=ltr>⑤</bdi> أمثلة محلولة: أثر العملية على المعادلة</h2>
+<h3 dir=auto id="Example-I-Haytham-ص48"><bdi dir=ltr>Example (I)</bdi> – <bdi dir=ltr>Haytham</bdi> <bdi dir=rtl>(ص48)</bdi></h3>
+<table>
+<thead>
+<tr>
+<th dir=auto>#</th>
+<th dir=auto>العملية</th>
+<th dir=auto>الأثر</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi></td>
+<td dir=auto>استثمر <bdi dir=ltr>15,000</bdi> في حساب البنك</td>
+<td dir=auto><bdi dir=ltr>Cash +15,000</bdi> ، <bdi dir=ltr>Capital +15,000</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi></td>
+<td dir=auto>دفع <bdi dir=ltr>900</bdi> إيجار <bdi dir=ltr>3</bdi> شهور مقدمًا + <bdi dir=ltr>6,700</bdi> معدات مكتبية</td>
+<td dir=auto><bdi dir=ltr>Prepaid Rent +900</bdi> ، <bdi dir=ltr>Equipment +6,700</bdi> ، <bdi dir=ltr>Cash −7,600</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi></td>
+<td dir=auto>اشترى مستلزمات <bdi dir=ltr>300</bdi> <strong>بالأجل</strong></td>
+<td dir=auto><bdi dir=ltr>Supplies +300</bdi> ، <bdi dir=ltr>Accounts Payable +300</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi></td>
+<td dir=auto>خدمة قانونية وتحصيل <bdi dir=ltr>500</bdi> نقدًا</td>
+<td dir=auto><bdi dir=ltr>Cash +500</bdi> ، <bdi dir=ltr>Revenue (Equity) +500</bdi></td>
+</tr>
+<tr>
+<td dir=auto><strong>التحقق:</strong> الأصول = <bdi dir=ltr>7,900</bdi> نقدية + <bdi dir=ltr>900 + 6,700 + 300</bdi> = <strong><bdi dir=ltr>15,800</bdi></strong></td>
+<td dir=auto>الخصوم <bdi dir=ltr>300</bdi> + حقوق الملكية <bdi dir=ltr>(15,000+500)</bdi> = <strong><bdi dir=ltr>15,800</bdi></strong> ✓</td>
+<td dir=auto></td>
+</tr>
+</tbody>
+</table>
+<h3 dir=auto id="تمرين-17-Professor-s-company-ص64-65">تمرين <bdi dir=ltr>17</bdi> – "<bdi dir=ltr>Professor's company</bdi>" <bdi dir=rtl>(ص64–65)</bdi></h3>
+<p dir=auto>(حل الاتجاه فقط، الأرقام زي ما هي مقروءة في الصور)<br />
+<bdi dir=ltr>①</bdi> استثمر <bdi dir=ltr>130,000</bdi> ← <bdi dir=ltr>Cash</bdi> ↑ ، <bdi dir=ltr>Capital</bdi> ↑<br />
+<bdi dir=ltr>②</bdi> دفع <bdi dir=ltr>600</bdi> إيجار عيادة لشهر ديسمبر ← <bdi dir=ltr>Cash</bdi> ↓ ، <bdi dir=ltr>Rent Expense</bdi> ↑ <bdi dir=ltr>(Equity</bdi> ↓)<br />
+<bdi dir=ltr>③</bdi> اشترى معدات <bdi dir=ltr>30,000</bdi> نقدًا ← <bdi dir=ltr>Equipment</bdi> ↑ ، <bdi dir=ltr>Cash</bdi> ↓<br />
+<bdi dir=ltr>④</bdi> اشترى مستلزمات <strong><bdi dir=ltr>on account</bdi></strong> ← <bdi dir=ltr>Supplies</bdi> ↑ ، <bdi dir=ltr>Accounts Payable</bdi> ↑ <em>(المبلغ مكتوب "<bdi dir=ltr>18.00</bdi>" وغالبًا <bdi dir=ltr>18,000</bdi> – راجع الصورة)</em><br />
+<bdi dir=ltr>⑤</bdi> فوّت العملاء <bdi dir=ltr>22,600</bdi> عن خدمات ← <bdi dir=ltr>Accounts Receivable</bdi> ↑ ، <bdi dir=ltr>Revenue</bdi> ↑<br />
+<bdi dir=ltr>⑥</bdi> دفع <bdi dir=ltr>1,400</bdi> من حساب المستلزمات ← <bdi dir=ltr>Cash</bdi> ↓ ، <bdi dir=ltr>Accounts Payable</bdi> ↓<br />
+<bdi dir=ltr>⑦</bdi> دفع راتب <bdi dir=ltr>900</bdi> ← <bdi dir=ltr>Cash</bdi> ↓ ، <bdi dir=ltr>Salary Expense</bdi> ↑<br />
+<bdi dir=ltr>⑧</bdi> استلم <bdi dir=ltr>11,600</bdi> من العملاء (مفوترين <bdi dir=ltr>15</bdi> ديسمبر) ← <bdi dir=ltr>Cash</bdi> ↑ ، <bdi dir=ltr>Accounts Receivable</bdi> ↓<br />
+<bdi dir=ltr>⑨</bdi> فوّت <bdi dir=ltr>2,500</bdi> عن خدمات آخر الشهر ← <bdi dir=ltr>A/R</bdi> ↑ ، <bdi dir=ltr>Revenue</bdi> ↑<br />
+<bdi dir=ltr>⑩</bdi> سحب <bdi dir=ltr>1,000</bdi> للاستخدام الشخصي ← <bdi dir=ltr>Cash</bdi> ↓ ، <bdi dir=ltr>Drawings</bdi> ↑ <bdi dir=ltr>(Equity</bdi> ↓)<br />
+<bdi dir=ltr>⑪</bdi> جرد المستلزمات <bdi dir=ltr>3,000</bdi> متبقية ← <bdi dir=ltr>Supplies Expense</bdi> ↑ بقدر المستخدم، <bdi dir=ltr>Supplies</bdi> ↓ (تسوية)<br />
+<bdi dir=ltr>⑫</bdi> مرافق مستخدمة غير مدفوعة <bdi dir=ltr>400</bdi> ← <bdi dir=ltr>Utilities Expense</bdi> ↑ ، <bdi dir=ltr>Accrued Expenses</bdi> ↑ (التزام)<br />
+<bdi dir=ltr>⑬</bdi> إهلاك شهر المعدات <bdi dir=ltr>180</bdi> ← <bdi dir=ltr>Depreciation Expense</bdi> ↑ ، <bdi dir=ltr>Accumulated Depreciation</bdi> ↑<br />
+المطلوب: <strong><bdi dir=ltr>Show the effect of each transaction on the balance sheet equation</bdi>.</strong></p>
+<hr />
+<h1 dir=auto id="الجزء-ب-Business-Mathematics-بالإنجليزي-د-هيثم">الجزء (ب): <bdi dir=ltr>Business Mathematics</bdi> بالإنجليزي (د/هيثم)</h1>
+<p dir=auto><strong>الشيت المطلوب:</strong> ص<bdi dir=ltr>213</bdi> رقم <bdi dir=ltr>A</bdi> كامل، رقم <bdi dir=ltr>B</bdi> أول نقطة فقط، رقم <bdi dir=ltr>C</bdi> نقطة واحدة؛ ص<bdi dir=ltr>251</bdi> رقم <bdi dir=ltr>G</bdi>؛ وشيت رياضة لغة ص<bdi dir=ltr>249</bdi>–<bdi dir=ltr>250</bdi>.</p>
+<h2 dir=auto id="قواعد-حل-المعادلات">قواعد حل المعادلات</h2>
+<ul>
+<li dir=auto><strong>معادلة خطية:</strong> اجمع/اطرح من الطرفين ثم اقسم. مثال: <bdi dir=ltr>2x − 1 = 4</bdi> → <bdi dir=ltr>2x = 5</bdi> → <strong><bdi dir=ltr>x = 5/2</bdi></strong>.</li>
+<li dir=auto><strong>معادلة القيمة المطلقة |<bdi dir=ltr>A| = k</bdi>:</strong> <bdi dir=ltr>A = k</bdi> أو <bdi dir=ltr>A = −k</bdi>. مثال: |<bdi dir=ltr>x − 4| = 3</bdi> → <bdi dir=ltr>x − 4 = 3</bdi> أو <bdi dir=ltr>x − 4 = −3</bdi> → <strong><bdi dir=ltr>x = 7</bdi> أو <bdi dir=ltr>x = 1</bdi></strong>.</li>
+<li dir=auto><strong>|<bdi dir=ltr>A| = |B</bdi>|:</strong> <bdi dir=ltr>A = B</bdi> أو <bdi dir=ltr>A = −B</bdi> (وفحص الجواب بالتعويض).<ul>
+<li dir=auto>|<bdi dir=ltr>10 − 2x| = |2x + 5</bdi>|: (أ) <bdi dir=ltr>10 − 2x = 2x + 5</bdi> → <strong><bdi dir=ltr>x = 5/4 = 1.25</bdi></strong> | (ب) <bdi dir=ltr>10 − 2x = −2x − 5</bdi> → <bdi dir=ltr>10 = −5</bdi> مستحيل، يُهمل. <strong>الحل: <bdi dir=ltr>x = 5/4</bdi></strong>.</li>
+<li dir=auto>|<bdi dir=ltr>x − 4| = |2x − 3|: x − 4 = 2x − 3</bdi> → <bdi dir=ltr>x = −1 | x − 4 = −2x + 3</bdi> → <bdi dir=ltr>x = 7/3</bdi>. <strong><bdi dir=ltr>x = −1</bdi> أو <bdi dir=ltr>7/3</bdi></strong> (حلّيتها أنا، مش من الشيت).</li>
+<li dir=auto>|<bdi dir=ltr>4x − 3| = 12: 4x − 3 = 12</bdi> → <bdi dir=ltr>x = 15/4 | 4x − 3 = −12</bdi> → <bdi dir=ltr>x = −9/4</bdi>.</li>
+</ul>
+</li>
+<li dir=auto><strong>المتباينات <bdi dir=ltr>(Inequalities)</bdi>:</strong> نفس خطوات المعادلة، لكن <strong>لو ضربت أو قسمت في سالب اقلب الإشارة</strong>.<ul>
+<li dir=auto><bdi dir=ltr>4x + 4 ≤ 12</bdi> → <bdi dir=ltr>x ≤ 2</bdi> (من شيت الطالبة). <bdi dir=ltr>3x − 3 ≤ 7</bdi> → <bdi dir=ltr>x ≤ 10/3</bdi>.</li>
+<li dir=auto>المتباينة المزدوجة: <bdi dir=ltr>x + 1 ≤ x ≤ 4 − x</bdi>: الجزء الأول يعطي <bdi dir=ltr>1 ≤ 0</bdi> وده مستحيل ← <strong>لا يوجد حل <bdi dir=ltr>(no solution)</bdi></strong> (مكتوب في شيت الطالبة "ليس لها حل").</li>
+<li dir=auto><bdi dir=ltr>3x − 1 ≤ x ≤ 4x + 2</bdi> (سبورة د/هيثم): <bdi dir=ltr>3x − 1 ≤ x</bdi> → <bdi dir=ltr>x ≤ 1/2 | x ≤ 4x + 2</bdi> → <bdi dir=ltr>x ≥ −2/3</bdi>. <strong>الحل: −<bdi dir=ltr>2/3 ≤ x ≤ 1/2</bdi></strong> (حلّيتها أنا).</li>
+</ul>
+</li>
+</ul>
+<h2 dir=auto id="Linear-Equation-الفصل-2-ص215-252"><bdi dir=ltr>Linear Equation</bdi> (الفصل <bdi dir=ltr>2</bdi> – ص<bdi dir=ltr>215</bdi>–<bdi dir=ltr>252.</bdi></h2>
+<ul>
+<li dir=auto>الصورة العامة: <strong><bdi dir=ltr>y = mx + c</bdi></strong> حيث <strong><bdi dir=ltr>m = Slope</bdi> (الميل)</strong> و <strong><bdi dir=ltr>c = Intercept</bdi> (المقطع)</strong>.</li>
+<li dir=auto>شكل عام: <bdi dir=ltr>ax + by = c</bdi>. مثال: <bdi dir=ltr>2x + 4y = 16</bdi> والنقطة <bdi dir=ltr>(2,3): 2(2) + 4(3) = 4 + 12 = 16</bdi> ✓ (فالنقطة تقع على الخط).</li>
+<li dir=auto>تحقق دايمًا بالتعويض.</li>
+<li dir=auto>(باقي الفصل: رسم الخط، تقاطع خطين، حل نظام معادلتين، ما فهمتش منه شيء لأني قريت أول ورقتين بس من شرح <bdi dir=ltr>5/10.)</bdi></li>
+</ul>
+<hr />
+<h2 dir=auto id="ملحق-حسب-رسالة-الأدمن-5-11-لامتحان-اللغة">➕ ملحق (حسب رسالة الأدمن <bdi dir=ltr>5/11</bdi> لامتحان اللغة)</h2>
+<blockquote dir=auto>
+<p dir=auto>⚠ <strong>من المعرفة العامة</strong>؛ د/محمد ممكن يستخدم صياغة الكتاب. احفظ صياغة الكتاب لو اختلفت.</p>
+</blockquote>
+<h3 dir=auto id="Accounting-Introduction-ركز-عليها"><bdi dir=ltr>Accounting</bdi> – <bdi dir=ltr>Introduction</bdi> (ركز عليها)</h3>
+<ul>
+<li dir=auto>
+<p dir=auto><strong><bdi dir=ltr>Definition</bdi>:</strong> <em><bdi dir=ltr>Accounting is an information system that identifies, records, classifies, summarizes and communicates financial information about an economic entity to users who make decisions</bdi>.</em><br />
+  (المحاسبة نظام معلومات يحدد ويسجل ويبوّب ويلخص ويوصل المعلومات المالية عن منشأة لمتخذي القرارات.)</p>
+</li>
+<li dir=auto>
+<p dir=auto><strong><bdi dir=ltr>The accounting process</bdi>:</strong> <bdi dir=ltr>Recording</bdi> → <bdi dir=ltr>Classifying</bdi> → <bdi dir=ltr>Reporting (Summarizing)</bdi> → <bdi dir=ltr>Interpreting</bdi>.</p>
+</li>
+<li dir=auto><strong><bdi dir=ltr>Branches of accounting</bdi> (فروع المحاسبة):</strong> <strong><bdi dir=ltr>Financial</bdi></strong> <bdi dir=ltr>accounting (external users)</bdi> | <strong><bdi dir=ltr>Managerial</bdi></strong> <bdi dir=ltr>accounting (internal users)</bdi> | <strong><bdi dir=ltr>Cost</bdi></strong> <bdi dir=ltr>accounting (cost of production)</bdi> | <strong><bdi dir=ltr>Government</bdi></strong> <bdi dir=ltr>accounting</bdi> | <strong><bdi dir=ltr>Tax</bdi></strong> <bdi dir=ltr>accounting</bdi> | <strong><bdi dir=ltr>Auditing</bdi></strong> (المراجعة).</li>
+<li dir=auto><strong><bdi dir=ltr>Internal users</bdi> (مستخدمون داخليون):</strong> <bdi dir=ltr>managers, owners-managers, employees</bdi> → <bdi dir=ltr>need information for planning and control</bdi>.</li>
+<li dir=auto><strong><bdi dir=ltr>External users</bdi> (مستخدمون خارجيون):</strong> <bdi dir=ltr>investors/shareholders, creditors (banks, suppliers), government and tax authorities, customers</bdi>.</li>
+<li dir=auto><strong><bdi dir=ltr>The accounting equation</bdi>:</strong> <strong><bdi dir=ltr>Assets = Liabilities + Owners' Equity</bdi></strong> (الأصول = الالتزامات + حقوق الملكية).<br />
+  <bdi dir=ltr>Assets: what the business owns. Liabilities: what it owes to outsiders. Owner's equity: the owner's claim</bdi>.</li>
+</ul>
+<h3 dir=auto id="Math-in-English-Linear-equations-absolute-value-slope-line"><bdi dir=ltr>Math in English: Linear equations, absolute value, slope</bdi> &amp; <bdi dir=ltr>line</bdi></h3>
+<ul>
+<li dir=auto><strong><bdi dir=ltr>Linear equation</bdi>:</strong> <bdi dir=ltr>ax + b = c</bdi> → <bdi dir=ltr>solve: move terms, then divide. Example: 3x − 3 = 7</bdi> → <bdi dir=ltr>3x = 10</bdi> → <bdi dir=ltr>x = 10/3</bdi>.</li>
+<li dir=auto><strong><bdi dir=ltr>Absolute value</bdi>:</strong> |<bdi dir=ltr>x| = a (a ≥ 0)</bdi> → <strong><bdi dir=ltr>x = a or x = −a</bdi></strong>. |<bdi dir=ltr>A| = |B</bdi>| → <bdi dir=ltr>A = B or A = −B</bdi>. (حلولها في قسم الرياضة فوق.)</li>
+<li dir=auto><strong><bdi dir=ltr>Slope</bdi> (الميل):</strong> <bdi dir=ltr>m = (y</bdi>₂ − <bdi dir=ltr>y</bdi>₁) ÷ <bdi dir=ltr>(x</bdi>₂ − <bdi dir=ltr>x</bdi>₁).</li>
+<li dir=auto><strong><bdi dir=ltr>Equation of a straight line</bdi> (معادلة الخط المستقيم):</strong> <bdi dir=ltr>y = mx + c</bdi> ، <bdi dir=ltr>c = y-intercept</bdi> (المقطع الصادي). <bdi dir=ltr>From a point</bdi>: <strong><bdi dir=ltr>y − y</bdi>₁ = <bdi dir=ltr>m(x − x</bdi>₁)</strong>.<ul>
+<li dir=auto>مثال: الخط يمر بالنقطتين <bdi dir=ltr>(2,3)</bdi> و<bdi dir=ltr>(4,7): m = (7−3)/(4−2)</bdi> = <strong><bdi dir=ltr>2</bdi></strong> → <bdi dir=ltr>y − 3 = 2(x − 2)</bdi> → <strong><bdi dir=ltr>y = 2x − 1</bdi></strong>.</li>
+</ul>
+</li>
+<li dir=auto><strong><bdi dir=ltr>Parallel lines</bdi>:</strong> <bdi dir=ltr>equal slopes</bdi>. <strong><bdi dir=ltr>Perpendicular</bdi>:</strong> <bdi dir=ltr>m</bdi>₁·<bdi dir=ltr>m</bdi>₂ = −<bdi dir=ltr>1</bdi>.</li>
+<li dir=auto><strong>ولما الـ <bdi dir=ltr>x</bdi> يكون أسها غير <bdi dir=ltr>1 (non-linear)</bdi>:</strong> المعادلة التربيعية <bdi dir=ltr>ax² + bx + c = 0</bdi> تحل بالتحليل أو بالقانون <strong><bdi dir=ltr>x = (−b</bdi> ± <bdi dir=ltr>√(b² − 4ac)) ÷ 2a</bdi></strong>. مثال: <bdi dir=ltr>x² − 5x + 6 = 0</bdi> → <bdi dir=ltr>(x−2)(x−3) = 0</bdi> → <strong><bdi dir=ltr>x = 2</bdi> أو <bdi dir=ltr>x = 3</bdi></strong>.</li>
+</ul>
+<hr />
+<h2 dir=auto id="نصايح-الامتحان">نصايح الامتحان</h2>
+<ul>
+<li dir=auto>الإجابات بالإنجليزي: ابدأ بـ <strong><bdi dir=ltr>Definition</bdi></strong> ثم المثال. اكتب الكلمات الإنجليزية بتهجئة صحيحة <bdi dir=ltr>(Receivable / Payable / Equity / Liabilities)</bdi>.</li>
+<li dir=auto>في أي عملية: اكتب <strong>أي حسابين اتأثروا + زاد ولا قل</strong> وراجع إن <bdi dir=ltr>Assets = Liabilities + Equity</bdi>.</li>
+<li dir=auto>في الرياضة: تحقق من كل جذر في القيمة المطلقة بالتعويض.</li>
+</ul>
+<h2 dir=auto id="ملاحظات-أمانة">ملاحظات أمانة</h2>
+<ul>
+<li dir=auto><strong>اللي مقريتوش:</strong> صور اللغة كتير <bdi dir=ltr>(159</bdi> صورة)، ما فتحتش منها غير الأهم: مصطلحات <bdi dir=ltr>2/10</bdi> و<bdi dir=ltr>25/10</bdi>، أسئلة ص<bdi dir=ltr>48</bdi> وص<bdi dir=ltr>63</bdi>–<bdi dir=ltr>65</bdi>، حلول شيت المعادلات وسبورة د/هيثم. باقي الصور (شرح <bdi dir=ltr>5/10</bdi>، شيتات <bdi dir=ltr>17/10</bdi> و<bdi dir=ltr>24/10</bdi>، حلول ص<bdi dir=ltr>29</bdi>–<bdi dir=ltr>32</bdi> و<bdi dir=ltr>48</bdi>–<bdi dir=ltr>51</bdi> و<bdi dir=ltr>249</bdi>–<bdi dir=ltr>250</bdi> و<bdi dir=ltr>251 G)</bdi> لسه محتاجة قراءة.</li>
+<li dir=auto>لقيت <strong>تضارب</strong>: الكتاب المصور فيه المثال بـ "<bdi dir=ltr>L.E</bdi>." وبعض الأرقام بخط مش واضح، والـ"المعادلة بالغة" في صورة <bdi dir=ltr>3/10</bdi> مقلوبة.</li>
+<li dir=auto>ما لقيتش في الجروب ملف أسئلة السنوات السابقة اللي قال محمد عادل إنه هيحلها.</li>
+<li dir=auto>حلول الرياضة اللي كتبت إنها "حلّيتها أنا" مش من ملاحظاتك. راجعها مع د/هيثم.</li>
+</ul></div><div class=nextbar><a class=btn href=lang-files.html>التالي: 📄 ملفات الأدمن ◀</a></div></main><button id=mode type=button onclick="md()">🌙 ريّح عينك</button><script>(function(){var m=localStorage.getItem("mode")||"";if(m)document.documentElement.className=m;window.md=function(){var c=document.documentElement.className,n=c==""?"sp":c=="sp"?"dk":"";document.documentElement.className=n;localStorage.setItem("mode",n);document.getElementById("mode").textContent=n=="sp"?"📖 ورقي":n=="dk"?"☀ عادي":"🌙 ريّح عينك"};var b=document.getElementById("mode");if(b)b.textContent=m=="sp"?"📖 ورقي":m=="dk"?"☀ عادي":"🌙 ريّح عينك"})()</script><div id=lb><button style="right:8px" onclick="lbx()">✕ إغلاق</button><button style="left:8px" onclick="lbn(1)">التالية ▶</button><button style="left:120px" onclick="lbn(-1)">◀ السابقة</button><span id=lbc></span><img id=lbi></div>
+<script>
+var L=[],I=0;
+function lbx(){lb.style.display='none'}
+function lbs(){lbi.src=L[I];lbc.textContent=(I+1)+' / '+L.length;lb.style.display='block'}
+function lbn(d){I=(I+d+L.length)%L.length;lbs()}
+function sw(b){var p=b.closest('.pt');p.querySelectorAll('.seg button').forEach(function(x){x.classList.toggle('on',x===b)});p.querySelectorAll('.pane').forEach(function(x){x.hidden=x.dataset.p!=b.dataset.p})}
+document.addEventListener('click',function(e){var t=e.target;if(t.tagName=='IMG'&&t.dataset.z){var g=t.closest('.strip,.pages')||document;L=[].slice.call(g.querySelectorAll('img[data-z]')).map(function(x){return x.dataset.z});I=L.indexOf(t.dataset.z);lbs()}});
+document.addEventListener('keydown',function(e){if(lb.style.display=='block'){if(e.key=='Escape')lbx();if(e.key=='ArrowLeft')lbn(1);if(e.key=='ArrowRight')lbn(-1)}});
+document.querySelectorAll('.pth input').forEach(function(c){var k='ck:'+location.pathname+c.dataset.i;c.checked=localStorage[k]=='1';c.onchange=function(){localStorage[k]=c.checked?'1':'0'}});
+</script>

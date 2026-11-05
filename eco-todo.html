@@ -1,0 +1,573 @@
+<!doctype html><html lang=ar dir=rtl><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>المطلوب – مبادئ الاقتصاد</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI','Dubai','Noto Sans Arabic','Noto Naskh Arabic',system-ui,Arial,sans-serif;margin:0;background:#f4f6f8;color:#1e293b;line-height:1.9;font-size:17px;-webkit-font-smoothing:antialiased}b,strong{font-weight:700}
+a{color:#1d4ed8}
+.top{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;font-weight:bold;background:#ffffff30;padding:6px 14px;border-radius:20px;font-size:16px}
+.top h1{margin:0;font-size:22px;flex:1}
+.tabs{position:sticky;top:0;z-index:10;background:#fff;display:flex;gap:6px;padding:8px;overflow-x:auto;box-shadow:0 2px 6px #0002}
+.tabs a{white-space:nowrap;padding:10px 16px;border-radius:12px;background:#e2e8f0;color:#0f172a;text-decoration:none;font-size:17px;font-weight:bold}
+.tabs a.on{background:var(--c);color:#fff}
+main{max-width:860px;margin:auto;padding:14px}
+.card{background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0;box-shadow:0 1px 4px #0002}
+.card h2{margin:0 0 8px;font-size:22px}
+.big{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;padding:18px;margin:12px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 5px #0003;border-right:8px solid var(--c)}
+.big .ic{font-size:36px}.big b{font-size:21px;display:block}.big small{color:#475569;font-size:15px;line-height:1.5;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.grid figure{margin:0;font-size:13px;line-height:1.4;color:#334155}
+.grid img{width:100%;border-radius:10px;cursor:zoom-in;border:1px solid #cbd5e1;background:#fff}
+.pages img{width:100%;border-radius:10px;border:1px solid #cbd5e1;margin:4px 0;cursor:zoom-in}
+.pn{background:var(--c);color:#fff;display:inline-block;border-radius:20px;padding:0 14px;font-size:15px;margin-top:10px}
+.todo label{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:#f8fafc;margin:8px 0;cursor:pointer;border:2px solid #e2e8f0}
+.todo input{width:26px;height:26px;margin-top:5px;flex:none;accent-color:var(--c)}
+.todo input:checked+span{opacity:.5;text-decoration:line-through}
+.chip{display:inline-block;background:#e2e8f0;border-radius:16px;padding:2px 12px;margin:3px 3px 0 0;font-size:15px;text-decoration:none;color:#0f172a;font-weight:bold}.chips{display:block;margin-top:4px;font-size:15px}
+.ch{background:#fff;border-radius:14px;padding:12px 16px;margin:12px 0;border-right:8px solid;box-shadow:0 1px 4px #0002}.ch p{margin:6px 0}.badge{color:#fff;border-radius:12px;padding:1px 10px;font-size:14px;margin-right:6px}
+.pt{background:#fff;border-radius:16px;margin:18px 0;box-shadow:0 1px 4px #0002;overflow:hidden}
+.pth{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px}.pth label{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:18px;line-height:1.6;flex:1}.tt{flex:1}
+.pth input{width:26px;height:26px;flex:none;accent-color:#fff;margin-right:auto}
+.pth label:has(input:checked) .tt{opacity:.6;text-decoration:line-through}
+.ptd{padding:10px 16px 14px}
+.num{background:#fff;color:var(--c);border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:none}
+.pth .badge{background:#ffffff40;margin:0}
+.seg{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;border-bottom:2px solid #e2e8f0;margin-bottom:10px}.seg button{font:inherit;font-size:16px;font-weight:700;border:0;background:#e2e8f0;color:#0f172a;border-radius:20px;padding:7px 14px;cursor:pointer;white-space:nowrap}.seg button.on{background:var(--c);color:#fff}
+.pane[hidden]{display:none}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}.strip figure{margin:0;flex:none;width:150px;scroll-snap-align:start;text-align:center}.strip img{width:150px;height:200px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #cbd5e1;cursor:zoom-in;background:#fff}.strip figcaption{font-size:12px;color:#64748b}
+.hint{font-size:14px;color:#64748b;margin:0 0 4px}.cht{margin:0 0 2px;font-size:16px}
+.admbox{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;padding:8px 14px 6px;margin:14px 0}.admh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;color:#9a3412;margin-bottom:6px}.dl{background:#ea580c;color:#fff;text-decoration:none;border-radius:20px;padding:5px 14px;font-size:15px;white-space:nowrap}.fn{font-size:13px;color:#64748b;margin:0}
+#lbc{position:fixed;top:14px;left:50%;transform:translateX(-50%);color:#fff;font-size:17px;z-index:100;background:#0008;padding:2px 14px;border-radius:12px}
+.sec{border-top:1px dashed #cbd5e1;padding-top:6px;margin-top:10px}
+.sech{font-weight:700;color:var(--c);font-size:18px;margin:8px 0}
+.sec h3{font-size:18px;margin:14px 0 4px}.sec p{margin:6px 0}.sec ul,.sec ol{padding-right:24px;margin:6px 0}
+.sec table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px;margin:8px 0}.sec td,.sec th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sec th{background:#f1f5f9}
+.sec blockquote{background:#fef9c3;margin:8px 0;padding:4px 14px;border-radius:8px;border-right:4px solid #eab308}
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px}.idx a{display:flex;gap:8px;align-items:center;padding:6px 10px;background:#f1f5f9;border-radius:10px;text-decoration:none;color:#1e293b;font-size:15px;line-height:1.5}.idx .num{background:var(--c);color:#fff;width:26px;height:26px;font-size:14px}
+.warn{background:#fef9c3;border-right:5px solid #eab308;padding:10px 14px;border-radius:10px;font-size:16px}
+.btn{display:block;background:var(--c);color:#fff;text-align:center;padding:14px;border-radius:14px;text-decoration:none;font-weight:bold;font-size:19px;margin:10px 0}
+.btn.alt{background:#fff;color:var(--c);border:2px solid var(--c)}
+.nextbar{display:flex;gap:10px;margin:22px 0}.nextbar a{flex:1}
+details{background:#f8fafc;border-radius:12px;padding:8px 14px;margin:10px 0;border:1px solid #e2e8f0}summary{cursor:pointer;font-weight:bold;font-size:18px}
+.sum h2{border-right:6px solid var(--c);padding-right:10px;margin-top:34px;font-size:23px;background:#f8fafc;border-radius:8px}
+.sum h3{color:var(--c);font-size:20px}
+.sum table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px}
+.sum td,.sum th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sum th{background:#f1f5f9}
+.sum blockquote{background:#fef9c3;margin:10px 0;padding:6px 14px;border-radius:8px;border-right:4px solid #eab308}
+.mx{display:inline-grid;direction:ltr;gap:0 16px;padding:2px 12px;border-left:3px solid #0f172a;border-right:3px solid #0f172a;border-radius:8px;vertical-align:middle;text-align:center;margin:2px 6px;line-height:1.6}.mx.det{border-radius:0;border-width:2px}.mx i{font-style:normal}
+.allim{margin-top:14px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px;padding:8px 12px}.allim summary{cursor:pointer;font-weight:700;color:#334155}
+.blk{border-top:3px dashed #cbd5e1;padding-top:10px;margin-top:14px}.blk:first-child{border-top:0;margin-top:0}.blkh{font-weight:800;font-size:19px;color:#0f172a;display:flex;gap:8px;align-items:center;margin-bottom:6px}.bn{background:var(--c,#2563eb);color:#fff;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+.eq{direction:ltr;text-align:center;font-size:21px;background:#f1f5f9;border-radius:12px;padding:10px 12px;margin:10px 0;font-family:'Cambria Math',Cambria,serif}
+.sum code{background:#f1f5f9;padding:0 4px;border-radius:4px}
+.toc{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 16px;font-size:17px}.toc ul{padding-right:20px;margin:4px 0}
+.dayh{margin:26px 0 8px;font-size:19px;background:#fff;padding:6px 14px;border-radius:10px;border-right:6px solid var(--c)}
+.f{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:14px;margin:10px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 4px #0002;border-right:6px solid var(--c)}.f .ic{font-size:30px}
+table.sch{border-collapse:collapse;width:100%}table.sch td,table.sch th{border:1px solid #cbd5e1;padding:8px;text-align:center}table.sch th{background:#f1f5f9}
+.sjs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.sj{background:var(--c);color:#fff;border-radius:18px;padding:16px 18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;box-shadow:0 3px 8px #0003;min-height:120px}.sj b{font-size:22px;line-height:1.4}.sje{font-size:34px}.sjd{background:#ffffff33;border-radius:12px;padding:2px 12px;align-self:flex-start;font-size:15px;margin-top:auto}
+.tools{margin:26px 0 8px;padding:12px 14px;border:2px dashed #94a3b8;border-radius:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.toolh{width:100%;font-size:15px;color:#64748b;font-weight:700}.tools a{background:#e2e8f0;color:#0f172a;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:16px;font-weight:700}
+.ex{background:#ecfdf5;border:2px solid #34d399;border-radius:14px;padding:6px 16px 10px;margin:12px 0}.exh{font-weight:700;color:#047857;font-size:19px;margin:6px 0}.ex p{margin:6px 0}.ex ul,.ex ol{padding-right:24px;margin:6px 0}
+.ims{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 12px;margin:10px 0}.ims summary{font-size:18px}.imh{font-weight:700;color:var(--c);margin:12px 0 6px}
+.grid figcaption{text-align:center;font-size:12px;color:#64748b}
+.adm{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;margin:14px 0}.adm summary{font-size:19px;color:#9a3412}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:8px 0}
+.vc{display:block;background:#fff;border:1px solid #cbd5e1;border-radius:12px;overflow:hidden;text-decoration:none;color:#0f172a;font-size:15px;line-height:1.5}.vc img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#e2e8f0}.vc span{display:block;padding:8px 10px}
+.chap{background:#fff;border-radius:16px;border-right:8px solid;padding:6px 18px 14px;margin:18px 0;box-shadow:0 1px 4px #0002;scroll-margin-top:70px}.chap h2{font-size:22px;margin:10px 0}.pgs{font-size:14px;color:#64748b;margin:2px 0 8px}
+.expl{background:#f8fafc;border-radius:12px;padding:6px 12px;margin:10px 0;border:1px solid #e2e8f0}.pt{scroll-margin-top:70px}
+#lb{display:none;position:fixed;inset:0;background:#000e;z-index:99;overflow:auto;text-align:center}#lb img{max-width:100%;margin:50px auto 0;display:block}
+#lb button{position:fixed;top:8px;background:#fff;border:0;border-radius:20px;padding:8px 18px;font-size:18px;cursor:pointer;font-weight:bold;z-index:100}
+
+html.dk{filter:invert(1) hue-rotate(180deg);background:#fff}html.dk img,html.dk .vc img{filter:invert(1) hue-rotate(180deg)}html.dk #lb{filter:none}
+html.sp body{background:#f1e7d0}html.sp .card,html.sp .pt,html.sp .sec{background:#faf3e0}
+#mode{position:fixed;left:10px;bottom:12px;z-index:50;background:#1e293b;color:#fff;border:0;border-radius:24px;padding:10px 14px;font-size:16px;box-shadow:0 2px 8px #0005;font-family:inherit}
+html.dk #mode{filter:invert(1) hue-rotate(180deg)}
+@media(max-width:700px){body{font-size:18px;line-height:2}main{padding:8px!important}.card{padding:12px!important;border-radius:14px}.strip figure{width:42vw}.strip img{width:42vw;height:56vw}.seg button{padding:10px 12px;font-size:16px}.tabs a,.tabs button{font-size:15px;padding:10px 12px}.eq{font-size:18px;overflow-x:auto}.ex{padding:4px 12px 8px}.blkh{font-size:18px}.vgrid{grid-template-columns:1fr}}
+@media print{.pane[hidden]{display:block!important}.seg,.strip{display:none!important}.top,.tabs,.nextbar,.noprint{display:none!important}body{background:#fff;font-size:15px}.card{box-shadow:none;padding:0}}
+</style><body style="--c:#16a34a"><div class=top><a href=index.html>🏠 الرئيسية</a><h1 dir=auto>📈 مبادئ الاقتصاد</h1></div><div class=tabs><a class="on" href=eco-todo.html>🎯 المطلوب</a><a class="" href=eco-cur.html>📚 المنهج</a><a class="" href=eco-sum.html>📝 الملخص الكامل</a><a class="" href=eco-files.html>📄 ملفات الأدمن</a><a class="" href=eco-ext.html>🎥 شروحات</a></div><main><div class="card todo"><h2 dir=auto>🎯 المطلوب – مبادئ الاقتصاد</h2><p dir=auto style="margin:0 0 6px;font-size:16px;color:#475569">نقط رسالة الأدمن <bdi dir=ltr>(5/11)</bdi>. كل نقطة فيها أزرار: <b>الشرح خطوة خطوة</b> (صورة ← تبسيط ← فيديو) و<b>المادة</b> و<b>الملفات</b>. علّم ✔ لما تخلص.</p><div class=idx><a href="#p0"><span class=num><bdi dir=ltr>1</bdi></span>الفصل <bdi dir=ltr>1</bdi>: المشكلة الاقتصادية</a><a href="#p1"><span class=num><bdi dir=ltr>2</bdi></span>الفصل <bdi dir=ltr>2</bdi>: الطلب والعرض والمرونة</a><a href="#p2"><span class=num><bdi dir=ltr>3</bdi></span>الفصل <bdi dir=ltr>3</bdi>: المنفعة والسواء</a><a href="#p3"><span class=num><bdi dir=ltr>4</bdi></span>الفصل <bdi dir=ltr>4</bdi>: الإنتاج والتكاليف</a><a href="#p4"><span class=num><bdi dir=ltr>5</bdi></span>تدريب: ملف التطبيقات</a></div></div><div class=admbox><div class=admh><span>📄 ملخص الأدمن الجاهز <bdi dir=ltr>(3</bdi> صفحة) – اضغط أي صفحة تقراها</span><a class=dl href="files/ملخص_الأدمن_الاقتصاد.pdf">⬇ <bdi dir=ltr>PDF</bdi></a></div><div class=strip><figure><img loading=lazy src="adm/eco_0_01.jpg" data-z="adm/eco_0_01.jpg"><figcaption>ص<bdi dir=ltr>1</bdi></figcaption></figure><figure><img loading=lazy src="adm/eco_0_02.jpg" data-z="adm/eco_0_02.jpg"><figcaption>ص<bdi dir=ltr>2</bdi></figcaption></figure><figure><img loading=lazy src="adm/eco_0_03.jpg" data-z="adm/eco_0_03.jpg"><figcaption>ص<bdi dir=ltr>3</bdi></figcaption></figure></div></div><section class=pt id=p0><div class=pth><label><span class=num><bdi dir=ltr>1</bdi></span><span class=tt><b>الفصل <bdi dir=ltr>1</bdi>:</b> تعريف الاقتصاد – المشكلة الاقتصادية – الاقتصاد الكلي والجزئي – تكلفة الفرصة البديلة.</span><input type=checkbox data-i=0></label></div><div class=ptd><div class=seg><button type=button class="on" data-p=ex onclick="sw(this)">💡 الشرح خطوة خطوة</button><button type=button class="" data-p=sum onclick="sw(this)">📖 المادة</button><button type=button class="" data-p=f onclick="sw(this)">📎 ملفات</button></div><div class=pane data-p=ex><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>1</bdi></span>يعني إيه علم الاقتصاد؟</div><div class=strip><figure><img loading=lazy src="pg/eco_02.jpg" data-z="pg/eco_02.jpg"><figcaption>ص<bdi dir=ltr>2</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_03.jpg" data-z="pg/eco_03.jpg"><figcaption>ص<bdi dir=ltr>3</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_14.jpg" data-z="pg/eco_14.jpg"><figcaption>ص<bdi dir=ltr>14</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_15.jpg" data-z="pg/eco_15.jpg"><figcaption>ص<bdi dir=ltr>15</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>الفكرة بالبساطة:</strong> احنا كلنا عايزين حاجات كتير (أكل، عربية، موبايل، سفر) <strong>بس الفلوس والموارد محدودة</strong>. علم الاقتصاد هو العلم اللي بيدرس: <strong>إزاي نختار ونوزع الموارد المحدودة على حاجاتنا الكتيرة.</strong></p>
+<p dir=auto><strong>التعريف اللي تحفظه:</strong> علم الاقتصاد هو العلم الذي يدرس سلوك الإنسان في استخدام <strong>الموارد المحدودة</strong> لإشباع <strong>حاجات غير محدودة</strong>.</p>
+<p dir=auto><strong>مثال من حياتك:</strong> مصروفك <bdi dir=ltr>1000</bdi> جنيه في الشهر. عايز موبايل وهدوم وخروجة. مش هتقدر على كله ← <strong>لازم تختار.</strong> ده الاقتصاد بالظبط.</p></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>2</bdi></span>المشكلة الاقتصادية وأسبابها</div><div class=strip><figure><img loading=lazy src="pg/eco_04.jpg" data-z="pg/eco_04.jpg"><figcaption>ص<bdi dir=ltr>4</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_05.jpg" data-z="pg/eco_05.jpg"><figcaption>ص<bdi dir=ltr>5</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>المشكلة الاقتصادية</strong> = إن مواردنا <strong>أقل</strong> من حاجاتنا، فلازم نختار.</p>
+<p dir=auto><strong>سببها اتنين (احفظهم):</strong></p>
+<ol>
+<li dir=auto><strong>ندرة الموارد:</strong> الموارد قليلة ومحدودة.</li>
+<li dir=auto><strong>تعدد الحاجات:</strong> رغباتنا كتير وما بتخلصش.</li>
+</ol>
+<p dir=auto><strong>موارد الإنتاج (عناصر الإنتاج) <bdi dir=ltr>4</bdi>، وكل واحد له عائد:</strong></p><div class=eq>الأرض ← ريع<br>العمل ← أجر<br>رأس المال ← فائدة<br>التنظيم ← ربح</div><p dir=auto>⚠ المشكلة الاقتصادية <strong>موجودة في كل الدول</strong> (الغنية والفقيرة)، مش بس النامية. دي جت صح وغلط.</p></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>3</bdi></span>تكلفة الفرصة البديلة</div><div class=strip><figure><img loading=lazy src="pg/eco_06.jpg" data-z="pg/eco_06.jpg"><figcaption>ص<bdi dir=ltr>6</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>الفكرة:</strong> أي اختيار بتعمله معناه إنك <strong>سيبت حاجة تانية</strong>. أحسن حاجة سيبتها هي <strong>تكلفة الفرصة البديلة</strong>.</p>
+<p dir=auto><strong>مثال:</strong> معاك ساعتين. تقدر تذاكر، أو تشتغل وتاخد <bdi dir=ltr>100</bdi> جنيه. لو اخترت المذاكرة ← <strong>تكلفة الفرصة البديلة = <bdi dir=ltr>100</bdi> جنيه</strong> (اللي ضحيت بيه).</p>
+<p dir=auto><strong>خد بالك:</strong></p>
+<ul>
+<li dir=auto>هي <strong>أحسن بديل واحد</strong> مش كل البدائل.</li>
+<li dir=auto>مش لازم تتحسب بفلوس، ممكن وقت أو راحة.</li>
+</ul></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=D3pUh6ZdFHU"><img loading=lazy src="https://i.ytimg.com/vi/D3pUh6ZdFHU/mqdefault.jpg" alt=""><span>▶ معنى تكلفة الفرصة البديلة</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>4</bdi></span>اقتصاد كلي وجزئي</div><div class=strip><figure><img loading=lazy src="pg/eco_19.jpg" data-z="pg/eco_19.jpg"><figcaption>ص<bdi dir=ltr>19</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_20.jpg" data-z="pg/eco_20.jpg"><figcaption>ص<bdi dir=ltr>20</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>الاقتصاد الجزئي:</strong> بيدرس <strong>الوحدات الصغيرة</strong>: مستهلك واحد، شركة واحدة، سعر سلعة معينة.</p>
+<p dir=auto><strong>الاقتصاد الكلي:</strong> بيدرس <strong>الاقتصاد كله</strong>: التضخم، البطالة، الناتج القومي.</p>
+<p dir=auto><strong>طريقة تفتكر:</strong> الجزئي = <strong>شجرة</strong>، والكلي = <strong>الغابة كلها</strong>.</p></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>5</bdi></span>منحنى إمكانيات الإنتاج</div><div class=strip><figure><img loading=lazy src="pg/eco_20.jpg" data-z="pg/eco_20.jpg"><figcaption>ص<bdi dir=ltr>20</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_23.jpg" data-z="pg/eco_23.jpg"><figcaption>ص<bdi dir=ltr>23</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>الفكرة:</strong> دولة بتنتج <strong>سلعتين</strong> بس بمواردها كلها. المنحنى بيوريك <strong>أقصى توليفات</strong> تقدر تنتجها.</p>
+<ul>
+<li dir=auto>نقطة <strong>على المنحنى</strong> ← الموارد مستغلة <strong>بالكامل</strong> (ممكنة).</li>
+<li dir=auto>نقطة <strong>جوا المنحنى</strong> ← فيه موارد <strong>معطلة</strong> (بطالة) أو استغلال ناقص.</li>
+<li dir=auto>نقطة <strong>بره المنحنى</strong> ← <strong>مستحيلة</strong> بالموارد الحالية.</li>
+</ul>
+<p dir=auto><strong>ليه المنحنى بينزل؟</strong> لأن لو زودت إنتاج سلعة لازم تقلل التانية (دي تكلفة الفرصة البديلة تاني).</p></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=xTU8wxOLFXc"><img loading=lazy src="https://i.ytimg.com/vi/xTU8wxOLFXc/mqdefault.jpg" alt=""><span>▶ مراجعة سريعة لمنحنى إمكانيات الإنتاج</span></a></div></div><details class=allim><summary>🖼 كل صور الموضوع ده <bdi dir=ltr>(10)</bdi> – لو عايز تشوف الدفتر كله</summary><p dir=auto class=hint>اسحب الصور يمين وشمال، واضغط على أي صورة لتكبيرها والتقليب بينها</p><div class=imh>📖 الفصل الأول – من ملف المحاضرات <bdi dir=ltr>(10</bdi> صفحة)</div><div class=strip><figure><img loading=lazy src="pg/eco_02.jpg" data-z="pg/eco_02.jpg"><figcaption>ص<bdi dir=ltr>2</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_03.jpg" data-z="pg/eco_03.jpg"><figcaption>ص<bdi dir=ltr>3</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_04.jpg" data-z="pg/eco_04.jpg"><figcaption>ص<bdi dir=ltr>4</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_05.jpg" data-z="pg/eco_05.jpg"><figcaption>ص<bdi dir=ltr>5</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_06.jpg" data-z="pg/eco_06.jpg"><figcaption>ص<bdi dir=ltr>6</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_14.jpg" data-z="pg/eco_14.jpg"><figcaption>ص<bdi dir=ltr>14</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_15.jpg" data-z="pg/eco_15.jpg"><figcaption>ص<bdi dir=ltr>15</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_19.jpg" data-z="pg/eco_19.jpg"><figcaption>ص<bdi dir=ltr>19</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_20.jpg" data-z="pg/eco_20.jpg"><figcaption>ص<bdi dir=ltr>20</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_23.jpg" data-z="pg/eco_23.jpg"><figcaption>ص<bdi dir=ltr>23</bdi></figcaption></figure></div></details></div><div class=pane data-p=sum hidden><div class=sec id=s0-0><div class=sech>الفصل الأول: ما هو علم الاقتصاد؟ <bdi dir=rtl>(ص2–6، 14–15، 20)</bdi></div><p dir=auto><strong>التعريف (حفظ):</strong> علم الاقتصاد هو العلم الذي يدرس كيفية استخدام الموارد <strong>المحدودة</strong> لإشباع حاجات الإنسان <strong>المتعددة</strong> (غير المحدودة).</p>
+<p dir=auto><strong>المشكلة الاقتصادية = ندرة نسبية:</strong> موارد محدودة ونادرة  ⟵⟶  حاجات كثيرة وغير محدودة ومتجددة. وعشان كده لازم <strong>نختار</strong>.</p>
+<p dir=auto><strong>عناصر الإنتاج (الموارد) وعوائدها:</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>العنصر</th>
+<th dir=auto>عائده</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الأرض (موارد طبيعية)</td>
+<td dir=auto>الريع</td>
+</tr>
+<tr>
+<td dir=auto>العمل (موارد بشرية)</td>
+<td dir=auto>الأجر</td>
+</tr>
+<tr>
+<td dir=auto>رأس المال</td>
+<td dir=auto>الفائدة</td>
+</tr>
+<tr>
+<td dir=auto>التنظيم (ريادة الأعمال)</td>
+<td dir=auto>الربح</td>
+</tr>
+</tbody>
+</table>
+<blockquote dir=auto>
+<p dir=auto>⚠ فخ امتحان: «الأجر هو عائد عنصر الأرض» = <strong>خطأ</strong> (عائد الأرض هو الريع). ملحوظة الدكتورة: «الهواء من أهم الموارد الاقتصادية» = <strong>خطأ</strong> (الهواء مورد حر).</p>
+</blockquote>
+<p dir=auto><strong>الموارد الاقتصادية مقابل الحرة:</strong></p>
+<ul>
+<li dir=auto><strong>اقتصادية:</strong> تُدفع فلوس للحصول عليها، ويُطلب عليها تضحيات مادية (مثال: الطعام والملابس والرمل).</li>
+<li dir=auto><strong>حرة (عينية):</strong> بدون مقابل، لا تتطلب تضحيات مادية (مثال: الهواء والشمس).</li>
+</ul>
+<p dir=auto><strong>الاختيار والتضحية:</strong></p>
+<ul>
+<li dir=auto>كل اختيار مرتبط بتضحية. (مثال: <bdi dir=ltr>500</bdi> جنيه، اشتريت ملابس ← ضحيت بالطعام).</li>
+<li dir=auto><strong>التضحية = تكلفة الفرصة البديلة</strong> = قيمة أفضل بديل يتم التخلي عنه عند اختيار بديل آخر. (مثال: عندك وقت للمذاكرة أو العمل، اخترت المذاكرة ← العمل الذي تركته = تكلفة الفرصة البديلة).</li>
+<li dir=auto><strong>الفرصة البديلة</strong> = التضحية بشيء مقابل الحصول على شيء آخر.</li>
+</ul>
+<p dir=auto><strong>قواعد تكوين القرار الاقتصادي:</strong> <bdi dir=ltr>①</bdi> تكلفة الفرصة البديلة <bdi dir=ltr>②</bdi> رشد اقتصادي <bdi dir=ltr>③</bdi> كمال المعلومات <bdi dir=ltr>④</bdi> الحافز <bdi dir=ltr>⑤</bdi> الحادية. <strong>الربح = الإيرادات − التكلفة.</strong></p>
+<p dir=auto><strong>منحنى إمكانيات الإنتاج <bdi dir=ltr>(PPC)</bdi></strong> <bdi dir=rtl>(ص5–6، 20)</bdi>:</p>
+<ul>
+<li dir=auto>محور س: سلعة أ، محور ص: سلعة ب (مثال المحاضرة: مستشفيات ومدارس، <bdi dir=ltr>100</bdi> مليون جنيه).</li>
+<li dir=auto><strong>أي نقطة على المنحنى</strong> = توظيف كامل واستغلال كامل للموارد (توليفات ممكنة).</li>
+<li dir=auto><strong>أي نقطة داخل المنحنى</strong> (أو يساره) = <strong>بطالة موارد</strong> / استغلال غير كامل.</li>
+<li dir=auto><strong>أي نقطة خارج المنحنى</strong> = <strong>غير ممكنة</strong> حالياً (موارد لا تكفي).</li>
+<li dir=auto>منحنى مقعّر لأسفل ومنحدر (ما تزوده من سلعة تنقصه من الأخرى).</li>
+</ul>
+<p dir=auto><strong>الاقتصاد الجزئي والكلي <bdi dir=rtl>(ص3، 15)</bdi>:</strong></p>
+<ul>
+<li dir=auto><strong>الجزئي:</strong> يدرس سلوك الوحدات الفردية: المستهلك، المنتج، الأسعار، العرض والطلب. (الفرد أو الشركة).</li>
+<li dir=auto><strong>الكلي:</strong> يدرس الاقتصاد ككل: التضخم، البطالة، الناتج القومي، الدخل القومي. (التضخم = غلاء الأسعار).</li>
+<li dir=auto>مؤسس الاقتصاد الكلي: <strong>كينز</strong>.</li>
+</ul>
+<p dir=auto><strong>تطبيقات الفصل الأول (إجابات الدكتورة، ص<bdi dir=ltr>19</bdi> و<bdi dir=ltr>22.</bdi>:</strong></p>
+<ul>
+<li dir=auto>صح/خطأ <bdi dir=ltr>(7</bdi> أسئلة): ✗ ✗ ✗ ✓ ✓ ✓ ✓ ، والأسئلة الثلاثة الأولى عن «آدم سميث» و«الكل يعاني» و«كل المجتمعات تعاني بنسب متفاوتة».</li>
+<li dir=auto>اختيار من متعدد <bdi dir=ltr>(9</bdi> أسئلة) بالترتيب: <strong>ميزان المدفوعات، جميع ما سبق، تكلفة الفرصة البديلة، التوظيف الكامل، الاقتصاد الجزئي، كينز، جميع ما سبق، الاقتصاد المثالي، كمال المعلومات</strong>.</li>
+</ul>
+<blockquote dir=auto>
+<p dir=auto>⚠ نص الأسئلة نفسه مش مكتوب في الصفحات دي، فالربط بين السؤال والإجابة بالترتيب بس. ذاكر الورقة الأصلية (تطبيقات الفصل الأول والثاني + صفحة <bdi dir=ltr>198.</bdi> مع الإجابات دي.</p>
+</blockquote>
+<hr /></div></div><div class=pane data-p=f hidden><div class=chips><a class=chip href="eco-files.html#pdf0">📄 ملخص الأدمن</a><a class=chip href="eco-files.html#pdf0">ملف الأدمن</a></div></div></div></section><section class=pt id=p1><div class=pth><label><span class=num><bdi dir=ltr>2</bdi></span><span class=tt><b>الفصل <bdi dir=ltr>2</bdi>:</b> تعريف الطلب والعرض والعوامل المؤثرة عليهما – <b>احفظ المنحنيات</b> – اعرف الفرق بين <b>أنواع المرونة</b> (والمرونة الطلبية) – تعريف السوق ونقطة التوازن (الكمية المعروضة = المطلوبة).</span><input type=checkbox data-i=1></label></div><div class=ptd><div class=seg><button type=button class="on" data-p=ex onclick="sw(this)">💡 الشرح خطوة خطوة</button><button type=button class="" data-p=sum onclick="sw(this)">📖 المادة</button><button type=button class="" data-p=f onclick="sw(this)">📎 ملفات</button></div><div class=pane data-p=ex><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>1</bdi></span>الطلب: يعني إيه؟</div><div class=strip><figure><img loading=lazy src="pg/eco_07.jpg" data-z="pg/eco_07.jpg"><figcaption>ص<bdi dir=ltr>7</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_08.jpg" data-z="pg/eco_08.jpg"><figcaption>ص<bdi dir=ltr>8</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>الطلب</strong> = الكمية اللي المستهلك <strong>عايز يشتريها وقادر يدفع تمنها</strong> عند سعر معين. (لازم الاتنين: رغبة + قدرة، مجرد الحلم مش طلب.)</p>
+<p dir=auto><strong>قانون الطلب</strong> (الأدمن قال لازم تحفظه):</p><div class=eq>السعر يزيد ← الكمية المطلوبة تقل<br>السعر ينقص ← الكمية المطلوبة تزيد</div><p dir=auto>يعني علاقة <strong>عكسية</strong>. والمنحنى بيتحرك <strong>لتحت</strong> من الشمال لليمين، وميله <strong>سالب</strong>.</p>
+<p dir=auto><strong>الجدول والمنحنى:</strong> جدول الطلب فيه السعر والكمية، ولما نرسمهم نحصل على منحنى الطلب. <strong>احفظ شكله</strong>.</p></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=d1NzViBtp-o"><img loading=lazy src="https://i.ytimg.com/vi/d1NzViBtp-o/mqdefault.jpg" alt=""><span>▶ شرح رسم منحنى العرض والطلب وتوازن السوق</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>2</bdi></span>إيه اللي بيحرك الطلب؟</div><div class=strip><figure><img loading=lazy src="pg/eco_09.jpg" data-z="pg/eco_09.jpg"><figcaption>ص<bdi dir=ltr>9</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_16.jpg" data-z="pg/eco_16.jpg"><figcaption>ص<bdi dir=ltr>16</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_17.jpg" data-z="pg/eco_17.jpg"><figcaption>ص<bdi dir=ltr>17</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>قاعدة بتتسأل كتير:</strong></p>
+<ul>
+<li dir=auto>لو اتغير <strong>سعر السلعة نفسها</strong> ← <strong>تحرك على نفس المنحنى</strong> (الكمية المطلوبة اتغيرت).</li>
+<li dir=auto>لو اتغير <strong>أي حاجة تانية</strong> (الدخل، الذوق، عدد السكان، أسعار سلع تانية) ← <strong>المنحنى كله ينتقل</strong> يمين أو شمال (الطلب نفسه اتغير).</li>
+</ul>
+<p dir=auto><strong>أمثلة:</strong></p>
+<ul>
+<li dir=auto>عدد السكان زاد ← المنحنى ينتقل <strong>يمين</strong> (طلب أكتر).</li>
+<li dir=auto>سعر البنزين زاد ← ده <strong>حركة على المنحنى</strong> مش انتقال.</li>
+</ul>
+<p dir=auto><strong>السلع البديلة</strong> (شاي وقهوة): لو سعر الشاي زاد، طلبك على القهوة <strong>يزيد</strong> (علاقة طردية).<br />
+<strong>السلع المكملة</strong> (عربية وبنزين): لو سعر البنزين زاد، طلبك على العربيات <strong>يقل</strong> (علاقة عكسية).</p></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>3</bdi></span>العرض</div><div class=strip><figure><img loading=lazy src="pg/eco_10.jpg" data-z="pg/eco_10.jpg"><figcaption>ص<bdi dir=ltr>10</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_11.jpg" data-z="pg/eco_11.jpg"><figcaption>ص<bdi dir=ltr>11</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>العرض</strong> = الكمية اللي <strong>البائع عايز يبيعها</strong> عند سعر معين.</p>
+<p dir=auto><strong>قانون العرض:</strong> كل ما السعر <strong>يزيد</strong>، البائع <strong>يبيع أكتر</strong> لأن الربح أحسن. علاقة <strong>طردية</strong>، والمنحنى <strong>بيطلع</strong> من الشمال لليمين.</p>
+<p dir=auto><strong>نفس قاعدة الطلب:</strong> تغير سعر السلعة ← حركة على المنحنى، وتغير أي عامل تاني (تكلفة الإنتاج، التكنولوجيا) ← انتقال المنحنى كله.</p></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=_6Ey3-GzkKM"><img loading=lazy src="https://i.ytimg.com/vi/_6Ey3-GzkKM/mqdefault.jpg" alt=""><span>▶ أساسيات الاقتصاد – العرض والطلب</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>4</bdi></span>السوق ونقطة التوازن</div><div class=strip><figure><img loading=lazy src="pg/eco_21.jpg" data-z="pg/eco_21.jpg"><figcaption>ص<bdi dir=ltr>21</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_22.jpg" data-z="pg/eco_22.jpg"><figcaption>ص<bdi dir=ltr>22</bdi></figcaption></figure><figure><img loading=lazy src="adm/eco_0_01.jpg" data-z="adm/eco_0_01.jpg"><figcaption>الأدمن ص<bdi dir=ltr>1</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>السوق:</strong> المكان (أو الطريقة) اللي بيتقابل فيها المشتري والبائع.</p>
+<p dir=auto><strong>التوازن:</strong> السعر اللي <strong>الكمية المطلوبة = الكمية المعروضة</strong>. على الرسم هو <strong>نقطة تقاطع</strong> منحنى الطلب مع منحنى العرض.</p>
+<p dir=auto><strong>ليه السعر بيرجع للتوازن لوحده؟</strong></p>
+<ul>
+<li dir=auto>لو السعر <strong>أعلى</strong> من التوازن ← البايعين عندهم بضاعة زيادة (<strong>فائض عرض</strong>) ← بينزلوا السعر.</li>
+<li dir=auto>لو السعر <strong>أقل</strong> من التوازن ← الناس عايزة أكتر من الموجود (<strong>عجز</strong>) ← السعر بيطلع.</li>
+</ul>
+<p dir=auto><strong>مثال بالأرقام:</strong> الطلب <bdi dir=ltr>Qd = 100 − 2P</bdi> والعرض <bdi dir=ltr>Qs = 20 + 2P</bdi>. التوازن لما الاتنين يتساووا:</p><div class=eq><bdi dir=ltr>100 − 2P = 20 + 2P</bdi></div><div class=eq><bdi dir=ltr>80 = 4P</bdi> ⟹ <bdi dir=ltr>P = 20</bdi></div><div class=eq><bdi dir=ltr>Q = 100 − 40 = 60</bdi></div></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=mivxNVVRbi4"><img loading=lazy src="https://i.ytimg.com/vi/mivxNVVRbi4/mqdefault.jpg" alt=""><span>▶ توازن السوق – مبادئ الاقتصاد (الفرقة الأولى تجارة)</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>5</bdi></span>أنواع المرونة</div><div class=strip><figure><img loading=lazy src="pg/eco_18.jpg" data-z="pg/eco_18.jpg"><figcaption>ص<bdi dir=ltr>18</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>يعني إيه مرونة؟</strong> مدى <strong>حساسية</strong> الكمية المطلوبة لتغير السعر. زي ما نقول: لو السعر زاد شوية، الناس بتفرق ولا لأ؟</p><div class=eq>المرونة = نسبة التغير في الكمية ÷ نسبة التغير في السعر</div><p dir=auto><strong>الأنواع (اعرف الفرق بينهم):</strong></p>
+<ul>
+<li dir=auto><strong>مرن</strong> (أكبر من <bdi dir=ltr>①</bdi>: الكمية بتتغير <strong>أكتر</strong> من السعر. (سلع كمالية، ليها بدائل).</li>
+<li dir=auto><strong>غير مرن</strong> (أقل من <bdi dir=ltr>①</bdi>: الكمية بتتغير <strong>أقل</strong> من السعر. (سلع ضرورية زي الخبز).</li>
+<li dir=auto><strong>وحدوي</strong> <bdi dir=ltr>(= 1)</bdi>: بنفس النسبة.</li>
+<li dir=auto><strong>عديم المرونة</strong> (= صفر): الكمية ثابتة مهما اتغير السعر (خط رأسي).</li>
+<li dir=auto><strong>لا نهائي المرونة</strong>: أي تغير بسيط في السعر يخلي الكمية تروح (خط أفقي).</li>
+</ul>
+<p dir=auto><strong>مثال:</strong> السعر نزل <bdi dir=ltr>20</bdi>% والكمية زادت <bdi dir=ltr>30</bdi>% ⟹ المرونة = <bdi dir=ltr>30 ÷ 20</bdi> = <strong><bdi dir=ltr>1.5</bdi> (مرن)</strong>.</p></div></div><details class=allim><summary>🖼 كل صور الموضوع ده <bdi dir=ltr>(25)</bdi> – لو عايز تشوف الدفتر كله</summary><p dir=auto class=hint>اسحب الصور يمين وشمال، واضغط على أي صورة لتكبيرها والتقليب بينها</p><div class=imh>📖 الطلب والعرض – من ملف المحاضرات <bdi dir=ltr>(10</bdi> صفحة)</div><div class=strip><figure><img loading=lazy src="pg/eco_07.jpg" data-z="pg/eco_07.jpg"><figcaption>ص<bdi dir=ltr>7</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_08.jpg" data-z="pg/eco_08.jpg"><figcaption>ص<bdi dir=ltr>8</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_09.jpg" data-z="pg/eco_09.jpg"><figcaption>ص<bdi dir=ltr>9</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_10.jpg" data-z="pg/eco_10.jpg"><figcaption>ص<bdi dir=ltr>10</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_11.jpg" data-z="pg/eco_11.jpg"><figcaption>ص<bdi dir=ltr>11</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_16.jpg" data-z="pg/eco_16.jpg"><figcaption>ص<bdi dir=ltr>16</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_17.jpg" data-z="pg/eco_17.jpg"><figcaption>ص<bdi dir=ltr>17</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_18.jpg" data-z="pg/eco_18.jpg"><figcaption>ص<bdi dir=ltr>18</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_21.jpg" data-z="pg/eco_21.jpg"><figcaption>ص<bdi dir=ltr>21</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_22.jpg" data-z="pg/eco_22.jpg"><figcaption>ص<bdi dir=ltr>22</bdi></figcaption></figure></div><div class=imh>🖼 ملخص الفصول <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> (من الجروب) – من الجروب <bdi dir=ltr>(15</bdi> صورة)</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0119.jpg" data-z="img/IMG-20261104-WA0119.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0108.jpg" data-z="img/IMG-20261104-WA0108.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0109.jpg" data-z="img/IMG-20261104-WA0109.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0114.jpg" data-z="img/IMG-20261104-WA0114.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0117.jpg" data-z="img/IMG-20261104-WA0117.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0118.jpg" data-z="img/IMG-20261104-WA0118.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0106.jpg" data-z="img/IMG-20261104-WA0106.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0116.jpg" data-z="img/IMG-20261104-WA0116.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0107.jpg" data-z="img/IMG-20261104-WA0107.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0115.jpg" data-z="img/IMG-20261104-WA0115.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0110.jpg" data-z="img/IMG-20261104-WA0110.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0104.jpg" data-z="img/IMG-20261104-WA0104.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0113.jpg" data-z="img/IMG-20261104-WA0113.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0105.jpg" data-z="img/IMG-20261104-WA0105.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0112.jpg" data-z="img/IMG-20261104-WA0112.jpg"><figcaption></figcaption></figure></div></details></div><div class=pane data-p=sum hidden><div class=sec id=s1-1><div class=sech>الفصل الثاني: نظرية الثمن – الطلب <bdi dir=rtl>(ص7–19)</bdi></div><p dir=auto><strong>شرطا الطلب:</strong> <bdi dir=ltr>(1)</bdi> الرغبة في شراء السلعة <bdi dir=ltr>(2)</bdi> القدرة المالية على الشراء.</p>
+<p dir=auto><strong>تعريف الطلب (حفظ):</strong> كميات من سلعة أو خدمة يرغب المستهلك ويقدر على شرائها عند ثمن معين وخلال فترة زمنية معينة.</p>
+<p dir=auto><strong>قانون الطلب (ركّز!):</strong> علاقة <strong>عكسية</strong> بين السعر (المتغير المستقل) والكمية المطلوبة (المتغير التابع)، <strong>بثبات العوامل الأخرى</strong>.</p>
+<ul>
+<li dir=auto>ما يتغير السعر ← <strong>تحرك على نفس المنحنى</strong> (تغير في الكمية المطلوبة).</li>
+<li dir=auto>لو تغير أي عامل آخر ← <strong>انتقال المنحنى كله</strong> (تغير الطلب) يمين أو يسار.</li>
+</ul>
+<p dir=auto><strong>الطلب الفردي</strong> = طلب فرد على سلعة. <strong>الطلب السوقي</strong> = مجموع طلب الأفراد (طلب الكل).</p>
+<p dir=auto><strong>أدوات الطلب:</strong> تعريف + <strong>جدول الطلب</strong> + <strong>منحنى الطلب</strong> + <strong>قانون الطلب</strong>.</p>
+<p dir=auto><strong>مثال جدول الطلب <bdi dir=rtl>(ص8)</bdi>:</strong> السعر <bdi dir=ltr>10</bdi> ← كمية <bdi dir=ltr>50</bdi> ... وهكذا ترتفع الكمية كلما انخفض السعر. <strong>منحنى الطلب ينحدر لأسفل جهة اليمين، وميله سالب</strong> (علاقة عكسية).</p>
+<p dir=auto><strong>محددات الطلب (العوامل المؤثرة)</strong> <bdi dir=rtl>(ص9–10، 14، 17–18)</bdi>:</p>
+<table>
+<thead>
+<tr>
+<th dir=auto>العامل</th>
+<th dir=auto>العلاقة / الأثر</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi>. سعر السلعة نفسها</td>
+<td dir=auto>عكسية (هو سبب الحركة على المنحنى)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi>. دخل المستهلك</td>
+<td dir=auto>طردية مع السلع العادية؛ <strong>عكسية مع السلع الرديئة</strong></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi>. أسعار السلع الأخرى</td>
+<td dir=auto><strong>بديلة</strong> (قهوة/شاي): طردية ، <strong>مكملة</strong> (سيارة/بنزين): عكسية</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi>. عدد السكان</td>
+<td dir=auto>طردية</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>5</bdi>. الأذواق (حماية المستهلك)</td>
+<td dir=auto>طردية</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>6</bdi>. توقعات المستهلكين</td>
+<td dir=auto>حسب التوقع</td>
+</tr>
+</tbody>
+</table>
+<p dir=auto><strong>تفصيل الدخل:</strong> السلعة العادية زاد دخلك ← زاد الطلب. الرديئة (اللحوم المجمدة مثلاً) زاد الدخل ← قل الطلب. السلعة الجيدة زاد الدخل ← يزيد الطلب.</p>
+<p dir=auto><strong>السلع البديلة:</strong> سعر البديل يرتفع ← الطلب على السلعة يزيد (علاقة طردية). <strong>المكملة:</strong> سعر المكمل يرتفع ← الطلب على السلعة يقل (علاقة عكسية).</p>
+<p dir=auto><strong>أسئلة صح/خطأ مهمة <bdi dir=rtl>(ص18–19)</bdi> — العلامات مقروءة من خط اليد، وبعض السطور فيها تخمين في الصياغة، فراجع الصورة:</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>العبارة</th>
+<th dir=auto>الإجابة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>زيادة الدخل تؤدي إلى زيادة الطلب على اللحوم المجمدة</td>
+<td dir=auto>✗ (لأنها سلعة رديئة)</td>
+</tr>
+<tr>
+<td dir=auto>زيادة الدخل عند مستويات الدخل المنخفضة تؤدي لزيادة الطلب على السلع الكمالية</td>
+<td dir=auto>✗ (السلع الكمالية تُطلب عند ارتفاع الدخل)</td>
+</tr>
+<tr>
+<td dir=auto>ارتفاع عدد السكان يؤدي إلى انتقال منحنى الطلب جهة اليمين</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>زيادة الدخل عند المستويات المرتفعة تؤدي لزيادة الطلب على السلع الكمالية</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>إذا ارتفع سعر البنزين انتقل منحنى الطلب على البنزين إلى اليسار</td>
+<td dir=auto>✗ (سعر البنزين تغيّر = حركة على المنحنى، مش انتقال)</td>
+</tr>
+<tr>
+<td dir=auto>السلع المكملة هي التي يرتبط إنتاجها بإنتاج سلعة أخرى</td>
+<td dir=auto>✗ (المكملة = تُستهلك معاً)</td>
+</tr>
+<tr>
+<td dir=auto>يتحدد منحنى الطلب من المستوى الأعلى إلى الأسفل</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>السلع البديلة هي التي يتم استهلاكها معاً ويرتبط استهلاك أحدها باستهلاك الأخرى</td>
+<td dir=auto>✗ (ده تعريف المكملة)</td>
+</tr>
+<tr>
+<td dir=auto>يتمثل أحد العوامل المؤثرة في الطلب في دخل المستهلك</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto>يعرف العرض بأنه الكميات التي يرغب ويقدر المستهلكون على شرائها</td>
+<td dir=auto>✗ (ده تعريف الطلب)</td>
+</tr>
+</tbody>
+</table>
+<hr /></div><div class=sec id=s1-2><div class=sech>الفصل الثاني: العرض <bdi dir=rtl>(ص20–23)</bdi></div><p dir=auto><strong>تعريف العرض (حفظ):</strong> كميات من سلعة معينة يرغب المنتجون في بيعها بسعر معين خلال فترة زمنية معينة. <strong>علاقة طردية</strong> بين السعر والكمية المعروضة.<br />
+<strong>قانون العرض:</strong> علاقة طردية بين الكمية المعروضة والسعر (بثبات العوامل الأخرى). منحنى العرض <strong>يصعد من أسفل اليسار إلى أعلى اليمين</strong>.</p>
+<p dir=auto><strong>الفرق بين الكمية والعرض:</strong> الكمية جزء من العرض تُقاس خلال فترة زمنية. العرض عملية البيع في فترة زمنية معينة.</p>
+<p dir=auto><strong>مثال جدول العرض <bdi dir=rtl>(ص11)</bdi>:</strong> سعر <bdi dir=ltr>15</bdi> ← كمية <bdi dir=ltr>10</bdi> ، <bdi dir=ltr>20</bdi> ← <bdi dir=ltr>12</bdi> ، <bdi dir=ltr>25</bdi> ← <bdi dir=ltr>14</bdi> ، <bdi dir=ltr>30</bdi> ← <bdi dir=ltr>16</bdi> ، <bdi dir=ltr>35</bdi> ← <bdi dir=ltr>18</bdi> ، <bdi dir=ltr>40</bdi> ← <bdi dir=ltr>20</bdi>.</p>
+<p dir=auto><strong>محددات العرض (العوامل المؤثرة):</strong></p>
+<ol>
+<li dir=auto><strong>سعر السلعة</strong> (طردية)</li>
+<li dir=auto><strong>تكاليف الإنتاج</strong> (علاقة عكسية: لو زادت التكلفة قلّ العرض)</li>
+<li dir=auto><strong>توقعات المنتجين</strong></li>
+<li dir=auto><strong>التكنولوجيا المستخدمة</strong> (التطور التكنولوجي يزيد العرض)</li>
+<li dir=auto><strong>عدد البائعين</strong> (طردية)</li>
+<li dir=auto><strong>أسعار السلع الأخرى</strong>، <strong>الظروف الطبيعية</strong> (حسب ص<bdi dir=ltr>21</bdi>–<bdi dir=ltr>22.</bdi>.</li>
+</ol>
+<hr /></div><div class=sec id=s1-3><div class=sech>➕ أقسام ناقصة (حسب رسالة الأدمن <bdi dir=ltr>5/11)</bdi>: التوازن، المرونة، منحنيات السواء، التكاليف</div><blockquote dir=auto>
+<p dir=auto>✅ <strong>الأقسام دي مش في ملاحظات د/نجية بخط اليد، فجمعتها من مبادئ الاقتصاد القياسية وراجعتها مع محاضرات جامعية منشورة</strong> (أنواع المرونة الخمسة، خصائص منحنى السواء و<bdi dir=ltr>MRS</bdi> وتوازن المستهلك، علاقة <bdi dir=ltr>MC</bdi> بالمتوسط عند أدنى نقطة): <a href="https://fac.ksu.edu.sa/sites/default/files/lmrwn_lsry_lltlb_wlrd.pdf">المرونة – جامعة الملك سعود</a> · <a href="https://uomus.edu.iq/img/lectures21/WameedMUCLecture_2021_91940543.pdf">منحنيات السواء – محاضرة</a> · <a href="https://uomus.edu.iq/img/lectures21/WameedMUCLecture_2021_9199521.pdf">التكاليف – محاضرة</a>. الدكتورة ممكن تستخدم رموزًا مختلفة، فطابق الرموز مع ملخص الأدمن.</p>
+</blockquote>
+<h3 dir=auto>توازن السوق (الفصل <bdi dir=ltr>②</bdi></h3>
+<ul>
+<li dir=auto><strong>السوق:</strong> المكان/الآلية اللي يتقابل فيها البائعون والمشترون.</li>
+<li dir=auto><strong>التوازن:</strong> السعر اللي عنده <strong>الكمية المطلوبة = الكمية المعروضة</strong>؛ نقطة تقاطع منحنى الطلب والعرض.</li>
+<li dir=auto><strong>فائض الطلب (نقص عرض):</strong> السعر أقل من التوازن ← الكمية المطلوبة &gt; المعروضة ← السعر يرتفع.</li>
+<li dir=auto><strong>فائض العرض:</strong> السعر أعلى من التوازن ← المعروضة &gt; المطلوبة ← السعر ينخفض.</li>
+<li dir=auto><strong>مثال عددي:</strong> <bdi dir=ltr>Qd = 100 − 2P</bdi> ، <bdi dir=ltr>Qs = 20 + 2P</bdi>. التوازن: <bdi dir=ltr>100 − 2P = 20 + 2P</bdi> ← <bdi dir=ltr>4P = 80</bdi> ← <strong><bdi dir=ltr>P = 20</bdi></strong> ، <strong><bdi dir=ltr>Q = 60</bdi></strong>. عند <bdi dir=ltr>P = 25: Qd = 50</bdi> ، <bdi dir=ltr>Qs = 70</bdi> ← <strong>فائض عرض <bdi dir=ltr>20</bdi></strong>.</li>
+<li dir=auto>زيادة الطلب (انتقال يمين) ← سعر وكمية توازن أعلى. زيادة العرض ← سعر أقل وكمية أكبر.</li>
+</ul>
+<h3 dir=auto>المرونة (الفصل <bdi dir=ltr>②</bdi></h3>
+<ul>
+<li dir=auto><strong>مرونة الطلب السعرية</strong> = النسبة المئوية للتغير في الكمية المطلوبة ÷ النسبة المئوية للتغير في السعر (نأخذ القيمة المطلقة).</li>
+<li dir=auto><strong>أنواعها:</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th dir=auto>القيمة</th>
+<th dir=auto>النوع</th>
+<th dir=auto>المعنى</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>&gt; <bdi dir=ltr>1</bdi></td>
+<td dir=auto>طلب <strong>مرن</strong></td>
+<td dir=auto>الكمية تتغير بنسبة أكبر من السعر</td>
+</tr>
+<tr>
+<td dir=auto>&lt; <bdi dir=ltr>1</bdi></td>
+<td dir=auto>طلب <strong>غير مرن</strong></td>
+<td dir=auto>تتغير بنسبة أقل</td>
+</tr>
+<tr>
+<td dir=auto>= <bdi dir=ltr>1</bdi></td>
+<td dir=auto><strong>وحدوي المرونة</strong></td>
+<td dir=auto>بنفس النسبة</td>
+</tr>
+<tr>
+<td dir=auto>= <bdi dir=ltr>0</bdi></td>
+<td dir=auto><strong>عديم المرونة</strong> (خط رأسي)</td>
+<td dir=auto>الكمية ثابتة مهما تغير السعر</td>
+</tr>
+<tr>
+<td dir=auto>= ∞</td>
+<td dir=auto><strong>لا نهائي المرونة</strong> (خط أفقي)</td>
+<td dir=auto></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto><strong>مثال:</strong> السعر من <bdi dir=ltr>10</bdi> إلى <bdi dir=ltr>8 (−20%)</bdi> والكمية من <bdi dir=ltr>100</bdi> إلى <bdi dir=ltr>130 (+30%)</bdi> ← المرونة = <bdi dir=ltr>30 ÷ 20</bdi> = <strong><bdi dir=ltr>1.5</bdi> (مرن)</strong>. الإيراد ارتفع من <bdi dir=ltr>1000</bdi> إلى <bdi dir=ltr>1040</bdi>.</li>
+<li dir=auto><strong>العلاقة بالإيراد:</strong> لو الطلب <strong>مرن</strong>: خفض السعر يزيد الإيراد. لو <strong>غير مرن</strong>: خفض السعر يقلل الإيراد.</li>
+<li dir=auto><strong>محددات المرونة:</strong> توفر البدائل (كثرة البدائل ← أكثر مرونة) | نوع السلعة (ضرورية ← أقل مرونة، كمالية ← أكثر) | نسبة الدخل المنفق عليها | الفترة الزمنية (الأطول أكثر مرونة).</li>
+<li dir=auto><strong>مرونة الدخل:</strong> تغير الكمية المطلوبة ÷ تغير الدخل (موجبة للسلع العادية، سالبة للسلع الرديئة).</li>
+<li dir=auto><strong>المرونة التقاطعية:</strong> تغير كمية سلعة ÷ تغير سعر سلعة أخرى (موجبة للبدائل، سالبة للمكملات).</li>
+<li dir=auto><strong>مرونة العرض:</strong> نفس الفكرة لكن مع السعر والكمية المعروضة.</li>
+</ul>
+<h3 dir=auto>منحنيات السواء (الفصل <bdi dir=ltr>③</bdi></h3>
+<ul>
+<li dir=auto><strong>منحنى السواء:</strong> مجموعة توليفات من سلعتين تعطي المستهلك <strong>نفس مستوى الإشباع</strong>.</li>
+<li dir=auto><strong>خرائط السواء:</strong> مجموعة منحنيات؛ <strong>المنحنى الأعلى والأبعد عن نقطة الأصل = إشباع أكبر</strong>.</li>
+<li dir=auto><strong>خصائصه:</strong> <bdi dir=ltr>①</bdi> سالب الميل (ينحدر لأسفل يمينًا) <bdi dir=ltr>②</bdi> <strong>محدب تجاه نقطة الأصل</strong> <bdi dir=ltr>③</bdi> <strong>لا يتقاطع</strong> منحنيان <bdi dir=ltr>④</bdi> الأعلى أفضل.</li>
+<li dir=auto><strong>معدل الإحلال الحدي <bdi dir=ltr>(MRS)</bdi>:</strong> ما يتنازل عنه المستهلك من سلعة مقابل وحدة إضافية من الأخرى مع بقاء الإشباع ثابتًا؛ <strong>يتناقص</strong> كلما انتقلنا يمينًا (ولذلك المنحنى محدب).</li>
+<li dir=auto><strong>خط الميزانية:</strong> كل التوليفات التي يقدر المستهلك على شرائها بدخله. معادلته: <strong><bdi dir=ltr>I = Px·X + Py·Y</bdi></strong>، وميله = −<bdi dir=ltr>Px/Py</bdi>. مثال: الدخل <bdi dir=ltr>100</bdi>، <bdi dir=ltr>Px = 10</bdi>، <bdi dir=ltr>Py = 5</bdi> ← يقطع المحور الأفقي عند <bdi dir=ltr>10</bdi> والرأسي عند <bdi dir=ltr>20</bdi>.</li>
+<li dir=auto><strong>توازن المستهلك:</strong> النقطة التي <strong>يمس عندها خط الميزانية أعلى منحنى سواء ممكن</strong>؛ عندها <strong><bdi dir=ltr>MRS = Px/Py</bdi></strong>.</li>
+</ul>
+<h3 dir=auto>التكاليف وعناصر الإنتاج (الفصل <bdi dir=ltr>④</bdi></h3>
+<ul>
+<li dir=auto><strong>عناصر الإنتاج:</strong> الأرض (ريع) – العمل (أجر) – رأس المال (فائدة) – التنظيم (ربح). (موجودة فوق.)</li>
+<li dir=auto><strong>التكاليف الثابتة <bdi dir=ltr>FC</bdi>:</strong> لا تتغير بتغير الإنتاج (إيجار، أقساط). <strong>المتغيرة <bdi dir=ltr>VC</bdi>:</strong> تتغير مع الإنتاج (مواد خام، أجور إنتاج).</li>
+<li dir=auto><strong>الكلية</strong> <bdi dir=ltr>TC = FC + VC</bdi>.</li>
+<li dir=auto><strong>المتوسطة:</strong> <bdi dir=ltr>AFC = FC ÷ Q</bdi> (<strong>تتناقص دائمًا</strong>) | <bdi dir=ltr>AVC = VC ÷ Q</bdi> | <strong><bdi dir=ltr>ATC = TC ÷ Q = AFC + AVC</bdi></strong>.</li>
+<li dir=auto><strong>الحدية:</strong> <bdi dir=ltr>MC</bdi> = التغير في <bdi dir=ltr>TC</bdi> ÷ التغير في <bdi dir=ltr>Q</bdi> (تكلفة الوحدة الإضافية).</li>
+<li dir=auto><strong>جدول مثال <bdi dir=ltr>(FC = 100)</bdi>:</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th dir=auto><bdi dir=ltr>Q</bdi></th>
+<th dir=auto><bdi dir=ltr>VC</bdi></th>
+<th dir=auto><bdi dir=ltr>TC</bdi></th>
+<th dir=auto><bdi dir=ltr>MC</bdi></th>
+<th dir=auto><bdi dir=ltr>AFC</bdi></th>
+<th dir=auto><bdi dir=ltr>AVC</bdi></th>
+<th dir=auto><bdi dir=ltr>ATC</bdi></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>0</bdi></td>
+<td dir=auto><bdi dir=ltr>0</bdi></td>
+<td dir=auto><bdi dir=ltr>100</bdi></td>
+<td dir=auto>–</td>
+<td dir=auto>–</td>
+<td dir=auto>–</td>
+<td dir=auto>–</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+<td dir=auto><bdi dir=ltr>150</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+<td dir=auto><bdi dir=ltr>100</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+<td dir=auto><bdi dir=ltr>150</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi></td>
+<td dir=auto><bdi dir=ltr>80</bdi></td>
+<td dir=auto><bdi dir=ltr>180</bdi></td>
+<td dir=auto><bdi dir=ltr>30</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+<td dir=auto><bdi dir=ltr>40</bdi></td>
+<td dir=auto><bdi dir=ltr>90</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi></td>
+<td dir=auto><bdi dir=ltr>120</bdi></td>
+<td dir=auto><bdi dir=ltr>220</bdi></td>
+<td dir=auto><bdi dir=ltr>40</bdi></td>
+<td dir=auto><bdi dir=ltr>33.3</bdi></td>
+<td dir=auto><bdi dir=ltr>40</bdi></td>
+<td dir=auto><bdi dir=ltr>73.3</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi></td>
+<td dir=auto><bdi dir=ltr>180</bdi></td>
+<td dir=auto><bdi dir=ltr>280</bdi></td>
+<td dir=auto><bdi dir=ltr>60</bdi></td>
+<td dir=auto><bdi dir=ltr>25</bdi></td>
+<td dir=auto><bdi dir=ltr>45</bdi></td>
+<td dir=auto><bdi dir=ltr>70</bdi></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto><strong>العلاقات المطلوبة:</strong> <bdi dir=ltr>MC</bdi> تقطع <bdi dir=ltr>AVC</bdi> و <bdi dir=ltr>ATC</bdi> من الأسفل <strong>عند أدنى نقطة فيهما</strong> | عندما <bdi dir=ltr>MC</bdi> &lt; المتوسط ← المتوسط يتناقص، وعندما <bdi dir=ltr>MC</bdi> &gt; المتوسط ← يتزايد.</li>
+<li dir=auto><strong>تكاليف صريحة</strong> (مدفوعة فعلاً) و<strong>ضمنية</strong> (تكلفة فرصة موارد صاحب المشروع).</li>
+<li dir=auto><strong>قصيرة الأجل</strong> (فيها عنصر ثابت واحد على الأقل) و<strong>طويلة الأجل</strong> (كل العناصر متغيرة).</li>
+</ul>
+<hr /></div></div><div class=pane data-p=f hidden><div class=chips><a class=chip href="eco-files.html#pdf0">📄 ملخص الأدمن</a></div></div></div></section><section class=pt id=p2><div class=pth><label><span class=num><bdi dir=ltr>3</bdi></span><span class=tt><b>الفصل <bdi dir=ltr>3</bdi>:</b> المنفعة وتعريفها – <b>منحنيات السواء</b>.</span><input type=checkbox data-i=2></label></div><div class=ptd><div class=seg><button type=button class="on" data-p=ex onclick="sw(this)">💡 الشرح خطوة خطوة</button><button type=button class="" data-p=sum onclick="sw(this)">📖 المادة</button><button type=button class="" data-p=f onclick="sw(this)">📎 ملفات</button></div><div class=pane data-p=ex><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>1</bdi></span>المنفعة: الفكرة من الأول</div><div class=strip><figure><img loading=lazy src="pg/eco_12.jpg" data-z="pg/eco_12.jpg"><figcaption>ص<bdi dir=ltr>12</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>المنفعة</strong> = <strong>درجة الإشباع</strong> اللي بتحس بيها لما تستهلك حاجة.</p>
+<ul>
+<li dir=auto><strong>المنفعة الكلية:</strong> إجمالي الإشباع من كل اللي استهلكته.</li>
+<li dir=auto><strong>المنفعة الحدية:</strong> الإشباع من <strong>آخر وحدة بس</strong>.</li>
+</ul>
+<p dir=auto><strong>مثال:</strong> بتاكل سندوتشات. الأول جعان قوي.</p><div class=eq>وحدة <bdi dir=ltr>1</bdi>: حدية <bdi dir=ltr>10</bdi> ← كلية <bdi dir=ltr>10</bdi><br>وحدة <bdi dir=ltr>2</bdi>: حدية <bdi dir=ltr>6</bdi> ← كلية <bdi dir=ltr>16</bdi><br>وحدة <bdi dir=ltr>3</bdi>: حدية <bdi dir=ltr>2</bdi> ← كلية <bdi dir=ltr>18</bdi><br>وحدة <bdi dir=ltr>4</bdi>: حدية <bdi dir=ltr>0</bdi> ← كلية <bdi dir=ltr>18</bdi></div><p dir=auto><strong>الكلية = جمع الحديات.</strong></p></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=-ddF6YfJ7Ts"><img loading=lazy src="https://i.ytimg.com/vi/-ddF6YfJ7Ts/mqdefault.jpg" alt=""><span>▶ العلاقة بين المنفعة الكلية والمنفعة الحدية</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>2</bdi></span>قانون تناقص المنفعة الحدية</div><div class=strip><figure><img loading=lazy src="pg/eco_13.jpg" data-z="pg/eco_13.jpg"><figcaption>ص<bdi dir=ltr>13</bdi></figcaption></figure></div><div class=ex><p dir=auto><strong>القانون:</strong> كل وحدة زيادة تستهلكها بتدي إشباع <strong>أقل</strong> من اللي قبلها (السندوتش الخامس مش زي الأول).</p>
+<p dir=auto><strong>العلاقة اللي تتسأل (احفظها):</strong></p>
+<ul>
+<li dir=auto>المنفعة الحدية <strong>بتقل دايمًا</strong>.</li>
+<li dir=auto>لما الحدية <strong>تساوي صفر</strong> ← الكلية توصل <strong>أقصى قيمة</strong> (شبعت خلاص).</li>
+<li dir=auto>لو الحدية <strong>سالبة</strong> ← الكلية <strong>بتنزل</strong> (بقيت تعبان).</li>
+</ul></div><div class=vgrid><a class=vc target=_blank rel=noopener href="https://www.youtube.com/watch?v=7XmSaXqRW0w"><img loading=lazy src="https://i.ytimg.com/vi/7XmSaXqRW0w/mqdefault.jpg" alt=""><span>▶ قانون تناقص المنفعة الحدية</span></a></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>3</bdi></span>منحنيات السواء</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0119.jpg" data-z="img/IMG-20261104-WA0119.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0108.jpg" data-z="img/IMG-20261104-WA0108.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0109.jpg" data-z="img/IMG-20261104-WA0109.jpg"><figcaption>من الجروب</figcaption></figure></div><div class=ex><p dir=auto><strong>الفكرة:</strong> تخيل إنك بتختار بين <strong>سلعتين</strong> (مثلًا بيتزا وعصير). فيه توليفات كتير تدّيك <strong>نفس الإشباع</strong> (يعني مش فارق معاك أي واحدة فيهم). لما نرسمهم نحصل على <strong>منحنى السواء</strong>.</p>
+<p dir=auto><strong>خصائصه (احفظهم):</strong></p>
+<ol>
+<li dir=auto><strong>بينزل</strong> لتحت (سالب الميل): لو زودت سلعة لازم تقلل التانية عشان الإشباع يفضل زي ما هو.</li>
+<li dir=auto><strong>محدب</strong> ناحية نقطة الأصل.</li>
+<li dir=auto><strong>ما يتقاطعوش</strong> أبدًا.</li>
+<li dir=auto>المنحنى <strong>الأبعد</strong> عن نقطة الأصل = إشباع <strong>أكبر</strong>.</li>
+</ol>
+<p dir=auto>مجموعة المنحنيات اسمها <strong>خريطة السواء</strong>.</p></div></div><details class=allim><summary>🖼 كل صور الموضوع ده <bdi dir=ltr>(17)</bdi> – لو عايز تشوف الدفتر كله</summary><p dir=auto class=hint>اسحب الصور يمين وشمال، واضغط على أي صورة لتكبيرها والتقليب بينها</p><div class=imh>📖 المنفعة – من ملف المحاضرات <bdi dir=ltr>(2</bdi> صفحة)</div><div class=strip><figure><img loading=lazy src="pg/eco_12.jpg" data-z="pg/eco_12.jpg"><figcaption>ص<bdi dir=ltr>12</bdi></figcaption></figure><figure><img loading=lazy src="pg/eco_13.jpg" data-z="pg/eco_13.jpg"><figcaption>ص<bdi dir=ltr>13</bdi></figcaption></figure></div><div class=imh>🖼 ملخص الفصول <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> (من الجروب) – من الجروب <bdi dir=ltr>(15</bdi> صورة)</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0119.jpg" data-z="img/IMG-20261104-WA0119.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0108.jpg" data-z="img/IMG-20261104-WA0108.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0109.jpg" data-z="img/IMG-20261104-WA0109.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0114.jpg" data-z="img/IMG-20261104-WA0114.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0117.jpg" data-z="img/IMG-20261104-WA0117.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0118.jpg" data-z="img/IMG-20261104-WA0118.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0106.jpg" data-z="img/IMG-20261104-WA0106.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0116.jpg" data-z="img/IMG-20261104-WA0116.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0107.jpg" data-z="img/IMG-20261104-WA0107.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0115.jpg" data-z="img/IMG-20261104-WA0115.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0110.jpg" data-z="img/IMG-20261104-WA0110.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0104.jpg" data-z="img/IMG-20261104-WA0104.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0113.jpg" data-z="img/IMG-20261104-WA0113.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0105.jpg" data-z="img/IMG-20261104-WA0105.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0112.jpg" data-z="img/IMG-20261104-WA0112.jpg"><figcaption></figcaption></figure></div></details></div><div class=pane data-p=sum hidden><div class=sec id=s2-4><div class=sech>نظرية المنفعة (الاشباع) <bdi dir=rtl>(ص12–13)</bdi></div><ul>
+<li dir=auto><strong>المنفعة</strong> هي <strong>الإشباع</strong> الذي يحصل عليه المستهلك من استهلاكه للسلعة.</li>
+<li dir=auto><strong>الإشباع يُقاس بدرجات</strong> (وحدة القياس «يوتل»/وحدة منفعة). ⚠ السؤال: «هل المنفعة لها وحدة قياس؟» (إجابتها في الصفحة بعلامة عدم التأكد، ذاكر المحاضرة).</li>
+<li dir=auto><strong>المنفعة الكلية</strong> = مجموع المنافع المكتسبة. <strong>المنفعة الحدية</strong> = الإضافة للمنفعة الكلية من استهلاك وحدة إضافية.</li>
+</ul>
+<p dir=auto><strong>جدول المحاضرة (حفظ الشكل):</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>عدد الوحدات</th>
+<th dir=auto>المنفعة الحدية</th>
+<th dir=auto>المنفعة الكلية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+<td dir=auto><bdi dir=ltr>50</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi></td>
+<td dir=auto><bdi dir=ltr>30</bdi></td>
+<td dir=auto><bdi dir=ltr>80</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi></td>
+<td dir=auto><bdi dir=ltr>20</bdi></td>
+<td dir=auto><bdi dir=ltr>100</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi></td>
+<td dir=auto><bdi dir=ltr>5</bdi></td>
+<td dir=auto><bdi dir=ltr>105</bdi></td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>5</bdi></td>
+<td dir=auto><bdi dir=ltr>0</bdi></td>
+<td dir=auto><bdi dir=ltr>105</bdi> (<strong>أقصى قيمة</strong>)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>6</bdi></td>
+<td dir=auto>−<bdi dir=ltr>5</bdi></td>
+<td dir=auto><bdi dir=ltr>100</bdi> (تتناقص)</td>
+</tr>
+</tbody>
+</table>
+<p dir=auto><strong>القاعدة (قانون تناقص المنفعة الحدية):</strong></p>
+<ul>
+<li dir=auto><strong>المنفعة الحدية دائماً متناقصة.</strong></li>
+<li dir=auto>عندما تكون المنفعة الحدية = <strong>صفر</strong> ← المنفعة الكلية <strong>أقصى ما يمكن</strong> (نقطة الإشباع الكامل).</li>
+<li dir=auto>عندما تكون المنفعة الحدية <strong>سالبة</strong> ← المنفعة الكلية <strong>تتناقص</strong>.</li>
+<li dir=auto>المنفعة الكلية <strong>تتزايد بمعدل متناقص</strong> ما دامت المنفعة الحدية موجبة.</li>
+</ul>
+<p dir=auto><strong>صح/خطأ <bdi dir=rtl>(ص13)</bdi>:</strong></p>
+<ol>
+<li dir=auto>«ترتبط المنفعة بقابلية السلع للجسم» ← خطأ.</li>
+<li dir=auto>«تتزايد المنفعة الكلية نتيجة استهلاك وحدات متتالية بمعدلات متزايدة» ← خطأ (متناقصة).</li>
+<li dir=auto>«تختلف منفعة السلعة من وقت لآخر ومن شخص لآخر» ← صحيحة (ملاحظة: بعض ما في الصفحة غير واضح، راجع الصورة).</li>
+<li dir=auto>«المنفعة الكلية هي مجموع المنافع المكتسبة» ← صح.</li>
+<li dir=auto>«من أهم خصائص المنفعة الحدية أنها تخضع لقانون المنفعة الحدية» ← صح.</li>
+<li dir=auto>«من أهم خصائص الكلية خضوعها لقانون تناقص المنفعة» ← خطأ.</li>
+<li dir=auto>«عندما تتناقص المنفعة الكلية فإن المنفعة الحدية تأخذ التذايد…» ← خطأ (تكون سالبة).</li>
+</ol>
+<hr /></div><div class=sec><div class=sech>➕ أقسام ناقصة (حسب رسالة الأدمن <bdi dir=ltr>5/11)</bdi>: التوازن، المرونة، منحنيات السواء، التكاليف</div><p dir=auto style="font-size:15px">اتعرض في النقطة <bdi dir=ltr>2</bdi> <a class=chip href="#s1-3">روح له</a></p></div></div><div class=pane data-p=f hidden><div class=chips><a class=chip href="eco-files.html#pdf0">📄 ملخص الأدمن</a></div></div></div></section><section class=pt id=p3><div class=pth><label><span class=num><bdi dir=ltr>4</bdi></span><span class=tt><b>الفصل <bdi dir=ltr>4</bdi>:</b> عناصر الإنتاج وأنواع التكاليف <b>فقط</b>.</span><input type=checkbox data-i=3></label></div><div class=ptd><div class=seg><button type=button class="on" data-p=ex onclick="sw(this)">💡 الشرح خطوة خطوة</button><button type=button class="" data-p=sum onclick="sw(this)">📖 المادة</button><button type=button class="" data-p=f onclick="sw(this)">📎 ملفات</button></div><div class=pane data-p=ex><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>1</bdi></span>عناصر الإنتاج</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0119.jpg" data-z="img/IMG-20261104-WA0119.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0108.jpg" data-z="img/IMG-20261104-WA0108.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0109.jpg" data-z="img/IMG-20261104-WA0109.jpg"><figcaption>من الجروب</figcaption></figure></div><div class=ex><p dir=auto>عشان تنتج أي حاجة (مصنع مثلًا) محتاج <bdi dir=ltr>4</bdi> حاجات، <strong>وكل واحدة صاحبها بياخد مقابل</strong>:</p><div class=eq>الأرض ← الريع<br>العمل ← الأجر<br>رأس المال ← الفائدة<br>التنظيم (المنظم) ← الربح</div><p dir=auto><strong>التنظيم</strong> هو الشخص اللي بيجمع العناصر الباقية ويتحمل المخاطرة.</p></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>2</bdi></span>أنواع التكاليف</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0183.jpg" data-z="img/IMG-20261104-WA0183.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0181.jpg" data-z="img/IMG-20261104-WA0181.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0180.jpg" data-z="img/IMG-20261104-WA0180.jpg"><figcaption>من الجروب</figcaption></figure></div><div class=ex><p dir=auto><strong>التكاليف</strong> = الفلوس اللي بتصرفها عشان تنتج.</p>
+<ul>
+<li dir=auto><strong>ثابتة <bdi dir=ltr>FC</bdi>:</strong> ما بتتغيرش لو إنتاجك زاد أو قل (إيجار المصنع).</li>
+<li dir=auto><strong>متغيرة <bdi dir=ltr>VC</bdi>:</strong> بتزيد كل ما تنتج أكتر (الخامات).</li>
+</ul><div class=eq>الكلية <bdi dir=ltr>TC = FC + VC</bdi></div><p dir=auto><strong>المتوسطة والحدية:</strong></p><div class=eq>متوسط التكلفة <bdi dir=ltr>ATC = TC ÷ Q</bdi></div><div class=eq>التكلفة الحدية <bdi dir=ltr>MC</bdi> = التغير في <bdi dir=ltr>TC</bdi> ÷ التغير في <bdi dir=ltr>Q</bdi></div><ul>
+<li dir=auto><strong>المتوسطة:</strong> تكلفة الوحدة الواحدة في المتوسط.</li>
+<li dir=auto><strong>الحدية:</strong> تكلفة <strong>الوحدة الزيادة</strong> بس.</li>
+</ul>
+<p dir=auto><strong>مثال <bdi dir=ltr>(FC = 100)</bdi>:</strong> إنتاج وحدة: <bdi dir=ltr>VC = 50</bdi> ← <bdi dir=ltr>TC = 150</bdi>. إنتاج وحدتين: <bdi dir=ltr>VC = 80</bdi> ← <bdi dir=ltr>TC = 180</bdi>. فالحدية للوحدة التانية = <bdi dir=ltr>180 − 150 = 30</bdi>.</p></div></div></div><div class=pane data-p=sum hidden><div class=sec><div class=sech>➕ أقسام ناقصة (حسب رسالة الأدمن <bdi dir=ltr>5/11)</bdi>: التوازن، المرونة، منحنيات السواء، التكاليف</div><p dir=auto style="font-size:15px">اتعرض في النقطة <bdi dir=ltr>2</bdi> <a class=chip href="#s1-3">روح له</a></p></div></div><div class=pane data-p=f hidden><div class=chips><a class=chip href="eco-files.html#pdf0">📄 ملخص الأدمن</a></div></div></div></section><section class=pt id=p4><div class=pth><label><span class=num><bdi dir=ltr>5</bdi></span><span class=tt><b>تدرّب:</b> حل ملف التطبيقات <bdi dir=ltr>(PDF</bdi> الدكتورة – قالت جه منه الامتحان) وأسئلة التدريب في الملخص.</span><input type=checkbox data-i=4></label></div><div class=ptd><div class=seg><button type=button class="on" data-p=ex onclick="sw(this)">💡 الشرح خطوة خطوة</button><button type=button class="" data-p=sum onclick="sw(this)">📖 المادة</button><button type=button class="" data-p=f onclick="sw(this)">📎 ملفات</button></div><div class=pane data-p=ex><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>1</bdi></span>ملف التطبيقات (الدكتورة قالت منه الامتحان)</div><div class=strip><figure><img loading=lazy src="adm/eco_1_01.jpg" data-z="adm/eco_1_01.jpg"><figcaption>الأدمن ص<bdi dir=ltr>1</bdi></figcaption></figure><figure><img loading=lazy src="adm/eco_1_02.jpg" data-z="adm/eco_1_02.jpg"><figcaption>الأدمن ص<bdi dir=ltr>2</bdi></figcaption></figure><figure><img loading=lazy src="adm/eco_1_03.jpg" data-z="adm/eco_1_03.jpg"><figcaption>الأدمن ص<bdi dir=ltr>3</bdi></figcaption></figure></div><div class=ex><p dir=auto>ده أهم ملف في المادة. <strong>حل صح وخطأ وأسئلة الاختيار بنفسك الأول</strong> وبعدين شوف الإجابة.</p>
+<p dir=auto><strong>نصايح للصح والخطأ:</strong></p>
+<ul>
+<li dir=auto>كلمات زي «<strong>دائمًا</strong>» و«<strong>فقط</strong>» غالبًا بتخلي العبارة <strong>غلط</strong>.</li>
+<li dir=auto>رجّع كل سؤال لقاعدة من اللي فوق: (تغير السعر = حركة على المنحنى) و(الطلب عكسي والعرض طردي).</li>
+</ul></div></div><div class=blk><div class=blkh><span class=bn><bdi dir=ltr>2</bdi></span>أسئلة مهمة من الجروب</div><div class=strip><figure><img loading=lazy src="img/IMG-20261104-WA0184.jpg" data-z="img/IMG-20261104-WA0184.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0182.jpg" data-z="img/IMG-20261104-WA0182.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261025-WA0075.jpg" data-z="img/IMG-20261025-WA0075.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261025-WA0076.jpg" data-z="img/IMG-20261025-WA0076.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261025-WA0077.jpg" data-z="img/IMG-20261025-WA0077.jpg"><figcaption>من الجروب</figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0091.jpg" data-z="img/IMG-20261104-WA0091.jpg"><figcaption>من الجروب</figcaption></figure></div><div class=ex><p dir=auto>أسئلة نزلها الأدمن، وكويز الجروب بإجاباته. اللي بتغلط فيه، ارجع للنقطة المناسبة فوق.</p></div></div><details class=allim><summary>🖼 كل صور الموضوع ده <bdi dir=ltr>(11)</bdi> – لو عايز تشوف الدفتر كله</summary><p dir=auto class=hint>اسحب الصور يمين وشمال، واضغط على أي صورة لتكبيرها والتقليب بينها</p><div class=imh>🖼 أسئلة مهمة وشيتات وكويز – من الجروب <bdi dir=ltr>(11</bdi> صورة)</div><div class=strip><figure><img loading=lazy src="img/IMG-20261025-WA0075.jpg" data-z="img/IMG-20261025-WA0075.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261025-WA0076.jpg" data-z="img/IMG-20261025-WA0076.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261025-WA0077.jpg" data-z="img/IMG-20261025-WA0077.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0184.jpg" data-z="img/IMG-20261104-WA0184.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0182.jpg" data-z="img/IMG-20261104-WA0182.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0183.jpg" data-z="img/IMG-20261104-WA0183.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0181.jpg" data-z="img/IMG-20261104-WA0181.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0180.jpg" data-z="img/IMG-20261104-WA0180.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0179.jpg" data-z="img/IMG-20261104-WA0179.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0091.jpg" data-z="img/IMG-20261104-WA0091.jpg"><figcaption></figcaption></figure><figure><img loading=lazy src="img/IMG-20261104-WA0048.jpg" data-z="img/IMG-20261104-WA0048.jpg"><figcaption></figcaption></figure></div></details></div><div class=pane data-p=sum hidden><div class=sec id=s4-5><div class=sech>أسئلة تدريب (جاوب قبل ما تبص على الإجابات)</div><ol>
+<li dir=auto>عرّف علم الاقتصاد، واذكر أسباب المشكلة الاقتصادية.</li>
+<li dir=auto>اذكر عناصر الإنتاج وعائد كل واحد.</li>
+<li dir=auto>ما تكلفة الفرصة البديلة؟ مثّل لها.</li>
+<li dir=auto>صح أم خطأ: ارتفاع سعر السلعة يسبب انتقال منحنى الطلب لليسار؟ ولماذا؟</li>
+<li dir=auto>ما الفرق بين السلع البديلة والمكملة؟ مع مثال.</li>
+<li dir=auto>نقطة تحت منحنى إمكانيات الإنتاج تعني ماذا؟</li>
+<li dir=auto>استكمل جدول المنفعة الكلية والحدية: عند أي وحدة تصل الكلية لأقصى قيمة؟</li>
+</ol>
+<p dir=auto><strong>الإجابات:</strong> <bdi dir=ltr>①</bdi> حسب التعريف فوق، السبب: ندرة الموارد + تعدد الحاجات. <bdi dir=ltr>②</bdi> أرض/ريع، عمل/أجر، رأس مال/فائدة، تنظيم/ربح. <bdi dir=ltr>③</bdi> قيمة أفضل بديل يتم التخلي عنه. <bdi dir=ltr>④</bdi> خطأ، تغير السعر = حركة على نفس المنحنى. <bdi dir=ltr>⑤</bdi> البديلة تحل محل بعض (قهوة/شاي) ، المكملة تُستهلك معاً (سيارة/بنزين). <bdi dir=ltr>⑥</bdi> بطالة موارد/استغلال غير كامل. <bdi dir=ltr>⑦</bdi> عند الوحدة <bdi dir=ltr>5</bdi> (المنفعة الحدية = صفر).</p>
+<hr /></div></div><div class=pane data-p=f hidden><div class=chips><a class=chip href="eco-files.html#pdf0">📄 ملخص الأدمن</a><a class=chip href="eco-files.html#pdf1">ملف التطبيقات</a></div></div></div></section><div class=card><h2 dir=auto>رسايل أدمن قديمة</h2><details><summary>اضغط لعرضها <bdi dir=ltr>(4)</bdi></summary><ul><li dir=auto>فيه <b><bdi dir=ltr>PDF 20</bdi> صفحة "مهمة جدًا لازم تتحل، جه منها الامتحان"</b> (د/نجية – <bdi dir=ltr>1/11)</bdi>. الملف عندي: "تطبيقات عن الفصل الأول والثاني".</li><li dir=auto>أسئلة مهمة من المحاضرة نزلها الأدمن <bdi dir=ltr>25/10</bdi> (صور في صفحة الاقتصاد).</li><li dir=auto>كويز الجروب <bdi dir=ltr>23/10</bdi> (إجاباته): المشكلة الاقتصادية <b>مش</b> للدول النامية بس (غلط) | قانون الطلب علاقة <b>عكسية</b> (العبارة "طردية" غلط) | التوازن = الكمية المطلوبة = المعروضة (صح) | التغير في الكمية المطلوبة بسبب السعر، والتغير في الطلب بسبب عوامل أخرى (صح) | تكلفة الفرصة البديلة <b>مش</b> مبالغ مالية فقط (غلط).</li><li dir=auto>المنفعة (من الصور): الكلية = مجموع الحدية (صح) | الحدية تتناقص بزيادة الاستهلاك (صح) | زيادة المنفعة الكلية بمعدل متناقص (صح) | شيت: حل ص<bdi dir=ltr>198</bdi>.</li></ul></details></div><div class=nextbar><a class=btn href=eco-cur.html>التالي: 📚 المنهج ◀</a></div></main><button id=mode type=button onclick="md()">🌙 ريّح عينك</button><script>(function(){var m=localStorage.getItem("mode")||"";if(m)document.documentElement.className=m;window.md=function(){var c=document.documentElement.className,n=c==""?"sp":c=="sp"?"dk":"";document.documentElement.className=n;localStorage.setItem("mode",n);document.getElementById("mode").textContent=n=="sp"?"📖 ورقي":n=="dk"?"☀ عادي":"🌙 ريّح عينك"};var b=document.getElementById("mode");if(b)b.textContent=m=="sp"?"📖 ورقي":m=="dk"?"☀ عادي":"🌙 ريّح عينك"})()</script><div id=lb><button style="right:8px" onclick="lbx()">✕ إغلاق</button><button style="left:8px" onclick="lbn(1)">التالية ▶</button><button style="left:120px" onclick="lbn(-1)">◀ السابقة</button><span id=lbc></span><img id=lbi></div>
+<script>
+var L=[],I=0;
+function lbx(){lb.style.display='none'}
+function lbs(){lbi.src=L[I];lbc.textContent=(I+1)+' / '+L.length;lb.style.display='block'}
+function lbn(d){I=(I+d+L.length)%L.length;lbs()}
+function sw(b){var p=b.closest('.pt');p.querySelectorAll('.seg button').forEach(function(x){x.classList.toggle('on',x===b)});p.querySelectorAll('.pane').forEach(function(x){x.hidden=x.dataset.p!=b.dataset.p})}
+document.addEventListener('click',function(e){var t=e.target;if(t.tagName=='IMG'&&t.dataset.z){var g=t.closest('.strip,.pages')||document;L=[].slice.call(g.querySelectorAll('img[data-z]')).map(function(x){return x.dataset.z});I=L.indexOf(t.dataset.z);lbs()}});
+document.addEventListener('keydown',function(e){if(lb.style.display=='block'){if(e.key=='Escape')lbx();if(e.key=='ArrowLeft')lbn(1);if(e.key=='ArrowRight')lbn(-1)}});
+document.querySelectorAll('.pth input').forEach(function(c){var k='ck:'+location.pathname+c.dataset.i;c.checked=localStorage[k]=='1';c.onchange=function(){localStorage[k]=c.checked?'1':'0'}});
+</script>

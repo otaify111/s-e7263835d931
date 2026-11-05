@@ -1,0 +1,481 @@
+<!doctype html><html lang=ar dir=rtl><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>الملخص – مبادئ المحاسبة المالية</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI','Dubai','Noto Sans Arabic','Noto Naskh Arabic',system-ui,Arial,sans-serif;margin:0;background:#f4f6f8;color:#1e293b;line-height:1.9;font-size:17px;-webkit-font-smoothing:antialiased}b,strong{font-weight:700}
+a{color:#1d4ed8}
+.top{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;font-weight:bold;background:#ffffff30;padding:6px 14px;border-radius:20px;font-size:16px}
+.top h1{margin:0;font-size:22px;flex:1}
+.tabs{position:sticky;top:0;z-index:10;background:#fff;display:flex;gap:6px;padding:8px;overflow-x:auto;box-shadow:0 2px 6px #0002}
+.tabs a{white-space:nowrap;padding:10px 16px;border-radius:12px;background:#e2e8f0;color:#0f172a;text-decoration:none;font-size:17px;font-weight:bold}
+.tabs a.on{background:var(--c);color:#fff}
+main{max-width:860px;margin:auto;padding:14px}
+.card{background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0;box-shadow:0 1px 4px #0002}
+.card h2{margin:0 0 8px;font-size:22px}
+.big{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;padding:18px;margin:12px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 5px #0003;border-right:8px solid var(--c)}
+.big .ic{font-size:36px}.big b{font-size:21px;display:block}.big small{color:#475569;font-size:15px;line-height:1.5;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.grid figure{margin:0;font-size:13px;line-height:1.4;color:#334155}
+.grid img{width:100%;border-radius:10px;cursor:zoom-in;border:1px solid #cbd5e1;background:#fff}
+.pages img{width:100%;border-radius:10px;border:1px solid #cbd5e1;margin:4px 0;cursor:zoom-in}
+.pn{background:var(--c);color:#fff;display:inline-block;border-radius:20px;padding:0 14px;font-size:15px;margin-top:10px}
+.todo label{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:#f8fafc;margin:8px 0;cursor:pointer;border:2px solid #e2e8f0}
+.todo input{width:26px;height:26px;margin-top:5px;flex:none;accent-color:var(--c)}
+.todo input:checked+span{opacity:.5;text-decoration:line-through}
+.chip{display:inline-block;background:#e2e8f0;border-radius:16px;padding:2px 12px;margin:3px 3px 0 0;font-size:15px;text-decoration:none;color:#0f172a;font-weight:bold}.chips{display:block;margin-top:4px;font-size:15px}
+.ch{background:#fff;border-radius:14px;padding:12px 16px;margin:12px 0;border-right:8px solid;box-shadow:0 1px 4px #0002}.ch p{margin:6px 0}.badge{color:#fff;border-radius:12px;padding:1px 10px;font-size:14px;margin-right:6px}
+.pt{background:#fff;border-radius:16px;margin:18px 0;box-shadow:0 1px 4px #0002;overflow:hidden}
+.pth{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px}.pth label{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:18px;line-height:1.6;flex:1}.tt{flex:1}
+.pth input{width:26px;height:26px;flex:none;accent-color:#fff;margin-right:auto}
+.pth label:has(input:checked) .tt{opacity:.6;text-decoration:line-through}
+.ptd{padding:10px 16px 14px}
+.num{background:#fff;color:var(--c);border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:none}
+.pth .badge{background:#ffffff40;margin:0}
+.seg{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;border-bottom:2px solid #e2e8f0;margin-bottom:10px}.seg button{font:inherit;font-size:16px;font-weight:700;border:0;background:#e2e8f0;color:#0f172a;border-radius:20px;padding:7px 14px;cursor:pointer;white-space:nowrap}.seg button.on{background:var(--c);color:#fff}
+.pane[hidden]{display:none}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}.strip figure{margin:0;flex:none;width:150px;scroll-snap-align:start;text-align:center}.strip img{width:150px;height:200px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #cbd5e1;cursor:zoom-in;background:#fff}.strip figcaption{font-size:12px;color:#64748b}
+.hint{font-size:14px;color:#64748b;margin:0 0 4px}.cht{margin:0 0 2px;font-size:16px}
+.admbox{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;padding:8px 14px 6px;margin:14px 0}.admh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;color:#9a3412;margin-bottom:6px}.dl{background:#ea580c;color:#fff;text-decoration:none;border-radius:20px;padding:5px 14px;font-size:15px;white-space:nowrap}.fn{font-size:13px;color:#64748b;margin:0}
+#lbc{position:fixed;top:14px;left:50%;transform:translateX(-50%);color:#fff;font-size:17px;z-index:100;background:#0008;padding:2px 14px;border-radius:12px}
+.sec{border-top:1px dashed #cbd5e1;padding-top:6px;margin-top:10px}
+.sech{font-weight:700;color:var(--c);font-size:18px;margin:8px 0}
+.sec h3{font-size:18px;margin:14px 0 4px}.sec p{margin:6px 0}.sec ul,.sec ol{padding-right:24px;margin:6px 0}
+.sec table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px;margin:8px 0}.sec td,.sec th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sec th{background:#f1f5f9}
+.sec blockquote{background:#fef9c3;margin:8px 0;padding:4px 14px;border-radius:8px;border-right:4px solid #eab308}
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px}.idx a{display:flex;gap:8px;align-items:center;padding:6px 10px;background:#f1f5f9;border-radius:10px;text-decoration:none;color:#1e293b;font-size:15px;line-height:1.5}.idx .num{background:var(--c);color:#fff;width:26px;height:26px;font-size:14px}
+.warn{background:#fef9c3;border-right:5px solid #eab308;padding:10px 14px;border-radius:10px;font-size:16px}
+.btn{display:block;background:var(--c);color:#fff;text-align:center;padding:14px;border-radius:14px;text-decoration:none;font-weight:bold;font-size:19px;margin:10px 0}
+.btn.alt{background:#fff;color:var(--c);border:2px solid var(--c)}
+.nextbar{display:flex;gap:10px;margin:22px 0}.nextbar a{flex:1}
+details{background:#f8fafc;border-radius:12px;padding:8px 14px;margin:10px 0;border:1px solid #e2e8f0}summary{cursor:pointer;font-weight:bold;font-size:18px}
+.sum h2{border-right:6px solid var(--c);padding-right:10px;margin-top:34px;font-size:23px;background:#f8fafc;border-radius:8px}
+.sum h3{color:var(--c);font-size:20px}
+.sum table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:16px}
+.sum td,.sum th{border:1px solid #cbd5e1;padding:6px 10px;vertical-align:top}.sum th{background:#f1f5f9}
+.sum blockquote{background:#fef9c3;margin:10px 0;padding:6px 14px;border-radius:8px;border-right:4px solid #eab308}
+.mx{display:inline-grid;direction:ltr;gap:0 16px;padding:2px 12px;border-left:3px solid #0f172a;border-right:3px solid #0f172a;border-radius:8px;vertical-align:middle;text-align:center;margin:2px 6px;line-height:1.6}.mx.det{border-radius:0;border-width:2px}.mx i{font-style:normal}
+.allim{margin-top:14px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px;padding:8px 12px}.allim summary{cursor:pointer;font-weight:700;color:#334155}
+.blk{border-top:3px dashed #cbd5e1;padding-top:10px;margin-top:14px}.blk:first-child{border-top:0;margin-top:0}.blkh{font-weight:800;font-size:19px;color:#0f172a;display:flex;gap:8px;align-items:center;margin-bottom:6px}.bn{background:var(--c,#2563eb);color:#fff;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+.eq{direction:ltr;text-align:center;font-size:21px;background:#f1f5f9;border-radius:12px;padding:10px 12px;margin:10px 0;font-family:'Cambria Math',Cambria,serif}
+.sum code{background:#f1f5f9;padding:0 4px;border-radius:4px}
+.toc{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 16px;font-size:17px}.toc ul{padding-right:20px;margin:4px 0}
+.dayh{margin:26px 0 8px;font-size:19px;background:#fff;padding:6px 14px;border-radius:10px;border-right:6px solid var(--c)}
+.f{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:14px;margin:10px 0;text-decoration:none;color:#0f172a;box-shadow:0 1px 4px #0002;border-right:6px solid var(--c)}.f .ic{font-size:30px}
+table.sch{border-collapse:collapse;width:100%}table.sch td,table.sch th{border:1px solid #cbd5e1;padding:8px;text-align:center}table.sch th{background:#f1f5f9}
+.sjs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.sj{background:var(--c);color:#fff;border-radius:18px;padding:16px 18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;box-shadow:0 3px 8px #0003;min-height:120px}.sj b{font-size:22px;line-height:1.4}.sje{font-size:34px}.sjd{background:#ffffff33;border-radius:12px;padding:2px 12px;align-self:flex-start;font-size:15px;margin-top:auto}
+.tools{margin:26px 0 8px;padding:12px 14px;border:2px dashed #94a3b8;border-radius:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.toolh{width:100%;font-size:15px;color:#64748b;font-weight:700}.tools a{background:#e2e8f0;color:#0f172a;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:16px;font-weight:700}
+.ex{background:#ecfdf5;border:2px solid #34d399;border-radius:14px;padding:6px 16px 10px;margin:12px 0}.exh{font-weight:700;color:#047857;font-size:19px;margin:6px 0}.ex p{margin:6px 0}.ex ul,.ex ol{padding-right:24px;margin:6px 0}
+.ims{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:6px 12px;margin:10px 0}.ims summary{font-size:18px}.imh{font-weight:700;color:var(--c);margin:12px 0 6px}
+.grid figcaption{text-align:center;font-size:12px;color:#64748b}
+.adm{background:#fff7ed;border:2px solid #fb923c;border-radius:14px;margin:14px 0}.adm summary{font-size:19px;color:#9a3412}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:8px 0}
+.vc{display:block;background:#fff;border:1px solid #cbd5e1;border-radius:12px;overflow:hidden;text-decoration:none;color:#0f172a;font-size:15px;line-height:1.5}.vc img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#e2e8f0}.vc span{display:block;padding:8px 10px}
+.chap{background:#fff;border-radius:16px;border-right:8px solid;padding:6px 18px 14px;margin:18px 0;box-shadow:0 1px 4px #0002;scroll-margin-top:70px}.chap h2{font-size:22px;margin:10px 0}.pgs{font-size:14px;color:#64748b;margin:2px 0 8px}
+.expl{background:#f8fafc;border-radius:12px;padding:6px 12px;margin:10px 0;border:1px solid #e2e8f0}.pt{scroll-margin-top:70px}
+#lb{display:none;position:fixed;inset:0;background:#000e;z-index:99;overflow:auto;text-align:center}#lb img{max-width:100%;margin:50px auto 0;display:block}
+#lb button{position:fixed;top:8px;background:#fff;border:0;border-radius:20px;padding:8px 18px;font-size:18px;cursor:pointer;font-weight:bold;z-index:100}
+
+html.dk{filter:invert(1) hue-rotate(180deg);background:#fff}html.dk img,html.dk .vc img{filter:invert(1) hue-rotate(180deg)}html.dk #lb{filter:none}
+html.sp body{background:#f1e7d0}html.sp .card,html.sp .pt,html.sp .sec{background:#faf3e0}
+#mode{position:fixed;left:10px;bottom:12px;z-index:50;background:#1e293b;color:#fff;border:0;border-radius:24px;padding:10px 14px;font-size:16px;box-shadow:0 2px 8px #0005;font-family:inherit}
+html.dk #mode{filter:invert(1) hue-rotate(180deg)}
+@media(max-width:700px){body{font-size:18px;line-height:2}main{padding:8px!important}.card{padding:12px!important;border-radius:14px}.strip figure{width:42vw}.strip img{width:42vw;height:56vw}.seg button{padding:10px 12px;font-size:16px}.tabs a,.tabs button{font-size:15px;padding:10px 12px}.eq{font-size:18px;overflow-x:auto}.ex{padding:4px 12px 8px}.blkh{font-size:18px}.vgrid{grid-template-columns:1fr}}
+@media print{.pane[hidden]{display:block!important}.seg,.strip{display:none!important}.top,.tabs,.nextbar,.noprint{display:none!important}body{background:#fff;font-size:15px}.card{box-shadow:none;padding:0}}
+</style><body style="--c:#d97706"><div class=top><a href=index.html>🏠 الرئيسية</a><h1 dir=auto>🧾 مبادئ المحاسبة المالية</h1></div><div class=tabs><a class="" href=acc-todo.html>🎯 المطلوب</a><a class="" href=acc-cur.html>📚 المنهج</a><a class="on" href=acc-sum.html>📝 الملخص الكامل</a><a class="" href=acc-files.html>📄 ملفات الأدمن</a><a class="" href=acc-ext.html>🎥 شروحات</a></div><main><div class="card sum"><a class="btn noprint" href="files/ملخص_مبادئ_المحاسبة_المالية.pdf">⬇ تحميل الملخص <bdi dir=ltr>PDF</bdi></a><details open><summary>فهرس الملخص (اضغط على أي عنوان تروحله)</summary><div class=idx><a href="#1-الإطار-الفكري-ما-هي-المحاسبة-سكشن-1-ص2-3"><span class=num><bdi dir=ltr>1</bdi></span>الإطار الفكري: ما هي المحاسبة؟</a><a href="#2-أنواع-المنشآت-الدرس-2"><span class=num><bdi dir=ltr>2</bdi></span>أنواع المنشآت</a><a href="#3-عناصر-القوائم-المالية-الدرس-4-المعادلة-المحاسبية-ص3-ص4-ص5"><span class=num><bdi dir=ltr>3</bdi></span>عناصر القوائم المالية + المعادلة المحاسبية</a><a href="#4-المدين-والدائن-والقيد-المزدوج-ص1-2-من-ملخص-الأساسيات-كتاب-ص76-79"><span class=num><bdi dir=ltr>4</bdi></span>المدين والدائن والقيد المزدوج</a><a href="#5-كيفية-عمل-القيد-وإثبات-اليومية-ص2-من-الملخص-كتاب-ص78-81"><span class=num><bdi dir=ltr>5</bdi></span>كيفية عمل القيد وإثبات اليومية</a><a href="#6-مثال-شامل-من-السكشن-3-ص5-8-القيود-ثم-الترحيل"><span class=num><bdi dir=ltr>6</bdi></span>مثال شامل من السكشن <bdi dir=ltr>3</bdi></a><a href="#7-قيود-رأس-المال-وبدء-النشاط-الدرس-8-ملخص-ص6"><span class=num><bdi dir=ltr>7</bdi></span>قيود رأس المال وبدء النشاط</a><a href="#8-باقي-أنواع-القيود-ملخص-الأساسيات-ص1-6-8-مراجعة-سريعة"><span class=num><bdi dir=ltr>8</bdi></span>باقي أنواع القيود</a><a href="#9-المبادئ-المحاسبية-ملخص-ص5-6-احفظها-بعناوينها"><span class=num><bdi dir=ltr>9</bdi></span>المبادئ المحاسبية</a><a href="#10-أسئلة-تدريب-جاوب-قبل-الإجابات"><span class=num><bdi dir=ltr>10</bdi></span>أسئلة تدريب</a><a href="#ملحق-كتاب-المحاضرات-صفحات-8-26-وحلول-الشيتات"><span class=num><bdi dir=ltr>11</bdi></span>ملحق: كتاب المحاضرات وحلول الشيتات</a><a href="#ملاحظات-صدق"><span class=num><bdi dir=ltr>12</bdi></span>⚠ ملاحظات صدق</a><a href="#ملخص-الأدمن-الجديد-الدليل-الشامل-الكامل-في-مبادئ-المحاسبة-المالية-6-صفحات-اتبعت-4-11"><span class=num><bdi dir=ltr>13</bdi></span>➕ ملخص الأدمن الجديد</a></div></details>
+<blockquote dir=auto>
+<p dir=auto><strong>المادة:</strong> مبادئ المحاسبة المالية — د/سمر السواح (آخر محاضرة <bdi dir=ltr>27/10</bdi>، وتم المراجعة على نص المنهج «الميدترم»).<br />
+<strong>كتاب الجامعة:</strong> «تحليل مقومات النظام المحاسبي» (الأرقام فوق «ص» هنا = رقم الصفحة في الكتاب الورقي، من صور الجروب). «ص#» بين قوسين مربعين = رقم صفحة في قسم «محاضرات الكتاب» بالموقع.<br />
+<strong>الأدمن قال <bdi dir=ltr>(27/10)</bdi>:</strong> «المسائل دي في المحاسبة في غاية الأهمية وجِه منها في الامتحان، ما تضيعوهاش» — المقصود صور الكتاب ص<bdi dir=ltr>28</bdi>–<bdi dir=ltr>29</bdi> و<bdi dir=ltr>59</bdi> و<bdi dir=ltr>76</bdi>–<bdi dir=ltr>81</bdi> (اتحطت تحت في الموقع)، وقال إن الإجابة على <strong>نفس الورقة</strong>، والامتحان ورقي.</p>
+</blockquote>
+<h2 dir=auto id="1-الإطار-الفكري-ما-هي-المحاسبة-سكشن-1-ص2-3"><bdi dir=ltr>①</bdi> الإطار الفكري: ما هي المحاسبة؟ (سكشن <bdi dir=ltr>1</bdi> — ص<bdi dir=ltr>2</bdi>–<bdi dir=ltr>③</bdi></h2>
+<ul>
+<li dir=auto><strong>المحاسبة</strong> علم يختص بتسجيل وتبويب وتلخيص العمليات المالية التي تحدث داخل المنشأة، ثم تحليلها وتفسير نتائجها، بهدف توفير معلومات مالية تساعد في اتخاذ القرارات.</li>
+<li dir=auto><strong>أهميتها:</strong> تسجيل العمليات، تحديد نتيجة النشاط (ربح/خسارة)، تحديد المركز المالي، الرقابة على الأموال، اتخاذ القرارات، الالتزام القانوني والضريبي.</li>
+<li dir=auto><strong>فروع المحاسبة:</strong> المحاسبة المالية (تنتج القوائم المالية للأطراف الخارجية) — محاسبة التكاليف — المحاسبة الإدارية (معلومات للإدارة للتخطيط والرقابة) — المحاسبة الحكومية (الوحدات الحكومية) — المحاسبة الضريبية.</li>
+<li dir=auto><strong>المستخدمون:</strong> داخليون = الإدارة. خارجيون = الملاك، المقرضون، الموردون، الجهات الحكومية.</li>
+<li dir=auto><strong>أسئلة نموذجية محلولة (سكشن <bdi dir=ltr>①</bdi>:</strong> «المحاسبة المالية فرع يوفر معلومات للإدارة للتخطيط» ← خطأ (ده المحاسبة الإدارية). «المستخدم الداخلي من الأطراف المستفيدة ويشمل الأطراف خارج المنشأة» ← خطأ. «المحاسبة المالية فرع ينتج القوائم المالية» ← صح. «المستخدم الخارجي: الملاك + المقرضون + جميع ما سبق» ← جميع ما سبق.</li>
+</ul>
+<h2 dir=auto id="2-أنواع-المنشآت-الدرس-2"><bdi dir=ltr>②</bdi> أنواع المنشآت (الدرس <bdi dir=ltr>②</bdi></h2>
+<ul>
+<li dir=auto><strong>المنشأة</strong> كيان لممارسة نشاط معين بهدف الربح أو تقديم خدمات.</li>
+<li dir=auto><strong>حسب النشاط:</strong> تجارية (شراء وبيع بدون تغيير جوهري، مثل محل ملابس/سوبر ماركت) — صناعية (تحويل المواد الخام لمنتجات، مثل مصنع أثاث) — خدمية (خدمات مقابل أجر، مثل مكتب محاسبة/شركة نقل).</li>
+<li dir=auto><strong>حسب الملكية:</strong> فردية (شخص واحد) — شركات أشخاص (شخصان أو أكثر) — شركات أموال (تعتمد على رأس المال، مثل المساهمة).</li>
+<li dir=auto><strong>الأنشطة التجارية:</strong> المشتريات، المبيعات، الإيرادات، المصروفات، التحصيلات (من العملاء)، المدفوعات (للموردين).</li>
+</ul>
+<h2 dir=auto id="3-عناصر-القوائم-المالية-الدرس-4-المعادلة-المحاسبية-ص3-ص4-ص5"><bdi dir=ltr>③</bdi> عناصر القوائم المالية (الدرس <bdi dir=ltr>④</bdi> + المعادلة المحاسبية (ص<bdi dir=ltr>3</bdi>، ص<bdi dir=ltr>4</bdi>، ص<bdi dir=ltr>⑤</bdi></h2>
+<p dir=auto><strong>المعادلة الأساسية (حفظ!): الأصول = الالتزامات (الخصوم) + حقوق الملكية.</strong> وهي «حجر الزاوية» ومتوازنة دائماً.</p>
+<ul>
+<li dir=auto>حقوق الملكية = الأصول − الخصوم. (مثال: أصول <bdi dir=ltr>200,000</bdi> وخصوم <bdi dir=ltr>50,000</bdi> ← حقوق ملكية <bdi dir=ltr>150,000.)</bdi></li>
+<li dir=auto><strong>كتاب الجامعة ص<bdi dir=ltr>28</bdi>–<bdi dir=ltr>29</bdi>:</strong> «استخدامات الأموال = مصادر الأموال» <bdi dir=ltr>(60,000 = 40,000 + 20,000)</bdi> ثم «استخدامات الأموال = الالتزامات + حقوق الملكية». مثال محمد: أودع <bdi dir=ltr>60,000</bdi> جنيه في البنك (رأس مال) وجزء مقترض من الغير.</li>
+<li dir=auto><strong>الخمسة عناصر:</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th dir=auto>العنصر</th>
+<th dir=auto>التعريف</th>
+<th dir=auto>أمثلة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الأصول</td>
+<td dir=auto>موارد اقتصادية تسيطر عليها المنشأة ويُتوقع منها منافع مستقبلية</td>
+<td dir=auto>نقدية، بضاعة، عملاء، سيارات، مباني، معدات</td>
+</tr>
+<tr>
+<td dir=auto>الخصوم</td>
+<td dir=auto>التزامات على المنشأة تجاه الغير</td>
+<td dir=auto>قروض، موردون، رواتب مستحقة</td>
+</tr>
+<tr>
+<td dir=auto>حقوق الملكية</td>
+<td dir=auto>المتبقي بعد خصم الخصوم؛ رأس المال + الأرباح المحتجزة</td>
+<td dir=auto>رأس المال</td>
+</tr>
+<tr>
+<td dir=auto>الإيرادات</td>
+<td dir=auto>زيادة في المنافع تزيد حقوق الملكية (بدون مساهمات الملاك)</td>
+<td dir=auto>مبيعات، إيراد خدمات، إيجار</td>
+</tr>
+<tr>
+<td dir=auto>المصروفات</td>
+<td dir=auto>نقص في المنافع يخفض حقوق الملكية (بدون توزيعات)</td>
+<td dir=auto>رواتب، إيجار، كهرباء، إعلانات، إهلاك</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto><strong>أصول متداولة:</strong> نقدية، مخزون، عملاء. <strong>غير متداولة:</strong> أراضي، مباني، معدات. <strong>خصوم متداولة:</strong> تُسدد خلال سنة أو دورة التشغيل. <strong>غير متداولة:</strong> أطول من ذلك.</li>
+<li dir=auto><strong>صافي الربح = الإيرادات − المصروفات</strong> (مثال: <bdi dir=ltr>80,000 − 45,000 − 5,000 − 10,000</bdi> = <strong><bdi dir=ltr>20,000</bdi></strong>). <strong>الخسارة = المصروفات − الإيرادات.</strong></li>
+<li dir=auto><strong>القوائم المالية الخمس:</strong> المركز المالي (الميزانية) — الدخل — التدفقات النقدية — التغيرات في حقوق الملكية — الدخل الشامل.</li>
+</ul>
+<p dir=auto><strong>مثال من الكتاب ص<bdi dir=ltr>59</bdi> (قائمة المركز المالي):</strong> أصول: أثاث <bdi dir=ltr>22,000</bdi> + سيارات <bdi dir=ltr>38,000</bdi> + بضاعة <bdi dir=ltr>32,000</bdi> + نقدية <bdi dir=ltr>10,000</bdi> + مدينون <bdi dir=ltr>22,000</bdi> = <strong><bdi dir=ltr>124,000</bdi></strong>. خصوم: دائنون <bdi dir=ltr>36,000</bdi> + رأس المال <bdi dir=ltr>88,000</bdi> = <strong><bdi dir=ltr>124,000</bdi></strong> (رأس المال يُستخرج كرقم حسابي = الأصول − الخصوم).</p>
+<h2 dir=auto id="4-المدين-والدائن-والقيد-المزدوج-ص1-2-من-ملخص-الأساسيات-كتاب-ص76-79"><bdi dir=ltr>④</bdi> المدين والدائن والقيد المزدوج (ص<bdi dir=ltr>1</bdi>–<bdi dir=ltr>2</bdi> من ملخص الأساسيات، كتاب ص<bdi dir=ltr>76</bdi>–<bdi dir=ltr>79.</bdi></h2>
+<ul>
+<li dir=auto><strong>مدين</strong> <bdi dir=ltr>(Debere</bdi>: يجب عليه): أخذ / <strong>من حـ</strong>/ يُسجل في الجانب الأيمن. <strong>دائن</strong> <bdi dir=ltr>(Credere)</bdi>: أعطى / <strong>إلى حـ</strong>/ يُسجل في الجانب الأيسر.</li>
+<li dir=auto><strong>القاعدة الذهبية:</strong> لا بد من مدين ودائن في كل قيد، ومجموع المدين = مجموع الدائن.</li>
+<li dir=auto><strong>جدول طبيعة الحسابات (احفظه):</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th dir=auto>النوع</th>
+<th dir=auto>الزيادة</th>
+<th dir=auto>النقص</th>
+<th dir=auto>طبيعته</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الأصول</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدينة</td>
+</tr>
+<tr>
+<td dir=auto>المصروفات</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدينة</td>
+</tr>
+<tr>
+<td dir=auto>المسحوبات</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدينة</td>
+</tr>
+<tr>
+<td dir=auto>الالتزامات</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائنة</td>
+</tr>
+<tr>
+<td dir=auto>حقوق الملكية (رأس المال)</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائنة</td>
+</tr>
+<tr>
+<td dir=auto>الإيرادات</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائنة</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li dir=auto><strong>اختصار:</strong> المشتريات دائماً مدينة، المبيعات دائماً دائنة، المصروفات دائماً مدينة، الإيرادات دائماً دائنة. <strong>مردودات المشتريات دائنة</strong> (والخصم المكتسب دائن)، <strong>مردودات المبيعات مدينة</strong> (والخصم المسموح به مدين).</li>
+<li dir=auto><strong>الشراء:</strong> مشتريات مدين، الدائنون دائن (عند الشراء على الحساب)، وعند السداد الدائنون مدين.</li>
+<li dir=auto><strong>البيع:</strong> مبيعات دائنة، المدينون (العملاء) مدين عند البيع على الحساب.</li>
+<li dir=auto><strong>أمثلة من الكتاب ص<bdi dir=ltr>76</bdi>–<bdi dir=ltr>77</bdi> (الحسابات الاسمية):</strong><ul>
+<li dir=auto>خالد أعطى لعمر <bdi dir=ltr>22,000</bdi> ← <strong>عمر مدين</strong> (أخذ واستفاد)، <strong>خالد دائن</strong>.</li>
+<li dir=auto>اشترينا بضاعة نقداً <bdi dir=ltr>50,000</bdi> ← <strong>البضاعة مدين، النقدية دائن</strong>.</li>
+<li dir=auto>اشترى تاجر بضاعة بـ<bdi dir=ltr>50,000</bdi> من شركة (على الحساب) ← <strong>حـ/ البضاعة (المشتريات) مدين</strong>، <strong>شركة يثرب دائنة</strong> (أعطت البضاعة ولم تأخذ شيئاً).</li>
+<li dir=auto>سددنا لشركة السعادة <bdi dir=ltr>10,000</bdi> من حسابنا ← <strong>الشركة مدينة، النقدية دائنة</strong>.</li>
+<li dir=auto>بعنا بضاعة نقداً لكنزي <bdi dir=ltr>50,000</bdi> ← <strong>النقدية مدين، البضاعة المباعة دائن</strong> (كنزي لا يدخل في القيد لأنه دفع).</li>
+<li dir=auto>بعنا بضاعة (على الحساب) للارين <bdi dir=ltr>30,000</bdi> ← <strong>لارين مدين، البضاعة المباعة دائن</strong>.</li>
+<li dir=auto>بعنا بضاعة <bdi dir=ltr>36,000</bdi> (ولم يُذكر الطرف) ← <strong>نقداً</strong>: النقدية مدين، البضاعة المباعة دائن.</li>
+<li dir=auto>دفعنا إيجار المنشأة <bdi dir=ltr>4,000</bdi> ← <strong>مصروف الإيجار مدين، النقدية دائن</strong>.</li>
+<li dir=auto>اشترينا آلات ومعدات <bdi dir=ltr>6,000</bdi> نقداً ← <strong>الآلات مدين، النقدية دائن</strong>.</li>
+<li dir=auto>دفعنا أجور العمال <bdi dir=ltr>40,000</bdi> ← <strong>الأجور مدين، النقدية دائن</strong>.</li>
+</ul>
+</li>
+</ul>
+<h2 dir=auto id="5-كيفية-عمل-القيد-وإثبات-اليومية-ص2-من-الملخص-كتاب-ص78-81"><bdi dir=ltr>⑤</bdi> كيفية عمل القيد وإثبات اليومية (ص<bdi dir=ltr>2</bdi> من الملخص، كتاب ص<bdi dir=ltr>78</bdi>–<bdi dir=ltr>81.</bdi></h2>
+<ul>
+<li dir=auto><strong>القيد يتكون من:</strong> التاريخ — المبلغ — <strong>من حـ/ (المدين)</strong> — <strong>إلى حـ/ (الدائن)</strong> — البيان (وصف مختصر) — رقم القيد/الصفحة.</li>
+<li dir=auto><strong>الخطوات:</strong> <bdi dir=ltr>(1)</bdi> افهم المعاملة (شراء/بيع/استلام/دفع) <bdi dir=ltr>(2)</bdi> حدد الحسابات (أصول/خصوم/إيرادات/مصروفات) <bdi dir=ltr>(3)</bdi> حدد المدين والدائن (المدين يزيد الأصل، الدائن ينقصه) <bdi dir=ltr>(4)</bdi> سجّل في دفتر اليومية <bdi dir=ltr>(5)</bdi> راجع: مجموع المدين = مجموع الدائن.</li>
+<li dir=auto><strong>شكل القيد (كتاب ص<bdi dir=ltr>79.</bdi>:</strong> <code>×× من حـ/ ......</code> ثم <code>×× إلى حـ/ ......</code> — ونكتب الطرف الدائن على السطر التالي من <strong>المنتصف تقريباً</strong> في خانة البيان.</li>
+<li dir=auto><strong>أمثلة محلولة <bdi dir=rtl>(ص79–81)</bdi>:</strong><ul>
+<li dir=auto>اشترينا بضاعة من شركة محمد بـ<bdi dir=ltr>36,000</bdi> <strong>بالأجل</strong>: <strong>من حـ/ البضاعة (المشتراة) <bdi dir=ltr>36,000</bdi> إلى حـ/ شركة محمد <bdi dir=ltr>36,000</bdi></strong>.</li>
+<li dir=auto>بعنا بضاعة نقداً لمحلات حسن بـ<bdi dir=ltr>3,800</bdi>: <strong>من حـ/ النقدية <bdi dir=ltr>3,800</bdi> إلى حـ/ البضاعة المباعة <bdi dir=ltr>3,800</bdi></strong>.</li>
+<li dir=auto>سددنا إيجار المشروع <bdi dir=ltr>10,000</bdi>: <strong>من حـ/ مصروف الإيجار إلى حـ/ النقدية</strong>.</li>
+<li dir=auto><strong>حل ص<bdi dir=ltr>81</bdi> (ست عمليات في يناير):</strong> <bdi dir=ltr>1/1</bdi> من حـ/ هدير (مدين) <bdi dir=ltr>30,000</bdi> إلى حـ/ البضاعة المباعة (بيع على الحساب)؛ <bdi dir=ltr>1/2</bdi> من حـ/ البضاعة المشتراة <bdi dir=ltr>20,000</bdi> إلى حـ/ محمود (شراء على الحساب)؛ <bdi dir=ltr>1/5</bdi> من حـ/ مصروفات التليفون <bdi dir=ltr>4,000</bdi> إلى النقدية؛ <bdi dir=ltr>1/17</bdi> من حـ/ الأجور <bdi dir=ltr>2,000</bdi> إلى النقدية؛ <bdi dir=ltr>1/20</bdi> من حـ/ البضاعة المشتراة <bdi dir=ltr>10,000</bdi> إلى النقدية (شراء نقداً)؛ <bdi dir=ltr>1/25</bdi> من حـ/ الإيجار <bdi dir=ltr>800</bdi> إلى النقدية. (التواريخ من الصورة؛ راجعها.)</li>
+<li dir=auto>ملحوظة الكتاب: «دفع فاتورة التليفون وأجور العمال وإيجار المنشأة تعتبر عملية سداد نقدي».</li>
+</ul>
+</li>
+</ul>
+<h2 dir=auto id="6-مثال-شامل-من-السكشن-3-ص5-8-القيود-ثم-الترحيل"><bdi dir=ltr>⑥</bdi> مثال شامل من السكشن <bdi dir=ltr>3</bdi> <bdi dir=rtl>(ص5–8)</bdi> — القيود ثم الترحيل</h2>
+<p dir=auto>عمليات المثال (قيد وتأصيل بالتصنيف): </p>
+<ol>
+<li dir=auto>أودع صاحب المنشأة رأس مال في البنك (مبلغ <bdi dir=ltr>80,000)</bdi> ← <strong>من حـ/ البنك</strong> (أصل ⊕ مدين) <strong>إلى حـ/ رأس المال</strong> (دائن ⊕).</li>
+<li dir=auto>حصلت المنشأة على قرض من بنك <bdi dir=ltr>40,000</bdi> في الحساب الجاري ← <strong>من حـ/ البنك</strong> إلى <strong>حـ/ القرض</strong> (خصوم ⊕ دائن).</li>
+<li dir=auto>اشترى مبنى بـ<bdi dir=ltr>60,000</bdi> بشيك ← <strong>من حـ/ المباني</strong> إلى <strong>حـ/ البنك</strong>.</li>
+<li dir=auto>شراء سيارة <bdi dir=ltr>160,000</bdi> من شركة الحاوي، <strong>سدد نصف ثمنها بشيك والباقي على الحساب</strong> ← <strong>من حـ/ السيارات <bdi dir=ltr>160,000</bdi></strong> إلى <strong>حـ/ البنك <bdi dir=ltr>80,000</bdi> + حـ/ شركة الحاوي (دائنون) <bdi dir=ltr>80,000</bdi></strong> ← <strong>قيد مركب</strong>.</li>
+<li dir=auto>شراء أثاث على الحساب من محلات العراقي ← <strong>من حـ/ الأثاث إلى حـ/ الدائنون (العراقي)</strong>.</li>
+<li dir=auto>سداد أجور ورواتب العمال نقداً ← <strong>من حـ/ الأجور والمرتبات إلى حـ/ النقدية</strong>.</li>
+<li dir=auto>سداد المستحق لشركة الحاوي نقداً ← <strong>من حـ/ الدائنون (الحاوي) إلى حـ/ النقدية</strong> (الخصوم ⊖ مدين).</li>
+<li dir=auto>سحب مبلغ من الحساب الجاري ← قيد المسحوبات (البنك ⊖ دائن).<blockquote dir=auto>
+<p dir=auto>⚠ أرقام المثال مكتوبة بخط اليد وبعض الأصفار غير واضحة؛ ذاكر <strong>الفكرة والتصنيف</strong> من الصفحات [ص<bdi dir=ltr>5</bdi>–<bdi dir=ltr>7</bdi>]، مش الأرقام.</p>
+</blockquote>
+</li>
+</ol>
+<p dir=auto><strong>ترحيل القيود إلى دفتر الأستاذ (الدرس <bdi dir=ltr>⑫</bdi>:</strong></p>
+<ul>
+<li dir=auto><strong>دفتر اليومية</strong> يسجل العمليات حسب تاريخ حدوثها. <strong>دفتر الأستاذ</strong> يجمع العمليات المتشابهة تحت حسابها.</li>
+<li dir=auto><strong>الخطوات:</strong> <bdi dir=ltr>(1)</bdi> سجّل في اليومية <bdi dir=ltr>(2)</bdi> حدد الحسابات المدينة والدائنة <bdi dir=ltr>(3)</bdi> انقل المبلغ المدين للجانب المدين للحساب <bdi dir=ltr>(4)</bdi> انقل الدائن للجانب الدائن <bdi dir=ltr>(5)</bdi> اكتب التاريخ ومرجع القيد <bdi dir=ltr>(6)</bdi> استخرج <strong>رصيد كل حساب</strong>.</li>
+<li dir=auto><strong>مثال:</strong> بدأ أحمد بـ<bdi dir=ltr>50,000</bdi> رأس مال نقدي ثم دفع إيجار <bdi dir=ltr>5,000</bdi> نقداً ← الخزينة: مدين <bdi dir=ltr>50,000</bdi> دائن <bdi dir=ltr>5,000</bdi> ← <strong>الرصيد المدين <bdi dir=ltr>45,000</bdi></strong>؛ رأس المال: <strong>الرصيد الدائن <bdi dir=ltr>50,000</bdi></strong>؛ مصروف الإيجار: <strong>الرصيد المدين <bdi dir=ltr>5,000</bdi></strong>.</li>
+<li dir=auto><strong>الرصيد:</strong> لو <strong>المدين أكبر من الدائن</strong> ← الفرق <strong>مدين</strong> (رصيد مدين). لو <strong>الدائن أكبر</strong> ← الفرق <strong>دائن</strong>. <strong>لو متساويان</strong> ← الرصيد صفر والحساب «مقفل». (قاعدة الترصيد من الملخص ص<bdi dir=ltr>③</bdi></li>
+<li dir=auto><strong>حسابات الاستاذ بطبيعتها (الدرس <bdi dir=ltr>⑬</bdi>:</strong> المدينة: الأصول، المصروفات، المسحوبات، مردودات المبيعات، الخصم المسموح به. الدائنة: الالتزامات، حقوق الملكية، الإيرادات، مردودات المشتريات، الخصم المكتسب.</li>
+<li dir=auto><strong>مثال أرصدة:</strong> رصيد الخزينة بداية <bdi dir=ltr>20,000</bdi> + حصلنا <bdi dir=ltr>10,000</bdi> من العملاء − دفعنا مصروفات <bdi dir=ltr>4,000</bdi> = <strong><bdi dir=ltr>26,000</bdi> مدين</strong>. مثال رصيد الموردين: الرصيد الناتج في الدرس <strong><bdi dir=ltr>17,000</bdi> دائن</strong> (يزيد بالشراء بالأجل وينقص بالسداد) — راجع أرقامه في صورة الدرس.</li>
+</ul>
+<h2 dir=auto id="7-قيود-رأس-المال-وبدء-النشاط-الدرس-8-ملخص-ص6"><bdi dir=ltr>⑦</bdi> قيود رأس المال وبدء النشاط (الدرس <bdi dir=ltr>8</bdi> + ملخص ص<bdi dir=ltr>⑥</bdi></h2>
+<ul>
+<li dir=auto><strong>رأس المال</strong> = الأموال/الأصول التي يقدمها صاحب المنشأة لبدء النشاط، من عناصر حقوق الملكية.</li>
+<li dir=auto><strong>القاعدة:</strong> الأصول التي تدخل المنشأة <strong>مدينة</strong>، ورأس المال <strong>دائن</strong>.</li>
+<li dir=auto>أمثلة: بدأ أحمد بـ<bdi dir=ltr>100,000</bdi> نقداً ← من حـ/ النقدية إلى حـ/ رأس المال. بدأ بـ<bdi dir=ltr>60,000</bdi> نقداً + أثاث <bdi dir=ltr>20,000</bdi> ← <strong>من مذكورين:</strong> النقدية <bdi dir=ltr>60,000</bdi> + الأثاث <bdi dir=ltr>20,000</bdi> <strong>إلى حـ/ رأس المال <bdi dir=ltr>80,000</bdi></strong> (قيد مركب). أودع <bdi dir=ltr>70,000</bdi> في البنك واحتفظ بـ<bdi dir=ltr>30,000</bdi> في الخزينة ← من مذكورين: البنك + الخزينة إلى رأس المال.</li>
+<li dir=auto><strong>أنواع قيود رأس المال:</strong> نقدي (الصندوق/البنك ← رأس المال) — عيني (بضاعة، أثاث، سيارات ← رأس المال) — مختلط (نقدي + عيني) — مناصفة (الصندوق + البنك). <strong>زيادة رأس المال:</strong> من حـ/ البنك إلى رأس المال. <strong>تخفيض رأس المال:</strong> من حـ/ رأس المال إلى البنك. <strong>المسحوبات النقدية:</strong> من حـ/ المسحوبات إلى الصندوق. <strong>مسحوبات بضاعة:</strong> من المسحوبات إلى البضاعة.</li>
+<li dir=auto><strong>لو صاحب المنشأة اقترض شخصياً</strong> وأودع المبلغ: لا يُعد رأس مال، بل <strong>التزام</strong> على المنشأة إذا كانت هي المقترضة.</li>
+</ul>
+<h2 dir=auto id="8-باقي-أنواع-القيود-ملخص-الأساسيات-ص1-6-8-مراجعة-سريعة"><bdi dir=ltr>⑧</bdi> باقي أنواع القيود (ملخص الأساسيات ص<bdi dir=ltr>1</bdi>، <bdi dir=ltr>6</bdi>–<bdi dir=ltr>8</bdi> — مراجعة سريعة)</h2>
+<ul>
+<li dir=auto><strong>القروض:</strong> الحصول: من حـ/ البنك إلى حـ/ القرض. السداد: من حـ/ القرض إلى حـ/ النقدية (الصندوق أو البنك). <strong>الفائدة:</strong> من حـ/ مصروف الفائدة إلى النقدية.</li>
+<li dir=auto><strong>المصروفات:</strong> عمومية (من حـ/ المصروف إلى النقدية) — مشتريات، نقل، تأمين — بيع وتوزيع (دعاية، إيجار معرض) — إدارية (إيجار مكتب، كهرباء، هاتف، قرطاسية، ضيافة، بريد، محروقات) — تمويلية (فوائد بنكية، عمولات، خصم أوراق تجارية).</li>
+<li dir=auto><strong>الإيرادات:</strong> من حـ/ الصندوق (أو البنك) إلى حـ/ إيرادات.</li>
+<li dir=auto><strong>الخصم التجاري</strong> لا يظهر في القيود ويسجل الصافي. <strong>الخصم النقدي (تعجيل الدفع):</strong> للمشتري: من الموردين إلى مذكورين (الصندوق + خصم نقدي مكتسب). للبائع: من مذكورين (الصندوق + خصم مسموح به) إلى العملاء. <strong>خصم الكمية</strong> (حسب الكمية/القيمة).</li>
+<li dir=auto><strong>الأوراق التجارية:</strong> إصدار ورقة دفع: من حـ/ المشتريات (أو الموردين) إلى حـ/ أوراق الدفع. تسديدها: من أوراق الدفع إلى النقدية. استلام ورقة قبض: من أوراق القبض إلى المبيعات (أو العملاء). تحصيلها: من النقدية إلى أوراق القبض.</li>
+<li dir=auto><strong>أصول ثابتة:</strong> اقتناء: من حـ/ الأصل إلى النقدية أو الموردين (تشمل مصاريف النقل والتركيب والرسوم). المنح والهبات: من الأصل إلى رأس المال بقيمته العادلة.</li>
+<li dir=auto><strong>التسويات الجردية:</strong> بضاعة آخر المدة: من حـ/ بضاعة آخر المدة إلى حـ/ المتاجرة. إهلاك الأصول: من حـ/ مصروف الإهلاك إلى حـ/ مخصص إهلاك الأصل. <strong>مصروفات مستحقة:</strong> من حـ/ المصروف إلى حـ/ مصروف مستحق. <strong>مصروفات مقدمة:</strong> من حـ/ مصروف مقدم إلى المصروف. <strong>إيرادات مستحقة:</strong> من إيرادات مستحقة إلى إيرادات مكتسبة. <strong>إيرادات مقدمة:</strong> من إيرادات مكتسبة إلى إيرادات مقبوضة مقدماً.</li>
+</ul>
+<h2 dir=auto id="9-المبادئ-المحاسبية-ملخص-ص5-6-احفظها-بعناوينها"><bdi dir=ltr>⑨</bdi> المبادئ المحاسبية (ملخص ص<bdi dir=ltr>5</bdi>–<bdi dir=ltr>⑥</bdi> — احفظها بعناوينها</h2>
+<p dir=auto><bdi dir=ltr>①</bdi> <strong>الاستمرارية:</strong> نفترض استمرار المنشأة (تبرر إهلاك الأصول على عمرها). <bdi dir=ltr>②</bdi> <strong>الاستحقاق:</strong> تسجيل الإيراد/المصروف عند حدوثه بغض النظر عن النقد. <bdi dir=ltr>③</bdi> <strong>المقابلة:</strong> مقابلة الإيرادات بمصروفاتها في نفس الفترة. <bdi dir=ltr>④</bdi> <strong>التكلفة التاريخية:</strong> تسجيل الأصل بتكلفته الأصلية وقت الشراء (وليس السوقية). <bdi dir=ltr>⑤</bdi> <strong>الإفصاح التام.</strong> <bdi dir=ltr>⑥</bdi> <strong>الموضوعية:</strong> معاملات قائمة على أدلة (فواتير، عقود). <bdi dir=ltr>⑦</bdi> <strong>الثبات/الاتساق:</strong> نفس السياسة من فترة لأخرى. <bdi dir=ltr>⑧</bdi> <strong>الحيطة والحذر:</strong> لا تتوقع الأرباح واستعد لكل الخسائر. <bdi dir=ltr>⑨</bdi> <strong>الأهمية النسبية.</strong> <bdi dir=ltr>⑩</bdi> <strong>وحدة محاسبية:</strong> المنشأة كيان مستقل عن مالكها.</p>
+<ul>
+<li dir=auto><strong>الدورة المحاسبية <bdi dir=ltr>(5</bdi> خطوات):</strong> تحليل المستندات ← تسجيل في اليومية ← ترحيل إلى الأستاذ ← إعداد ميزان المراجعة ← إجراء التسويات وإصدار القوائم.</li>
+</ul>
+<h2 dir=auto id="10-أسئلة-تدريب-جاوب-قبل-الإجابات"><bdi dir=ltr>⑩</bdi> أسئلة تدريب (جاوب قبل الإجابات)</h2>
+<ol>
+<li dir=auto>صح/خطأ: المحاسبة الإدارية فرع ينتج القوائم المالية للأطراف الخارجية.</li>
+<li dir=auto>كوّن القيد: اشترينا بضاعة بـ<bdi dir=ltr>20,000</bdi> على الحساب من شركة النور.</li>
+<li dir=auto>كوّن القيد: بعنا بضاعة بـ<bdi dir=ltr>15,000</bdi> نقداً.</li>
+<li dir=auto>دفعنا أجور عمال <bdi dir=ltr>3,000</bdi> نقداً.</li>
+<li dir=auto>بدأ سامي النشاط بـ<bdi dir=ltr>50,000</bdi> نقداً + سيارة <bdi dir=ltr>30,000</bdi>. ما قيد رأس المال؟</li>
+<li dir=auto>أصول <bdi dir=ltr>300,000</bdi>، خصوم <bdi dir=ltr>120,000</bdi>: ما حقوق الملكية؟</li>
+<li dir=auto>أي الحسابات طبيعتها دائنة: المصروفات، الإيرادات، الأصول، رأس المال؟</li>
+<li dir=auto>رصيد الخزينة أول المدة <bdi dir=ltr>10,000</bdi>، حصلنا <bdi dir=ltr>5,000</bdi> ودفعنا <bdi dir=ltr>2,000</bdi>. الرصيد؟</li>
+</ol>
+<p dir=auto><strong>الإجابات:</strong> <bdi dir=ltr>①</bdi> خطأ (ده المحاسبة المالية؛ الإدارية للإدارة الداخلية). <bdi dir=ltr>②</bdi> من حـ/ البضاعة (المشتريات) <bdi dir=ltr>20,000</bdi> إلى حـ/ شركة النور (الدائنون) <bdi dir=ltr>20,000. 3)</bdi> من حـ/ النقدية <bdi dir=ltr>15,000</bdi> إلى حـ/ البضاعة المباعة (المبيعات) <bdi dir=ltr>15,000. 4)</bdi> من حـ/ الأجور <bdi dir=ltr>3,000</bdi> إلى حـ/ النقدية <bdi dir=ltr>3,000. 5)</bdi> من مذكورين: النقدية <bdi dir=ltr>50,000</bdi> + السيارات <bdi dir=ltr>30,000</bdi> إلى حـ/ رأس المال <bdi dir=ltr>80,000. 6) 180,000. 7)</bdi> الإيرادات + رأس المال. <bdi dir=ltr>8) 10,000 + 5,000 − 2,000</bdi> = <strong><bdi dir=ltr>13,000</bdi> مدين</strong>.</p>
+<hr />
+<h2 dir=auto id="ملحق-كتاب-المحاضرات-صفحات-8-26-وحلول-الشيتات">ملحق: كتاب المحاضرات (صفحات <bdi dir=ltr>8</bdi>–<bdi dir=ltr>26.</bdi> وحلول الشيتات</h2>
+<h3 dir=auto id="تعريفات-وأهداف-د-سمر-محاضرة-29-9">تعريفات وأهداف (د/سمر – محاضرة <bdi dir=ltr>29/9)</bdi></h3>
+<ul>
+<li dir=auto><strong>المحاسبة <bdi dir=ltr>(1)</bdi>:</strong> فن من المعرفة المحاسبية يهتم بتوصيل المعلومات المالية للأطراف الخارجية.</li>
+<li dir=auto><strong>المحاسبة <bdi dir=ltr>(2)</bdi>:</strong> العلم الذي يبحث في طرق تسجيل المعاملات المالية المختلفة للمنشأة لخدمة أغراض معينة.</li>
+<li dir=auto><strong>أهداف المحاسبة المالية:</strong> <bdi dir=ltr>①</bdi> تحديد نتيجة الأعمال من ربح أو خسارة. <bdi dir=ltr>②</bdi> تحديد المركز المالي في لحظة زمنية معينة. <bdi dir=ltr>③</bdi> توفير البيانات اللازمة للتخطيط ورسم سياسات الفترة القادمة.</li>
+<li dir=auto><strong>وظائف المحاسبة المالية <bdi dir=ltr>(4)</bdi>:</strong> قياس الموارد والممتلكات – قياس الالتزامات على المنشأة – قياس التغيرات في الموارد والحقوق – تخصيص التغيرات على فترات زمنية محددة.</li>
+<li dir=auto><strong>المستفيدون:</strong> داخليون (الإدارة بكل مستوياتها) وخارجيون: البنوك، الموردون، المستثمرون/الشركاء، الضرائب، أجهزة الحكم. (الأطراف الخارجية الثلاثة اللي كتبتها المحاضرة: <strong>البنوك والضرائب والمستثمرين</strong>.)</li>
+<li dir=auto><strong>فروع المحاسبة <bdi dir=ltr>(5)</bdi>:</strong> مالية (معلومات للأطراف الخارجية) – إدارية (معلومات للإدارة) – تكاليف (تحديد تكلفة الإنتاج وتخطيط الأنشطة والرقابة) – حكومية (تصرفات الوحدات الحكومية) – ضريبية (تجميع وربط المعلومات للأغراض الضريبية).</li>
+<li dir=auto><strong>مبادئ المحاسبة المتعارف عليها <bdi dir=ltr>(7)</bdi>:</strong> استقلال الوحدة المحاسبية – استمرار الوحدة – وحدة القياس النقدي – الفترات المحاسبية – التكلفة التاريخية – الاعتراف بالإيرادات – مقابلة المصروفات بالإيرادات.</li>
+<li dir=auto><strong>أنواع الأصول <bdi dir=ltr>(3)</bdi>:</strong> متداولة (تتحول لنقدية أو تُباع أو تُستخدم) – ثابتة غير متداولة (للاستخدام وليس لإعادة البيع) – غير ملموسة (حقوق لا وجود مادي لها: شهرة، علامة تجارية، براءة اختراع).</li>
+<li dir=auto><strong>الخصوم (الالتزامات للغير):</strong> قصيرة الأجل (تُسدد خلال سنة) – طويلة الأجل (أكثر من سنة).</li>
+<li dir=auto><strong>القيد المحاسبي:</strong> مفرد أو مزدوج. المحاضرة قالت إن <strong>مسودة</strong> الحل تكتب في الامتحان مع ورقة منفصلة.</li>
+<li dir=auto><strong>تصنيف سريع (مسودة المحاضرة):</strong> نقدية، مدينون، بضاعة، أثاث، سيارات، مبانٍ، أراضٍ، مخزون، بنك، أدوات مكتبية = <strong>أصول</strong>. دائنون/موردون/قروض = <strong>خصوم</strong>. المسحوبات تنقص رأس المال.</li>
+<li dir=auto><strong>قاعدة سريعة من المحاضرة:</strong> نقداً ← خزينة | شيك ← بنك | دائنين ← مشتريات | مدينين ← مبيعات | سحب ← نقص | إيداع ← زيادة | أصول ← مدين | خصوم ← دائن | رأس المال ← دائن | سداد ← دفع | قبض خزينة ← مدين.</li>
+</ul>
+<h3 dir=auto id="مثال-محاضرة-قيد-مركب-وجرد-الأصول-ص105-مثال-3">مثال محاضرة: قيد مركب وجرد الأصول (ص<bdi dir=ltr>105</bdi> – مثال <bdi dir=ltr>③</bdi></h3>
+<p dir=auto>أصول: أثاث <bdi dir=ltr>140,000</bdi> + بضاعة <bdi dir=ltr>90,000</bdi> + مدينون <bdi dir=ltr>24,000</bdi> + بنك <bdi dir=ltr>26,000</bdi> = <strong><bdi dir=ltr>280,000</bdi></strong>. الخصوم (قرض) <bdi dir=ltr>90,000</bdi>. <strong>رأس المال = الأصول − الخصوم = <bdi dir=ltr>280,000 − 90,000 = 190,000</bdi></strong>.<br />
+القيد (قيد مركب لأن طرف المدين فيه أكثر من حساب): من مذكورين: حـ/أثاث <bdi dir=ltr>140,000</bdi>، حـ/بضاعة <bdi dir=ltr>90,000</bdi>، حـ/مدينون <bdi dir=ltr>24,000</bdi>، حـ/بنك <bdi dir=ltr>26,000</bdi> ← إلى مذكورين: حـ/قروض <bdi dir=ltr>90,000</bdi>، حـ/رأس المال <bdi dir=ltr>190,000</bdi>.<br />
+القاعدة: <strong>القيد المركب = أحد طرفيه (المدين أو الدائن) فيه أكثر من حساب.</strong></p>
+<h3 dir=auto id="الاستاذ-ترحيل-ورصيد-محاضرة-4-و5">الاستاذ: ترحيل ورصيد (محاضرة <bdi dir=ltr>4</bdi> و<bdi dir=ltr>⑤</bdi></h3>
+<ul>
+<li dir=auto><strong>دفتر اليومية</strong> يسجل القيود بالتاريخ، <strong>دفتر الأستاذ</strong> يرحّل منها لحساب <bdi dir=ltr>T</bdi>: الجانب <strong>الأيمن = مدين</strong>، <strong>الأيسر = دائن</strong>.</li>
+<li dir=auto><strong>رصيد الحساب = الفرق بين الجانبين.</strong> يُكتب في الجانب الأقل، ويُرحّل للسنة الجديدة كـ <strong>"رصيد مرحل"</strong> ثم <strong>"رصيد منقول"</strong> في الجانب المقابل. مثال المحاضرة: حـ/البنك مدين <bdi dir=ltr>1,200,000</bdi> وداين <bdi dir=ltr>600,000</bdi> ← <strong>رصيد مرحل مدين <bdi dir=ltr>600,000</bdi></strong>.</li>
+<li dir=auto>مثال ص<bdi dir=ltr>109</bdi> (شراء سيارة بـ<bdi dir=ltr>160</bdi> ألف ثم بيع جزء منها بـ<bdi dir=ltr>100</bdi> ألف نقداً حسب قراءتي): حـ/السيارات مدين <bdi dir=ltr>160,000</bdi> ودائن <bdi dir=ltr>100,000</bdi> ← رصيد مدين <bdi dir=ltr>60,000</bdi> يُرحّل كرصيد منقول للسنة الجديدة. (أرقام الصورة غير واضحة، فراجعها.)</li>
+<li dir=auto>خطوات الأستاذ: افتح حساب <bdi dir=ltr>T</bdi> لكل حساب → رحّل كل قيد من اليومية → اجمع الجانبين → الرصيد = الفرق.</li>
+<li dir=auto><strong>الأرقام</strong> في هذه الصفحات مكتوبة بخط يد غير واضح (أصفار كتير)، فاحفظ <strong>الخطوات والترتيب</strong> وراجع الأرقام في الصور.</li>
+</ul>
+<h3 dir=auto id="حل-شيت-ص25-تدريبات-الامتحان">حل شيت <bdi dir=rtl>(ص25)</bdi> – تدريبات الامتحان</h3>
+<p dir=auto><strong>السؤال <bdi dir=ltr>1</bdi>:</strong> تكلّم بإيجاز عن: الأصول المتداولة، الإيرادات، صافي الربح، مبدأ التكلفة التاريخية، مبدأ الإفصاح الكامل. (الدكتورة شطبت "الأصول المتداولة" و"الإيرادات" تقريباً.)<br />
+<strong>السؤال <bdi dir=ltr>2</bdi>:</strong> تعريف المحاسبة وأهدافها ووظائفها ← من القسم الأول.<br />
+<strong>السؤال <bdi dir=ltr>3</bdi> – صح/خطأ مع التصحيح:</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>#</th>
+<th dir=auto>العبارة</th>
+<th dir=auto>الإجابة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto><bdi dir=ltr>1</bdi></td>
+<td dir=auto>تتصف جميع الأصول بأن لها كيان مادي ملموس</td>
+<td dir=auto>✗ (فيه أصول غير ملموسة)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>2</bdi></td>
+<td dir=auto>المنشأة وحدة اقتصادية تزاول نشاطاً تجارياً فقط</td>
+<td dir=auto>✗ (تجاري وصناعي وخدمي)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>3</bdi></td>
+<td dir=auto>تهتم المحاسبة المالية بخدمة الأطراف الداخلية فقط</td>
+<td dir=auto>✗ (داخلية وخارجية)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>4</bdi></td>
+<td dir=auto>الخصوم طويلة الأجل واجبة السداد خلال الفترة المحاسبية</td>
+<td dir=auto>✗ (أكثر من سنة)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>5</bdi></td>
+<td dir=auto>الأصول الثابتة تشترى للمساهمة في العملية الإنتاجية لا لإعادة البيع</td>
+<td dir=auto>✓</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>6</bdi></td>
+<td dir=auto>قائمة الدخل في لحظة زمنية لأنها تقيس ثروة المنشأة</td>
+<td dir=auto>✗ (قائمة الدخل <strong>عن فترة</strong>، المركز المالي عند لحظة)</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>7</bdi></td>
+<td dir=auto>لا يوجد أي اختلاف بين المحاسبة ومسك الدفاتر</td>
+<td dir=auto>✗</td>
+</tr>
+<tr>
+<td dir=auto><bdi dir=ltr>8</bdi></td>
+<td dir=auto>الأجهزة الحكومية من الأطراف الداخلية</td>
+<td dir=auto>✗ (خارجية)</td>
+</tr>
+</tbody>
+</table>
+<h3 dir=auto id="تطبيقات-ص226-و228-اختياري-ومتعدد-وصح-خطأ">تطبيقات ص<bdi dir=ltr>226</bdi> و<bdi dir=ltr>228</bdi> (اختياري ومتعدد وصح/خطأ)</h3>
+<p dir=auto><strong>ص<bdi dir=ltr>226</bdi> (اختر الإجابة الصحيحة):</strong> <bdi dir=ltr>①</bdi> أصول الوحدة وخصومها في تاريخ معين: <strong>قائمة المركز المالي</strong> | <bdi dir=ltr>②</bdi> ناتج مقابلة الإيرادات بالمصروفات: <strong>الربح</strong> | <bdi dir=ltr>③</bdi> الحيطة في أخذ الخسائر المتوقعة: <strong>مبدأ الحيطة والحذر</strong> | <bdi dir=ltr>④</bdi> التكاليف المستنفدة في سبيل الإيراد: <strong>المصروفات</strong> | <bdi dir=ltr>⑤</bdi> نظام قياس واتصال يسجل ويبوّب ويلخص العمليات: <strong>المحاسبة المالية</strong>.</p>
+<p dir=auto><strong>ص<bdi dir=ltr>228</bdi> (صح/خطأ – إجابات موجودة بالصورة):</strong><br />
+<bdi dir=ltr>1</bdi> ✓ علم المحاسبة يهتم بتحديد وقياس وتوصيل المعلومات | <bdi dir=ltr>2</bdi> ✗ الأصول الثابتة ليست النقدية والمخزون والعملاء | <bdi dir=ltr>3</bdi> ✗ الخصوم حقوق الغير لا تشمل الملاك | <bdi dir=ltr>4</bdi> ✗ تهدف لتحديد المركز المالي | <bdi dir=ltr>5</bdi> ✓ الالتزامات موارد مالية يقدمها الغير | <bdi dir=ltr>6</bdi> ✓ مبدأ المقابلة | <bdi dir=ltr>7</bdi> ✓ لا تعترف بالإيراد إلا بعد تحققه | <bdi dir=ltr>8</bdi> ✗ الوحدة مستقلة عن أصحاب المصلحة | <bdi dir=ltr>9</bdi> ✗ دفتر الأستاذ ≠ أول سجل (اليومية أول سجل) | <bdi dir=ltr>10</bdi> ✓ تقسيم الحياة لفترات (سنة مالية) | <bdi dir=ltr>11</bdi> ✗ الأراضي أصول لا خصوم | <bdi dir=ltr>12</bdi> ✗ المقصود بالأصول ليس التزامات | <bdi dir=ltr>13</bdi> ✗ المعادلة: أصول = خصوم + حقوق ملكية | <bdi dir=ltr>14</bdi> ✓ أصول ثابتة + متداولة = حقوق ملكية + التزامات | <bdi dir=ltr>15</bdi> ✓ رأس المال حقوق المساهمين | <bdi dir=ltr>16</bdi> ✓ الجانب الأيسر = الأيمن | <bdi dir=ltr>17</bdi> ✓ زيادة الأصول مدينة ونقصها دائنة | <bdi dir=ltr>18</bdi> ✓ زيادة الخصوم دائنة ونقصها مدينة | <bdi dir=ltr>19</bdi> ✗ الشهرة غير ملموسة | <bdi dir=ltr>20</bdi> ✓ الأصول الثابتة تزيد القدرة الإنتاجية | <bdi dir=ltr>21</bdi> ✓ | <bdi dir=ltr>22</bdi> ✓ طرفا المعادلة متساويان دائماً | <bdi dir=ltr>23</bdi> ✓ الخصوم قصيرة وطويلة الأجل | <bdi dir=ltr>24</bdi> ✗ المصروفات مدينة والإيرادات دائنة | <bdi dir=ltr>25</bdi> ✗ | <bdi dir=ltr>26</bdi> ✗ سجل المدينين للمبيعات الآجلة والدائنين للمشتريات الآجلة | <bdi dir=ltr>27</bdi> ✗ (علامة الصورة)، والصح منطقياً أن الأصول والمصروفات مدينة وتظهر يميناً، فراجع | <bdi dir=ltr>28</bdi> ✓ | <bdi dir=ltr>29</bdi> ✗ الخصوم عند الزيادة تكون دائنة | <bdi dir=ltr>30</bdi> ✓ الحسابات الشخصية = العملاء والموردين.<br />
+<em>(علامات <bdi dir=ltr>25</bdi> و<bdi dir=ltr>27</bdi> و<bdi dir=ltr>28</bdi> مش مؤكدة من الصورة، فراجعها مع المنطق أعلاه.)</em></p>
+<hr />
+<h2 dir=auto id="ملاحظات-صدق">⚠ ملاحظات صدق</h2>
+<ul>
+<li dir=auto>قرأت بالتفصيل: ملخصات إياد الورقي <bdi dir=ltr>(8</bdi> ورقات) + الدروس <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>4</bdi> و<bdi dir=ltr>8</bdi> و<bdi dir=ltr>12</bdi> و<bdi dir=ltr>13</bdi> + صور كتاب الجامعة <bdi dir=rtl>(ص28–29، 59، 76–81)</bdi> + السكشنات <bdi dir=ltr>1</bdi> و<bdi dir=ltr>3</bdi> + باقي كتاب المحاضرات (ص<bdi dir=ltr>8</bdi>–<bdi dir=ltr>26</bdi> في الموقع، منها صفحات مقلوبة صعبة: <bdi dir=ltr>10</bdi> و<bdi dir=ltr>11</bdi> و<bdi dir=ltr>21</bdi> و<bdi dir=ltr>25</bdi> و<bdi dir=ltr>26.</bdi> + حل شيت ص<bdi dir=ltr>25</bdi> وتطبيقات ص<bdi dir=ltr>226</bdi> و<bdi dir=ltr>228</bdi>.</li>
+<li dir=auto><strong>لسه ما قريتش</strong> صورة حل ص<bdi dir=ltr>100</bdi> (حوالي <bdi dir=ltr>29/10)</bdi> ولا ملفات الإنجليزي (جزء <bdi dir=ltr>Accounting</bdi> في اللغة، موجود في ملخص اللغة جزئياً)، ولا الميزان والتسويات إن وُجدت.</li>
+<li dir=auto>الأرقام الدقيقة لبعض الأمثلة المكتوبة بخط اليد غير واضحة؛ اعتمد على الفكرة والتصنيف.</li>
+<li dir=auto>مفيش تاريخ ثابت لامتحان المحاسبة في الشات؛ راجع جدول البوابة (الأحد <bdi dir=ltr>9/11</bdi> حسب الجدول اللي أرسلته).</li>
+</ul>
+<hr />
+<h2 dir=auto id="ملخص-الأدمن-الجديد-الدليل-الشامل-الكامل-في-مبادئ-المحاسبة-المالية-6-صفحات-اتبعت-4-11">➕ ملخص الأدمن الجديد: "الدليل الشامل الكامل في مبادئ المحاسبة المالية" <bdi dir=ltr>(6</bdi> صفحات، اتبعت <bdi dir=ltr>4/11)</bdi></h2>
+<p dir=auto>الملخص فيه <strong><bdi dir=ltr>15</bdi> درس</strong>. الأدمن قال المهم لنا: <em>مفاهيم الفصل الأول – المعادلة المحاسبية – القيد المزدوج (مين المدين ومين الدائن) – إزاي تكتب قيد يومية</em>، وإن الامتحان <strong>صح وغلط</strong>. فأهم دروس الملخص: <bdi dir=ltr>1</bdi> و<bdi dir=ltr>2</bdi> و<bdi dir=ltr>3</bdi> و<bdi dir=ltr>6</bdi> و<bdi dir=ltr>7</bdi> و<bdi dir=ltr>8</bdi>. (قريت معظم صفحاته، ودروس <bdi dir=ltr>4</bdi> و<bdi dir=ltr>9</bdi>–<bdi dir=ltr>11</bdi> بشكل سريع.)</p>
+<p dir=auto><strong>الدرس <bdi dir=ltr>1</bdi> – إيه هي المحاسبة؟</strong> علم بيختص بتسجيل وتبويب وتلخيص العمليات المالية للمنشأة وتحليلها وتفسير نتايجها، علشان نوفر معلومات تساعد في اتخاذ القرارات. أهميتها: تسجيل العمليات، معرفة الربح أو الخسارة، معرفة المركز المالي (الأصول والالتزامات وحقوق الملكية)، الرقابة على الأموال، اتخاذ القرارات، الالتزام القانوني والضريبي.<br />
+مثال الملخص: مبيعات <bdi dir=ltr>50,000</bdi>، تكلفة بضاعة مباعة <bdi dir=ltr>35,000</bdi>، مصروفات <bdi dir=ltr>10,000</bdi> ⟵ <strong>الربح = <bdi dir=ltr>50,000 − 35,000 − 10,000 = 5,000</bdi></strong> (الملخص كاتب النتيجة <bdi dir=ltr>10,000</bdi> وده غلط حسابي في الملخص نفسه؛ الصح <bdi dir=ltr>5,000</bdi>، فاحسب بنفسك لو جه مثال زي ده).</p>
+<p dir=auto><strong>الدرس <bdi dir=ltr>2</bdi> – أنواع المنشآت:</strong> تجارية (بتشتري وتبيع بدون تغيير جوهري: سوبر ماركت)، صناعية (بتحول المواد الخام لمنتجات: مصنع)، خدمية (بتقدم خدمات: مركز تدريب، مكتب محاسبة). ومن حيث الملكية: فردية، شركات أشخاص (شريكين أو أكتر)، شركات أموال (بتعتمد على رأس المال، زي المساهمة).</p>
+<p dir=auto><strong>الدرس <bdi dir=ltr>3</bdi> – المعادلة المحاسبية:</strong> <strong>الأصول = الخصوم + حقوق الملكية.</strong></p>
+<ul>
+<li dir=auto>الأصول: موارد اقتصادية بتملكها المنشأة (متداولة: نقدية ومخزون وعملاء. ثابتة: أراضي ومباني ومعدات).</li>
+<li dir=auto>الخصوم: التزامات على المنشأة للغير (متداولة: موردين وأوراق دفع. طويلة الأجل: قروض).</li>
+<li dir=auto>حقوق الملكية = الأصول − الخصوم (رأس المال + الأرباح − المسحوبات).</li>
+<li dir=auto>الإيرادات بتزود حقوق الملكية، والمصروفات بتنقصها.</li>
+<li dir=auto>مثال: مبيعات <bdi dir=ltr>80,000</bdi>، تكلفة بضاعة <bdi dir=ltr>45,000</bdi>، إيجار <bdi dir=ltr>5,000</bdi>، رواتب <bdi dir=ltr>10,000</bdi> ⟵ <strong>الربح = <bdi dir=ltr>80,000 − 45,000 − 5,000 − 10,000 = 20,000</bdi></strong>.</li>
+</ul>
+<p dir=auto><strong>الدرس <bdi dir=ltr>5</bdi> – الأساس النقدي وأساس الاستحقاق:</strong> <em>الاستحقاق</em> بيسجل الإيراد والمصروف وقت <strong>حدوثهم</strong> بغض النظر عن الدفع. <em>النقدي</em> بيسجل وقت <strong>التحصيل والدفع الفعلي</strong>. مثال: إيجار <bdi dir=ltr>5,000</bdi> عن أكتوبر اتدفع في نوفمبر ⟵ استحقاق: مصروف أكتوبر. نقدي: مصروف نوفمبر.</p>
+<p dir=auto><strong>الدرس <bdi dir=ltr>6</bdi> – قاعدة المدين والدائن (أهم حاجة):</strong></p>
+<table>
+<thead>
+<tr>
+<th dir=auto>نوع الحساب</th>
+<th dir=auto>يزيد بـ</th>
+<th dir=auto>ينقص بـ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir=auto>الأصول</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+</tr>
+<tr>
+<td dir=auto>المصروفات</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+</tr>
+<tr>
+<td dir=auto>المسحوبات الشخصية</td>
+<td dir=auto>مدين</td>
+<td dir=auto>دائن</td>
+</tr>
+<tr>
+<td dir=auto>الالتزامات (الخصوم)</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+</tr>
+<tr>
+<td dir=auto>حقوق الملكية / رأس المال</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+</tr>
+<tr>
+<td dir=auto>الإيرادات</td>
+<td dir=auto>دائن</td>
+<td dir=auto>مدين</td>
+</tr>
+</tbody>
+</table>
+<p dir=auto>حسابات <strong>ذات طبيعة مدينة:</strong> الأصول، المصروفات، المسحوبات، مردودات المبيعات. حسابات <strong>ذات طبيعة دائنة:</strong> الالتزامات، حقوق الملكية، الإيرادات، مردودات المشتريات.</p>
+<p dir=auto><strong>الدرس <bdi dir=ltr>7</bdi> – دفتر اليومية:</strong> الدفتر اللي بتتسجل فيه العمليات بالترتيب الزمني. <strong>خطوات القيد:</strong> <bdi dir=ltr>①</bdi> حدد العملية المالية <bdi dir=ltr>②</bdi> حدد الحسابات المتأثرة <bdi dir=ltr>③</bdi> حدد طبيعة كل حساب (زاد أم نقص) <bdi dir=ltr>④</bdi> حدد المدين والدائن <bdi dir=ltr>⑤</bdi> سجل القيد مع شرح مختصر. <strong>القاعدة:</strong> مجموع المدين = مجموع الدائن دايماً.<br />
+أمثلة:</p>
+<ol>
+<li dir=auto>بدأ النشاط برأس مال نقدي <bdi dir=ltr>100,000</bdi>: من ح/ النقدية <bdi dir=ltr>100,000</bdi> إلى ح/ رأس المال <bdi dir=ltr>100,000</bdi>.</li>
+<li dir=auto>دفع إيجار المحل <bdi dir=ltr>5,000</bdi> نقداً: من ح/ مصروف الإيجار <bdi dir=ltr>5,000</bdi> إلى ح/ النقدية <bdi dir=ltr>5,000</bdi>.</li>
+<li dir=auto>شراء بضاعة نقداً <bdi dir=ltr>20,000</bdi>: من ح/ المشتريات <bdi dir=ltr>20,000</bdi> إلى ح/ النقدية <bdi dir=ltr>20,000</bdi>.</li>
+<li dir=auto>بيع بضاعة نقداً <bdi dir=ltr>15,000</bdi>: من ح/ النقدية <bdi dir=ltr>15,000</bdi> إلى ح/ المبيعات <bdi dir=ltr>15,000</bdi>.</li>
+</ol>
+<p dir=auto><strong>الدرس <bdi dir=ltr>8</bdi> – قيد رأس المال:</strong> رأس المال هو الأموال والأصول اللي بيقدمها صاحب المنشأة لبدء النشاط. <strong>الأصول الداخلة = مدين، ورأس المال = دائن.</strong></p>
+<ul>
+<li dir=auto>رأس مال نقدي <bdi dir=ltr>100,000</bdi>: من ح/ النقدية إلى ح/ رأس المال.</li>
+<li dir=auto>نقدية <bdi dir=ltr>60,000</bdi> + أثاث <bdi dir=ltr>20,000</bdi>: من مذكورين ح/ النقدية <bdi dir=ltr>60,000</bdi> + ح/ الأثاث <bdi dir=ltr>20,000</bdi> إلى ح/ رأس المال <bdi dir=ltr>80,000</bdi>.</li>
+<li dir=auto><bdi dir=ltr>100,000 (70,000</bdi> بنك + <bdi dir=ltr>30,000</bdi> خزينة): من مذكورين ح/ البنك <bdi dir=ltr>70,000</bdi> + ح/ الخزينة <bdi dir=ltr>30,000</bdi> إلى ح/ رأس المال <bdi dir=ltr>100,000</bdi>.</li>
+<li dir=auto>لو صاحب النشاط مول المنشأة بقرض شخصي من الغير: المبلغ مش رأس مال، بل التزام على المنشأة.</li>
+</ul>
+<p dir=auto><strong>الدروس <bdi dir=ltr>9</bdi>–<bdi dir=ltr>11</bdi> (مشتريات ومبيعات نقداً وآجل، خصم تجاري ونقدي):</strong> <em>الخصم التجاري</em> (مثلاً <bdi dir=ltr>10</bdi>% على <bdi dir=ltr>10,000)</bdi> بيتخصم فوراً ويتسجل الصافي <bdi dir=ltr>9,000</bdi> بدون إظهار الخصم. <em>الخصم النقدي</em> (مثلاً <bdi dir=ltr>2</bdi>% عند السداد المبكر): من مذكورين ح/ الخزينة <bdi dir=ltr>9,800</bdi> + ح/ خصم مسموح به <bdi dir=ltr>200</bdi> إلى ح/ العملاء <bdi dir=ltr>10,000</bdi>. مردودات المشتريات <bdi dir=ltr>(2,000)</bdi>: من ح/ الموردين إلى ح/ مردودات المشتريات. مردودات المبيعات <bdi dir=ltr>(3,000)</bdi>: من ح/ مردودات المبيعات إلى ح/ العملاء.</p>
+<p dir=auto><strong>الدروس <bdi dir=ltr>12</bdi>–<bdi dir=ltr>15</bdi> (الأستاذ وميزان المراجعة):</strong> <em>دفتر الأستاذ</em> بيجمع حركات كل حساب لوحده. <em>الترحيل</em> = نقل المبلغ من اليومية للجانب المخصص في الأستاذ. أمثلة: رصيد الخزينة = <bdi dir=ltr>15,000 + 10,000</bdi> (من العملاء) − <bdi dir=ltr>4,000</bdi> (مصروفات) = <strong><bdi dir=ltr>21,000</bdi> مدين</strong>. رصيد الموردين = <bdi dir=ltr>15,000 + 2,000 − 3,000</bdi> = <strong><bdi dir=ltr>14,000</bdi> دائن</strong>. <em>ميزان المراجعة</em> بيتأكد من تساوي مجموع المدين والدائن (بالمجاميع وبالأرصدة). مثال الملخص: إجمالي حركات <bdi dir=ltr>90,000</bdi> مدين = <bdi dir=ltr>90,000</bdi> دائن، وإجمالي الأرصدة <bdi dir=ltr>75,000 = 75,000</bdi>. تساوي الطرفين لا يعني خلو الدفاتر من كل الأخطاء.</p>
+<p dir=auto><strong>من الشعبة العامة <bdi dir=ltr>(4/11)</bdi>:</strong> "امتحان المحاسبة: حل مدين ودائن – المعادلة المحاسبية – دفتر اليومية – صح وغلط." وبتطابق قايمة الأدمن (الأستاذ وميزان المراجعة مش في القايمة، فهما أولوية أقل).</p></div><div class=nextbar><a class=btn href=acc-files.html>التالي: 📄 ملفات الأدمن ◀</a></div></main><button id=mode type=button onclick="md()">🌙 ريّح عينك</button><script>(function(){var m=localStorage.getItem("mode")||"";if(m)document.documentElement.className=m;window.md=function(){var c=document.documentElement.className,n=c==""?"sp":c=="sp"?"dk":"";document.documentElement.className=n;localStorage.setItem("mode",n);document.getElementById("mode").textContent=n=="sp"?"📖 ورقي":n=="dk"?"☀ عادي":"🌙 ريّح عينك"};var b=document.getElementById("mode");if(b)b.textContent=m=="sp"?"📖 ورقي":m=="dk"?"☀ عادي":"🌙 ريّح عينك"})()</script><div id=lb><button style="right:8px" onclick="lbx()">✕ إغلاق</button><button style="left:8px" onclick="lbn(1)">التالية ▶</button><button style="left:120px" onclick="lbn(-1)">◀ السابقة</button><span id=lbc></span><img id=lbi></div>
+<script>
+var L=[],I=0;
+function lbx(){lb.style.display='none'}
+function lbs(){lbi.src=L[I];lbc.textContent=(I+1)+' / '+L.length;lb.style.display='block'}
+function lbn(d){I=(I+d+L.length)%L.length;lbs()}
+function sw(b){var p=b.closest('.pt');p.querySelectorAll('.seg button').forEach(function(x){x.classList.toggle('on',x===b)});p.querySelectorAll('.pane').forEach(function(x){x.hidden=x.dataset.p!=b.dataset.p})}
+document.addEventListener('click',function(e){var t=e.target;if(t.tagName=='IMG'&&t.dataset.z){var g=t.closest('.strip,.pages')||document;L=[].slice.call(g.querySelectorAll('img[data-z]')).map(function(x){return x.dataset.z});I=L.indexOf(t.dataset.z);lbs()}});
+document.addEventListener('keydown',function(e){if(lb.style.display=='block'){if(e.key=='Escape')lbx();if(e.key=='ArrowLeft')lbn(1);if(e.key=='ArrowRight')lbn(-1)}});
+document.querySelectorAll('.pth input').forEach(function(c){var k='ck:'+location.pathname+c.dataset.i;c.checked=localStorage[k]=='1';c.onchange=function(){localStorage[k]=c.checked?'1':'0'}});
+</script>
